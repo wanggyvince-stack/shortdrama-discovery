@@ -63,8 +63,8 @@ export default function RootLayout({
             <div className="site-footer__col">
               <p className="site-footer__col-title">Discover</p>
               <Link href="/" className="site-footer__link">All Dramas</Link>
-              <Link href="/genres" className="site-footer__link">Browse by Mood</Link>
-              <Link href="/genres" className="site-footer__link">Browse by Genre</Link>
+              <Link href="/genres?filter=emotion" className="site-footer__link">Browse by Mood</Link>
+              <Link href="/genres" className="site-footer__link">All Genres</Link>
               <Link href="/tag/revenge-comeback" className="site-footer__link">Top Revenge</Link>
             </div>
             <div className="site-footer__col">
