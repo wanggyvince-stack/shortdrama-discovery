@@ -1,4 +1,5 @@
 import { getDramaBySlug, getRelatedDramas, getAllDramaSlugs, getPlatforms } from '@/lib/data';
+import { getCpsUrl, hasCps } from '@/lib/cps';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -172,19 +173,66 @@ export default async function DramaPage({ params }: Props) {
                 </div>
               </div>
 
-              {/* Watch Now CTA */}
-              <a
-                href={drama.sourceUrl || '#'}
-                className="btn-watch"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                data-drama-id={drama.id}
-                data-drama-slug={drama.slug}
-                data-platform={drama.source}
-                onClick={undefined}
-              >
-                ▶ Watch Now
-              </a>
+              {/* CTA Buttons */}
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '6px' }}>
+                {(() => {
+                  const cpsUrl = getCpsUrl(drama.source || '');
+                  if (cpsUrl) {
+                    return (
+                      <>
+                        <a
+                          href={cpsUrl}
+                          className="btn-watch"
+                          target="_blank"
+                          rel="noopener noreferrer nofollow"
+                          data-drama-id={drama.id}
+                          data-drama-slug={drama.slug}
+                          data-platform={drama.source}
+                          data-link-type="app"
+                          style={{ background: platformColor }}
+                        >
+                          📱 Watch on App
+                        </a>
+                        <a
+                          href={drama.sourceUrl || '#'}
+                          target="_blank"
+                          rel="noopener noreferrer nofollow"
+                          data-drama-id={drama.id}
+                          data-drama-slug={drama.slug}
+                          data-platform={drama.source}
+                          data-link-type="web"
+                          style={{
+                            fontFamily: 'var(--font-ui)',
+                            fontSize: 'var(--text-xs)',
+                            color: 'var(--text-muted)',
+                            textDecoration: 'none',
+                            padding: '0 4px',
+                          }}
+                          className="cps-web-link"
+                        >
+                          or watch on web →
+                        </a>
+                      </>
+                    );
+                  }
+                  // No CPS link (FlexTV, NetShort) — single web button
+                  return (
+                    <a
+                      href={drama.sourceUrl || '#'}
+                      className="btn-watch"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      data-drama-id={drama.id}
+                      data-drama-slug={drama.slug}
+                      data-platform={drama.source}
+                      data-link-type="web"
+                      style={{ background: platformColor }}
+                    >
+                      🌐 Watch on Web
+                    </a>
+                  );
+                })()}
+              </div>
             </div>
 
             {/* Additional info */}
@@ -271,17 +319,18 @@ export default async function DramaPage({ params }: Props) {
 
       {/* CPS Click Tracking Script */}
       <script dangerouslySetInnerHTML={{ __html: `
-        document.querySelectorAll('.btn-watch[data-drama-id]').forEach(function(btn) {
+        document.querySelectorAll('[data-drama-id][data-link-type]').forEach(function(btn) {
           btn.addEventListener('click', function(e) {
             var dramaId = this.getAttribute('data-drama-id');
             var dramaSlug = this.getAttribute('data-drama-slug');
             var platform = this.getAttribute('data-platform');
+            var linkType = this.getAttribute('data-link-type');
             
             // Fire and forget - don't block navigation
             fetch('/api/click', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ dramaId: dramaId, dramaSlug: dramaSlug, platform: platform }),
+              body: JSON.stringify({ dramaId: dramaId, dramaSlug: dramaSlug, platform: platform, type: linkType }),
               keepalive: true
             }).catch(function() {});
           });

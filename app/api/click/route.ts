@@ -10,6 +10,7 @@ interface ClickRecord {
   dramaId: string;
   dramaSlug: string;
   platform: string;
+  type: string; // 'app' or 'web'
   timestamp: string;
   referer?: string;
   userAgent?: string;
@@ -56,7 +57,7 @@ function todayKey() {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { dramaId, dramaSlug, platform, referer, userAgent } = body;
+    const { dramaId, dramaSlug, platform, type, referer, userAgent } = body;
 
     if (!dramaId || !platform) {
       return NextResponse.json(
@@ -69,6 +70,7 @@ export async function POST(request: NextRequest) {
       dramaId: String(dramaId),
       dramaSlug: dramaSlug || '',
       platform: String(platform),
+      type: type || 'web',
       timestamp: new Date().toISOString(),
       referer: referer || '',
       userAgent: userAgent || '',
@@ -139,9 +141,12 @@ export async function GET(request: NextRequest) {
 
       const byPlatform: Record<string, number> = {};
       const byDrama: Record<string, number> = {};
+      const byType: Record<string, number> = {};
       for (const r of filtered) {
         byPlatform[r.platform] = (byPlatform[r.platform] || 0) + 1;
         byDrama[r.dramaSlug] = (byDrama[r.dramaSlug] || 0) + 1;
+        const t = r.type || 'web';
+        byType[t] = (byType[t] || 0) + 1;
       }
 
       return NextResponse.json({
@@ -149,6 +154,7 @@ export async function GET(request: NextRequest) {
         date,
         totalClicks: filtered.length,
         byPlatform,
+        byType,
         topDramas: Object.entries(byDrama)
           .sort((a, b) => b[1] - a[1])
           .slice(0, 20)
@@ -162,9 +168,12 @@ export async function GET(request: NextRequest) {
 
       const byPlatform: Record<string, number> = {};
       const byDrama: Record<string, number> = {};
+      const byType: Record<string, number> = {};
       for (const r of filtered) {
         byPlatform[r.platform] = (byPlatform[r.platform] || 0) + 1;
         byDrama[r.dramaSlug] = (byDrama[r.dramaSlug] || 0) + 1;
+        const t = r.type || 'web';
+        byType[t] = (byType[t] || 0) + 1;
       }
 
       return NextResponse.json({
@@ -172,6 +181,7 @@ export async function GET(request: NextRequest) {
         date,
         totalClicks: filtered.length,
         byPlatform,
+        byType,
         topDramas: Object.entries(byDrama)
           .sort((a, b) => b[1] - a[1])
           .slice(0, 20)
