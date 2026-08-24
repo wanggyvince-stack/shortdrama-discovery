@@ -1,5 +1,12 @@
-User-agent: *
-Allow: /
-Disallow: /api/
+import { MetadataRoute } from 'next';
 
-Sitemap: https://shortdrama-discovery.vercel.app/sitemap.xml
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: {
+      userAgent: '*',
+      allow: '/',
+      disallow: '/api/',
+    },
+    sitemap: 'https://shortdrama-discovery.vercel.app/sitemap.xml',
+  };
+}
