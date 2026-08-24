@@ -2,29 +2,10 @@ import { NextRequest, NextResponse } from 'next/server';
 
 // =============================================================================
 // CPS Click Tracking API
-// Supports dual mode: Vercel KV (persistent) or in-memory (fallback)
+// Dual mode: Upstash REST API (Vercel KV compatible) or in-memory fallback
+// Uses raw HTTP calls - zero npm dependencies needed
 // =============================================================================
 
-// --- Vercel KV (persistent) ---
-let kv: any = null;
-let kvAvailable = false;
-
-try {
-  // Dynamic import to avoid build failure when @vercel/kv is not installed
-  // or when KV env vars (KV_REST_API_URL) are not set
-  if (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN) {
-    const mod = await import('@vercel/kv');
-    kv = mod.kv;
-    kvAvailable = true;
-    console.log('[CPS] Vercel KV connected - persistent storage active');
-  } else {
-    console.log('[CPS] KV env vars not found - using in-memory fallback');
-  }
-} catch {
-  console.log('[CPS] @vercel/kv not available - using in-memory fallback');
-}
-
-// --- In-memory fallback ---
 interface ClickRecord {
   dramaId: string;
   dramaSlug: string;
@@ -34,10 +15,37 @@ interface ClickRecord {
   userAgent?: string;
 }
 
+// --- Upstash REST API client (works with Vercel KV env vars) ---
+const UPSTASH_URL = process.env.KV_REST_API_URL || process.env.UPSTASH_REST_API_URL;
+const UPSTASH_TOKEN = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REST_API_TOKEN;
+
+async function upstashCmd(...args: string[]): Promise<any> {
+  if (!UPSTASH_URL || !UPSTASH_TOKEN) return null;
+  try {
+    const res = await fetch(UPSTASH_URL, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${UPSTASH_TOKEN}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(args),
+    });
+    const data = await res.json();
+    return data.result;
+  } catch (e) {
+    console.error('[CPS] Upstash error:', e);
+    return null;
+  }
+}
+
+function isKVAvailable(): boolean {
+  return !!(UPSTASH_URL && UPSTASH_TOKEN);
+}
+
+// --- In-memory fallback ---
 let clickRecords: ClickRecord[] = [];
 const MAX_RECORDS = 5000;
 
-// --- Helper: get today's key for KV ---
 function todayKey() {
   return `clicks:${new Date().toISOString().slice(0, 10)}`;
 }
@@ -66,33 +74,31 @@ export async function POST(request: NextRequest) {
       userAgent: userAgent || '',
     };
 
-    if (kvAvailable && kv) {
-      // --- Persistent mode: Vercel KV ---
+    if (isKVAvailable()) {
+      // --- Persistent mode: Upstash REST API ---
       const key = todayKey();
-      // Store as a list in KV (JSON serialized)
-      const existing = await kv.get<string>(key);
-      const records: ClickRecord[] = existing ? JSON.parse(existing) : [];
-      records.push(record);
-      // Keep last 2000 records per day to avoid KV size limits
-      const trimmed = records.slice(-2000);
-      await kv.set(key, JSON.stringify(trimmed), { ex: 86400 * 30 }); // 30 day TTL
 
-      // Also maintain aggregate counters
+      // Append record to daily list (LPUSH + LTRIM to keep last 2000)
+      await upstashCmd('LPUSH', key, JSON.stringify(record));
+      await upstashCmd('LTRIM', key, '0', '1999');
+      await upstashCmd('EXPIRE', key, String(86400 * 30)); // 30 day TTL
+
+      // Increment aggregate counter
       const counterKey = `clicks:count:${record.platform}:${record.dramaId}`;
-      await kv.incr(counterKey);
-      await kv.expire(counterKey, 86400 * 90); // 90 day TTL
+      await upstashCmd('INCR', counterKey);
+      await upstashCmd('EXPIRE', counterKey, String(86400 * 90)); // 90 day TTL
 
-      console.log(`[CPS-KV] Recorded click: drama=${record.dramaSlug} platform=${record.platform}`);
+      console.log(`[CPS-KV] click: drama=${record.dramaSlug} platform=${record.platform}`);
+      return NextResponse.json({ success: true, mode: 'kv' });
     } else {
       // --- Fallback mode: in-memory ---
       clickRecords.push(record);
       if (clickRecords.length > MAX_RECORDS) {
         clickRecords = clickRecords.slice(-MAX_RECORDS);
       }
-      console.log(`[CPS-MEM] Recorded click: drama=${record.dramaSlug} platform=${record.platform} (total: ${clickRecords.length})`);
+      console.log(`[CPS-MEM] click: drama=${record.dramaSlug} platform=${record.platform} (total: ${clickRecords.length})`);
+      return NextResponse.json({ success: true, mode: 'memory' });
     }
-
-    return NextResponse.json({ success: true, mode: kvAvailable ? 'kv' : 'memory' });
   } catch (error) {
     console.error('[CPS] Error recording click:', error);
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
@@ -110,11 +116,10 @@ export async function GET(request: NextRequest) {
     const dramaId = searchParams.get('dramaId');
     const date = searchParams.get('date') || new Date().toISOString().slice(0, 10);
 
-    if (kvAvailable && kv) {
+    if (isKVAvailable()) {
       // --- KV mode ---
       if (platform && dramaId) {
-        // Get specific counter
-        const count = await kv.get(`clicks:count:${platform}:${dramaId}`);
+        const count = await upstashCmd('GET', `clicks:count:${platform}:${dramaId}`);
         return NextResponse.json({
           mode: 'kv',
           date,
@@ -124,16 +129,14 @@ export async function GET(request: NextRequest) {
         });
       }
 
-      // Get all records for a date
-      const key = `clicks:${date}`;
-      const raw = await kv.get<string>(key);
-      const records: ClickRecord[] = raw ? JSON.parse(raw) : [];
+      // Get all records for a date (LRANGE)
+      const raw = await upstashCmd('LRANGE', `clicks:${date}`, '0', '-1');
+      const records: ClickRecord[] = (raw || []).map((r: string) => JSON.parse(r));
 
       let filtered = records;
-      if (platform) filtered = records.filter(r => r.platform === platform);
-      if (dramaId) filtered = records.filter(r => r.dramaId === dramaId);
+      if (platform) filtered = records.filter((r: ClickRecord) => r.platform === platform);
+      if (dramaId) filtered = records.filter((r: ClickRecord) => r.dramaId === dramaId);
 
-      // Aggregate stats
       const byPlatform: Record<string, number> = {};
       const byDrama: Record<string, number> = {};
       for (const r of filtered) {
@@ -173,7 +176,7 @@ export async function GET(request: NextRequest) {
           .sort((a, b) => b[1] - a[1])
           .slice(0, 20)
           .map(([slug, clicks]) => ({ slug, clicks })),
-        note: 'In-memory mode. Data will be lost on serverless cold start. Set up Vercel KV for persistence.',
+        note: 'In-memory mode. Data lost on cold start. Set up Vercel KV for persistence.',
       });
     }
   } catch (error) {

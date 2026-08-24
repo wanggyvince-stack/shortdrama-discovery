@@ -19,8 +19,9 @@ const CATEGORY_ICONS: Record<string, string> = {
   genre: '📚',
 };
 
-export default function GenresPage() {
+export default function GenresPage({ searchParams }: { searchParams?: { filter?: string } }) {
   const allTags = getAllTags();
+  const filterCategory = searchParams?.filter; // e.g., ?filter=emotion
 
   // Group tags by category
   const grouped: Record<string, typeof allTags> = {};
@@ -31,7 +32,9 @@ export default function GenresPage() {
     grouped[tag.category].push(tag);
   }
 
-  const categoryOrder = ['emotion', 'genre', 'scene'];
+  const categoryOrder = filterCategory
+    ? ['emotion', 'genre', 'scene'].filter(c => c === filterCategory)
+    : ['emotion', 'genre', 'scene'];
   const categoryLabels: Record<string, string> = {
     emotion: 'By Mood & Emotion',
     genre: 'By Genre',
