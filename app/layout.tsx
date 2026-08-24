@@ -65,12 +65,14 @@ export default function RootLayout({
               <Link href="/" className="site-footer__link">All Dramas</Link>
               <Link href="/genres" className="site-footer__link">Browse by Mood</Link>
               <Link href="/genres" className="site-footer__link">Browse by Genre</Link>
+              <Link href="/tag/revenge-comeback" className="site-footer__link">Top Revenge</Link>
             </div>
             <div className="site-footer__col">
               <p className="site-footer__col-title">Platforms</p>
               <Link href="/platforms" className="site-footer__link">All Platforms</Link>
               <Link href="/platforms" className="site-footer__link">ReelShort</Link>
               <Link href="/platforms" className="site-footer__link">ShortMax</Link>
+              <Link href="/platforms" className="site-footer__link">GoodShort</Link>
             </div>
             <div className="site-footer__col">
               <p className="site-footer__col-title">About</p>
