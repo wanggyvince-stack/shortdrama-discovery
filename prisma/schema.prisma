@@ -1,0 +1,162 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ========== 核心表：Drama（剧集） ==========
+model Drama {
+  id            String    @id @default(cuid())
+  
+  // 来源信息
+  sourceId      String    // 平台原始ID（如 ReelShort 的 bookId）
+  source        String    // 来源平台：reelshort / dramabox / goodshort / shortmax
+  sourceUrl     String?   // 原始链接
+  
+  // 基础信息
+  title         String
+  slug          String    @unique  // URL友好标题
+  synopsis      String?   // 剧情简介
+  coverUrl      String?   // 封面图
+  
+  // 统计数据
+  score         Float?    // 评分（0-10）
+  readCount     Int?      // 阅读/播放量
+  collectCount  Int?      // 收藏数
+  chapterCount  Int?      // 集数
+  duration      Int?      // 单集时长（秒）
+  
+  // 时间信息
+  releaseDate   DateTime? // 上线日期
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  lastScrapedAt DateTime? // 最后爬取时间
+  
+  // 关联
+  tags          DramaTag[]
+  pricing       DramaPricing[]
+  clicks        CpsClick[]
+  
+  // 索引
+  @@index([source, sourceId])
+  @@index([slug])
+  @@index([score])
+  @@index([readCount])
+  @@index([releaseDate])
+}
+
+// ========== 标签表 ==========
+model Tag {
+  id        String   @id @default(cuid())
+  name      String   @unique  // 标签名称（如 "Billionaire"）
+  slug      String   @unique  // URL友好名称
+  category  String   // 标签分类：emotion / scene / genre
+  
+  // 统计数据（用于标签聚合页）
+  dramaCount  Int    @default(0)  // 该标签下的剧集数量
+  avgScore    Float? // 平均评分
+  totalReads  Int    @default(0)  // 总阅读量
+  
+  dramas    DramaTag[]
+  
+  @@index([category])
+  @@index([dramaCount])
+}
+
+// ========== 剧集-标签关联表 ==========
+model DramaTag {
+  id       String @id @default(cuid())
+  dramaId  String
+  tagId    String
+  priority Int    @default(0) // 标签优先级（用于排序）
+  
+  drama    Drama  @relation(fields: [dramaId], references: [id], onDelete: Cascade)
+  tag      Tag    @relation(fields: [tagId], references: [id], onDelete: Cascade)
+  
+  @@unique([dramaId, tagId])
+  @@index([dramaId])
+  @@index([tagId])
+}
+
+// ========== 平台信息表 ==========
+model Platform {
+  id          String  @id @default(cuid())
+  slug        String  @unique  // URL友好名称
+  name        String  // 平台名称
+  displayName String  // 显示名称
+  logoUrl     String? // Logo
+  
+  // 平台信息
+  description String? // 平台介绍
+  websiteUrl  String? // 官网
+  appStoreUrl String? // App Store
+  playStoreUrl String? // Google Play
+  
+  // 统计数据
+  dramaCount  Int     @default(0)
+  avgPrice    Float?  // 平均单集价格
+  
+  // CPS 信息
+  cpsEnabled  Boolean @default(false)
+  cpsUrl      String? // CPS 联盟链接模板
+  
+  isActive    Boolean @default(true)
+  
+  pricing     DramaPricing[]
+  
+  @@index([slug])
+}
+
+// ========== 剧集定价表（用于比价） ==========
+model DramaPricing {
+  id          String  @id @default(cuid())
+  dramaId     String
+  platformId  String
+  
+  // 定价信息
+  freeEpisodes Int     @default(0)  // 免费集数
+  pricePerEpisode Float? // 单集价格（USD）
+  pricePerPack   Float? // 套餐价格（USD）
+  episodesPerPack Int? // 套餐包含集数
+  
+  // CPS 链接
+  watchUrl    String? // 观看链接（含 CPS 参数）
+  deepLink    String? // App Deep Link
+  
+  // 更新时间
+  lastUpdatedAt DateTime @default(now())
+  
+  drama       Drama    @relation(fields: [dramaId], references: [id], onDelete: Cascade)
+  platform    Platform @relation(fields: [platformId], references: [id], onDelete: Cascade)
+  
+  @@unique([dramaId, platformId])
+  @@index([dramaId])
+  @@index([platformId])
+}
+
+// ========== CPS 点击追踪表 ==========
+model CpsClick {
+  id          String   @id @default(cuid())
+  dramaId     String
+  platformId  String?
+  
+  // 点击信息
+  userAgent   String?
+  ipAddress   String?  // 脱敏存储
+  referer     String?  // 来源页面
+  
+  // 追踪信息
+  clickedAt   DateTime @default(now())
+  convertedAt DateTime? // 转化时间（由联盟回调更新）
+  
+  drama       Drama    @relation(fields: [dramaId], references: [id], onDelete: Cascade)
+  
+  @@index([dramaId])
+  @@index([clickedAt])
+}

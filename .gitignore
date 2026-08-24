@@ -1,0 +1,6 @@
+node_modules/
+prisma/dev.db
+.env
+scraper/data/
+*.db
+.DS_Store
