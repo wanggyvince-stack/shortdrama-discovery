@@ -1,6 +1,7 @@
 import { getTagBySlug, getAllTags, getAllTagSlugs } from '@/lib/data';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 
 interface Props {
@@ -28,6 +29,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+const TAG_COLORS: Record<string, string> = {
+  emotion: '#e8457a',
+  scene: '#2d9f6f',
+  genre: '#4a7cf7',
+};
+
 export default async function TagPage({ params }: Props) {
   const { slug } = await params;
   const result = getTagBySlug(slug);
@@ -48,76 +55,117 @@ export default async function TagPage({ params }: Props) {
   const avgScore = dramas.length > 0
     ? dramas.reduce((sum, d) => sum + (d.score || 0), 0) / dramas.length
     : 0;
-  const totalReads = dramas.reduce((sum, d) => sum + (d.readCount || 0), 0);
   const avgEpisodes = dramas.length > 0
     ? dramas.reduce((sum, d) => sum + (d.chapterCount || 0), 0) / dramas.length
     : 0;
 
+  const tagColor = TAG_COLORS[tag.category] || TAG_COLORS.genre;
+
   return (
     <article>
       {/* Header */}
-      <section>
-        <h1>Best {tag.name} Short Dramas</h1>
-        <p style={{ color: '#6b7280', marginTop: '0.5rem' }}>
+      <section style={{ marginBottom: 'var(--space-8)' }}>
+        <p className="section-label" style={{ color: tagColor }}>{tag.category === 'emotion' ? '🎭 Emotion' : tag.category === 'scene' ? '🎬 Scene' : '🎭 Genre'}</p>
+        <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-4xl)', marginBottom: 'var(--space-3)' }}>
+          Best {tag.name} Short Dramas
+        </h1>
+        <p style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-lg)', maxWidth: '600px' }}>
           Discover top-rated {tag.name.toLowerCase()} short dramas. 
-          Browse {dramas.length} curated titles with an average rating of {avgScore.toFixed(1)}/10.
+          Browse {dramas.length} curated titles.
         </p>
       </section>
 
-      {/* Stats */}
-      <section className="drama-section">
-        <div className="price-compare">
-          <div className="price-row">
-            <span>Total Dramas</span>
-            <strong>{dramas.length}</strong>
+      {/* Stats Cards */}
+      <section style={{ marginBottom: 'var(--space-8)' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 'var(--space-4)' }}>
+          <div style={{ background: 'var(--bg-card)', borderRadius: 'var(--radius-lg)', padding: 'var(--space-5)', textAlign: 'center' }}>
+            <div style={{ fontSize: 'var(--text-3xl)', fontWeight: 700, color: 'var(--accent-wine)' }}>{dramas.length}</div>
+            <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', marginTop: 'var(--space-1)' }}>Total Dramas</div>
           </div>
-          <div className="price-row">
-            <span>Average Rating</span>
-            <strong>⭐ {avgScore.toFixed(1)}/10</strong>
+          <div style={{ background: 'var(--bg-card)', borderRadius: 'var(--radius-lg)', padding: 'var(--space-5)', textAlign: 'center' }}>
+            <div style={{ fontSize: 'var(--text-3xl)', fontWeight: 700, color: 'var(--accent-gold)' }}>★ {avgScore.toFixed(1)}</div>
+            <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', marginTop: 'var(--space-1)' }}>Avg Rating</div>
           </div>
-          <div className="price-row">
-            <span>Total Views</span>
-            <strong>{formatNumber(totalReads)}</strong>
+          <div style={{ background: 'var(--bg-card)', borderRadius: 'var(--radius-lg)', padding: 'var(--space-5)', textAlign: 'center' }}>
+            <div style={{ fontSize: 'var(--text-3xl)', fontWeight: 700, color: 'var(--accent-wine)' }}>{avgEpisodes.toFixed(0)}</div>
+            <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', marginTop: 'var(--space-1)' }}>Avg Episodes</div>
           </div>
-          <div className="price-row">
-            <span>Average Episodes</span>
-            <strong>{avgEpisodes.toFixed(0)} eps</strong>
+          <div style={{ background: 'var(--bg-card)', borderRadius: 'var(--radius-lg)', padding: 'var(--space-5)', textAlign: 'center' }}>
+            <div style={{ fontSize: 'var(--text-3xl)', fontWeight: 700, color: 'var(--accent-wine)' }}>{relatedTags.length}</div>
+            <div style={{ fontSize: 'var(--text-xs)', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', marginTop: 'var(--space-1)' }}>Related Tags</div>
           </div>
         </div>
       </section>
 
       {/* Drama List */}
-      <section className="drama-section">
-        <h2>{tag.name} Short Dramas</h2>
+      <section style={{ marginBottom: 'var(--space-10)' }}>
+        <p className="section-label">Collection</p>
+        <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-2xl)', marginBottom: 'var(--space-6)' }}>
+          {tag.name} Short Dramas
+        </h2>
         <div className="drama-grid">
-          {dramas.map((drama) => (
-            <Link key={drama.id} href={`/drama/${drama.slug}`} className="drama-card">
-              {drama.coverUrl && (
-                <img src={drama.coverUrl} alt={drama.title} loading="lazy" />
-              )}
-              <div className="drama-card-content">
-                <div className="drama-card-title">{drama.title}</div>
-                <div className="drama-card-meta">
-                  {drama.score && <span>⭐ {drama.score}</span>}
-                  {drama.chapterCount && <span>📺 {drama.chapterCount} ep</span>}
-                  {drama.readCount && <span>👁️ {formatNumber(drama.readCount)}</span>}
+          {dramas.map((drama) => {
+            const platformSlug = drama.source?.toLowerCase().replace(/\s+/g, '') || '';
+            return (
+              <Link key={drama.id} href={`/drama/${drama.slug}`} className="drama-card">
+                {drama.source && (
+                  <span className={`drama-card__platform-badge ${platformSlug}`}>
+                    {drama.source}
+                  </span>
+                )}
+                {drama.coverUrl && (
+                  <Image
+                    className="drama-card__poster"
+                    src={drama.coverUrl}
+                    alt={drama.title}
+                    width={300}
+                    height={400}
+                    loading="lazy"
+                    style={{ objectFit: 'cover' }}
+                  />
+                )}
+                <div className="drama-card__info">
+                  <div className="drama-card__title">{drama.title}</div>
+                  <div className="drama-card__meta">
+                    {drama.score && <span style={{ color: 'var(--accent-gold)' }}>★ {drama.score}</span>}
+                    {drama.chapterCount > 0 && <span>{drama.chapterCount} EP</span>}
+                  </div>
+                  {drama.tags && drama.tags.length > 0 && (
+                    <div className="drama-card__tags">
+                      {drama.tags.slice(0, 2).map((dt) => {
+                        const color = TAG_COLORS[dt.category] || TAG_COLORS.genre;
+                        return (
+                          <span key={dt.slug} className="drama-card__tag" style={{ borderColor: color, color: color }}>
+                            {dt.name}
+                          </span>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            );
+          })}
         </div>
       </section>
 
       {/* Related Tags */}
       {relatedTags.length > 0 && (
-        <section className="drama-section">
-          <h2>Related Tags</h2>
-          <div className="tag-list">
-            {relatedTags.map((relatedTag) => (
-              <Link key={relatedTag.id} href={`/tag/${relatedTag.slug}`} className="tag">
-                {relatedTag.name} ({relatedTag.dramaCount})
-              </Link>
-            ))}
+        <section style={{ marginBottom: 'var(--space-10)' }}>
+          <p className="section-label">Explore More</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-2xl)', marginBottom: 'var(--space-6)' }}>
+            Related Tags
+          </h2>
+          <div className="tag-cloud">
+            {relatedTags.map((relatedTag) => {
+              const color = TAG_COLORS[relatedTag.category] || TAG_COLORS.genre;
+              return (
+                <Link key={relatedTag.id} href={`/tag/${relatedTag.slug}`} className="tag-chip" style={{ borderColor: color }}>
+                  {relatedTag.name}
+                  <span className="tag-chip__count">{relatedTag.dramaCount}</span>
+                </Link>
+              );
+            })}
           </div>
         </section>
       )}
@@ -147,14 +195,4 @@ export default async function TagPage({ params }: Props) {
       />
     </article>
   );
-}
-
-function formatNumber(num: number): string {
-  if (num >= 1000000) {
-    return (num / 1000000).toFixed(1) + 'M';
-  }
-  if (num >= 1000) {
-    return (num / 1000).toFixed(1) + 'K';
-  }
-  return num.toString();
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -41,20 +42,42 @@ export default function RootLayout({
       <body>
         <header>
           <nav>
-            <a href="/" className="logo">ShortDrama Discovery</a>
+            <Link href="/" className="logo">ShortDrama Discovery</Link>
             <div style={{ display: 'flex', gap: 'var(--space-6)' }}>
-              <a href="/">Discover</a>
-              <a href="/genres">Genres</a>
-              <a href="/platforms">Platforms</a>
+              <Link href="/">Discover</Link>
+              <Link href="/genres">Genres</Link>
+              <Link href="/platforms">Platforms</Link>
             </div>
           </nav>
         </header>
         <main>{children}</main>
-        <footer>
-          <p style={{ fontFamily: 'var(--font-ui)', fontSize: 'var(--text-xs)', letterSpacing: '0.05em', textTransform: 'uppercase', marginBottom: 'var(--space-2)' }}>
-            ShortDrama Discovery
-          </p>
-          <p>© 2026 ShortDrama Discovery. Data sourced from official platforms.</p>
+        <footer className="site-footer">
+          <div className="site-footer__inner">
+            <div className="site-footer__brand">
+              <p className="site-footer__brand-name">ShortDrama Discovery</p>
+              <p className="site-footer__brand-desc">
+                Your cross-platform discovery engine for short dramas. 
+                Find, compare, and watch the best micro dramas from ReelShort, ShortMax, GoodShort, FlexTV and more.
+              </p>
+            </div>
+            <div className="site-footer__col">
+              <p className="site-footer__col-title">Discover</p>
+              <Link href="/" className="site-footer__link">All Dramas</Link>
+              <Link href="/genres" className="site-footer__link">Browse by Mood</Link>
+              <Link href="/genres" className="site-footer__link">Browse by Genre</Link>
+            </div>
+            <div className="site-footer__col">
+              <p className="site-footer__col-title">Platforms</p>
+              <Link href="/platforms" className="site-footer__link">All Platforms</Link>
+              <Link href="/platforms" className="site-footer__link">ReelShort</Link>
+              <Link href="/platforms" className="site-footer__link">ShortMax</Link>
+            </div>
+            <div className="site-footer__col">
+              <p className="site-footer__col-title">About</p>
+              <span className="site-footer__link" style={{ cursor: 'default' }}>Data from official platforms</span>
+              <span className="site-footer__link" style={{ cursor: 'default' }}>© 2026 ShortDrama Discovery</span>
+            </div>
+          </div>
         </footer>
       </body>
     </html>
