@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllDramas, getAllTags } from '@/lib/data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://shortdrama-discovery.vercel.app';
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://dramadisco.com';
 
   // Static pages
   const staticPages = [

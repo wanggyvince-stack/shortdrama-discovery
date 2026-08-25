@@ -186,7 +186,7 @@ export default async function TagPage({ params }: Props) {
               item: {
                 '@type': 'TVSeries',
                 name: drama.title,
-                url: `https://shortdrama-discovery.vercel.app/drama/${drama.slug}`,
+                url: `https://dramadisco.com/drama/${drama.slug}`,
                 image: drama.coverUrl,
               },
             })),

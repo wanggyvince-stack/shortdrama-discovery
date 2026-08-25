@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://shortdrama-discovery.vercel.app/sitemap.xml',
+    sitemap: 'https://dramadisco.com/sitemap.xml',
   };
 }

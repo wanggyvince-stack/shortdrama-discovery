@@ -357,7 +357,7 @@ export default async function DramaPage({ params }: Props) {
             } : undefined,
             provider: drama.source ? { '@type': 'Organization', name: drama.source, url: currentPlatform?.websiteUrl } : undefined,
             genre: drama.tags.map((dt) => dt.name),
-            url: `https://shortdrama-discovery.vercel.app/drama/${drama.slug}`,
+            url: `https://dramadisco.com/drama/${drama.slug}`,
           }),
         }}
       />
