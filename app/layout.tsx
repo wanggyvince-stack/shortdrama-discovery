@@ -5,23 +5,23 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'ShortDrama Discovery — Find Your Next Binge-Worthy Short Drama',
-    template: '%s | ShortDrama Discovery',
+    default: 'DramaDisco — Discover Your Next Short Drama Obsession',
+    template: '%s | DramaDisco',
   },
-  description: 'Discover the best short dramas across ReelShort, ShortMax, GoodShort, FlexTV, and more. Browse 700+ titles by mood, genre, and scene.',
-  keywords: ['short drama', 'micro drama', 'reelshort', 'shortmax', 'goodshort', 'mini drama', 'vertical drama', 'drama discovery'],
-  authors: [{ name: 'ShortDrama Discovery' }],
+  description: 'Discover 714+ short dramas across ReelShort, GoodShort, ShortMax, DramaBox & more. Filter by mood, genre & rating. Find where to watch legally.',
+  keywords: ['short drama', 'micro drama', 'reelshort', 'shortmax', 'goodshort', 'dramabox', 'mini drama', 'vertical drama', 'drama discovery', 'dramadisco', 'where to watch short drama'],
+  authors: [{ name: 'DramaDisco' }],
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    siteName: 'ShortDrama Discovery',
-    title: 'ShortDrama Discovery — Find Your Next Binge-Worthy Short Drama',
-    description: 'Discover 700+ short dramas across all major platforms. Browse by mood, genre, and scene.',
+    siteName: 'DramaDisco',
+    title: 'DramaDisco — Discover Your Next Short Drama Obsession',
+    description: 'Discover 714+ short dramas across all major platforms. Filter by mood, genre & rating. Find where to watch legally.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ShortDrama Discovery',
-    description: 'Discover 700+ short dramas across all major platforms.',
+    title: 'DramaDisco — Short Drama Discovery Engine',
+    description: '714+ short dramas across 5 platforms. Filter by mood, genre & rating.',
   },
 };
 
@@ -43,7 +43,7 @@ export default function RootLayout({
       <body>
         <header>
           <nav>
-            <Link href="/" className="logo">ShortDrama Discovery</Link>
+            <Link href="/" className="logo">DramaDisco</Link>
             <div style={{ display: 'flex', gap: 'var(--space-6)' }}>
               <Link href="/">Discover</Link>
               <Link href="/genres">Genres</Link>
@@ -55,10 +55,10 @@ export default function RootLayout({
         <footer className="site-footer">
           <div className="site-footer__inner">
             <div className="site-footer__brand">
-              <p className="site-footer__brand-name">ShortDrama Discovery</p>
+              <p className="site-footer__brand-name">DramaDisco</p>
               <p className="site-footer__brand-desc">
                 Your cross-platform discovery engine for short dramas. 
-                Find, compare, and watch the best micro dramas from ReelShort, ShortMax, GoodShort, FlexTV and more.
+                Find, compare, and watch the best micro dramas from ReelShort, GoodShort, ShortMax, DramaBox & more.
               </p>
             </div>
             <div className="site-footer__col">
@@ -78,7 +78,7 @@ export default function RootLayout({
             <div className="site-footer__col">
               <p className="site-footer__col-title">About</p>
               <span className="site-footer__link" style={{ cursor: 'default' }}>Data from official platforms</span>
-              <span className="site-footer__link" style={{ cursor: 'default' }}>© 2026 ShortDrama Discovery</span>
+              <span className="site-footer__link" style={{ cursor: 'default' }}>© 2026 DramaDisco</span>
             </div>
           </div>
         </footer>

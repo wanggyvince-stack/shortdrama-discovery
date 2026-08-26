@@ -129,6 +129,38 @@ export default function HomePage() {
           </p>
         </section>
       )}
+
+      {/* JSON-LD: WebSite with SearchAction */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: 'DramaDisco',
+            url: 'https://dramadisco.com',
+            description: 'Discover 714+ short dramas across all major platforms. Filter by mood, genre & rating.',
+            potentialAction: {
+              '@type': 'SearchAction',
+              target: 'https://dramadisco.com/search?q={search_term_string}',
+              'query-input': 'required name=search_term_string',
+            },
+          }),
+        }}
+      />
+      {/* JSON-LD: Organization */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'DramaDisco',
+            url: 'https://dramadisco.com',
+            logo: 'https://dramadisco.com/logo.png',
+          }),
+        }}
+      />
     </>
   );
 }

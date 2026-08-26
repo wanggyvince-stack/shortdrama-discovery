@@ -14,17 +14,31 @@ export async function generateStaticParams() {
   return slugs.map(slug => ({ slug }));
 }
 
+// Fix template-generated synopsis syntax errors
+function cleanSynopsis(raw: string | undefined, title: string, source?: string): string {
+  if (!raw) return `Watch ${title} on ${source || 'your favorite platform'}.`;
+  return raw
+    .replace(/\bAn (\d+)-episode a /g, '$1 episodes of ')
+    .replace(/\bA (\d+)-episode a /g, '$1 episodes of ')
+    .replace(/story delivers\./g, 'story.')
+    .replace(/story delivers$/g, 'story')
+    .replace(/Catch every episode on/g, 'Available on')
+    .trim();
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const drama = getDramaBySlug(slug);
   if (!drama) return { title: 'Drama Not Found' };
 
+  const desc = cleanSynopsis(drama.synopsis, drama.title, drama.source);
+
   return {
     title: drama.title,
-    description: drama.synopsis?.substring(0, 155) || `Watch ${drama.title} on ${drama.source}`,
+    description: desc.substring(0, 155),
     openGraph: {
       title: drama.title,
-      description: drama.synopsis?.substring(0, 155) || `Watch ${drama.title}`,
+      description: desc.substring(0, 155),
       images: drama.coverUrl ? [{ url: drama.coverUrl }] : [],
     },
   };
@@ -107,7 +121,7 @@ export default async function DramaPage({ params }: Props) {
             </div>
 
             {drama.synopsis && (
-              <p className="drama-hero__synopsis">{drama.synopsis}</p>
+              <p className="drama-hero__synopsis">{cleanSynopsis(drama.synopsis, drama.title, drama.source)}</p>
             )}
 
             {/* Tags */}
@@ -343,21 +357,22 @@ export default async function DramaPage({ params }: Props) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'CreativeWorkSeries',
+            '@type': 'TVEpisode',
             name: drama.title,
-            description: drama.synopsis || '',
+            description: cleanSynopsis(drama.synopsis, drama.title, drama.source),
             image: drama.coverUrl || '',
+            url: `https://dramadisco.com/drama/${drama.slug}`,
             numberOfEpisodes: drama.chapterCount,
+            genre: drama.tags.map((dt) => dt.name),
             aggregateRating: drama.score ? {
               '@type': 'AggregateRating',
               ratingValue: drama.score,
               bestRating: 10,
               worstRating: 1,
-              ratingCount: 1,
+              ratingCount: Math.max(drama.readCount || 1, 1),
             } : undefined,
             provider: drama.source ? { '@type': 'Organization', name: drama.source, url: currentPlatform?.websiteUrl } : undefined,
-            genre: drama.tags.map((dt) => dt.name),
-            url: `https://dramadisco.com/drama/${drama.slug}`,
+            publisher: { '@type': 'Organization', name: 'DramaDisco', url: 'https://dramadisco.com' },
           }),
         }}
       />

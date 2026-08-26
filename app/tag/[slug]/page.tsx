@@ -176,20 +176,30 @@ export default async function TagPage({ params }: Props) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'ItemList',
+            '@type': 'CollectionPage',
             name: `Best ${tag.name} Short Dramas`,
-            description: `Discover top-rated ${tag.name.toLowerCase()} short dramas.`,
-            numberOfItems: dramas.length,
-            itemListElement: dramas.slice(0, 10).map((drama, index) => ({
-              '@type': 'ListItem',
-              position: index + 1,
-              item: {
-                '@type': 'TVSeries',
-                name: drama.title,
-                url: `https://dramadisco.com/drama/${drama.slug}`,
-                image: drama.coverUrl,
-              },
-            })),
+            description: `Discover top-rated ${tag.name.toLowerCase()} short dramas. Browse ${dramas.length} curated titles on DramaDisco.`,
+            url: `https://dramadisco.com/tag/${tag.slug}`,
+            mainEntity: {
+              '@type': 'ItemList',
+              numberOfItems: dramas.length,
+              itemListElement: dramas.slice(0, 20).map((drama, index) => ({
+                '@type': 'ListItem',
+                position: index + 1,
+                item: {
+                  '@type': 'TVEpisode',
+                  name: drama.title,
+                  url: `https://dramadisco.com/drama/${drama.slug}`,
+                  image: drama.coverUrl,
+                  aggregateRating: drama.score ? {
+                    '@type': 'AggregateRating',
+                    ratingValue: drama.score,
+                    bestRating: 10,
+                    ratingCount: Math.max(drama.readCount || 1, 1),
+                  } : undefined,
+                },
+              })),
+            },
           }),
         }}
       />
