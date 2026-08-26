@@ -650,7 +650,7 @@ export default function DiscoBall() {
       <div
         ref={containerRef}
         style={{
-          position: 'fixed',
+          position: 'absolute',
           top: 0,
           left: 0,
           width: '100%',
@@ -663,7 +663,7 @@ export default function DiscoBall() {
       <div
         ref={overlayRef}
         style={{
-          position: 'fixed',
+          position: 'absolute',
           zIndex: 100,
           pointerEvents: 'auto',
           opacity: 0,

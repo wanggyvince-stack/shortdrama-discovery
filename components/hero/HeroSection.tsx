@@ -14,13 +14,13 @@ export default function HeroSection() {
         background: '#0A0A0A',
       }}
     >
-      {/* ─── Disco Ball (fixed canvas) ─── */}
+      {/* ─── Disco Ball (absolute canvas) ─── */}
       <DiscoBall />
 
       {/* ─── CSS Spotlight Orbs ─── */}
       <div
         style={{
-          position: 'fixed',
+          position: 'absolute',
           top: 0,
           left: 0,
           width: '100%',
@@ -39,7 +39,7 @@ export default function HeroSection() {
       {/* ─── Film Grain Overlay ─── */}
       <div
         style={{
-          position: 'fixed',
+          position: 'absolute',
           top: 0,
           left: 0,
           width: '100%',
