@@ -51,6 +51,7 @@ export async function POST(request: NextRequest) {
     }
 
     let totalSubmitted = 0;
+    const errors: string[] = [];
     for (const batch of batches) {
       const response = await fetch(INDEXNOW_ENDPOINT, {
         method: 'POST',
@@ -63,17 +64,19 @@ export async function POST(request: NextRequest) {
         }),
       });
 
-      if (response.ok || response.status === 200 || response.status === 202) {
+      if (response.status === 200 || response.status === 202) {
         totalSubmitted += batch.length;
       } else {
-        console.error(`[IndexNow] Batch failed: ${response.status} ${response.statusText}`);
+        const text = await response.text().catch(() => '');
+        errors.push(`Status ${response.status}: ${text}`);
       }
     }
 
     return NextResponse.json({
-      success: true,
+      success: totalSubmitted > 0,
       submitted: totalSubmitted,
       total: urls.length,
+      errors: errors.length > 0 ? errors : undefined,
     });
   } catch (error) {
     console.error('[IndexNow] Error:', error);
