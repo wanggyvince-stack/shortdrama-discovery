@@ -1,6 +1,7 @@
 import { getPopularDramas, getAllTags, getPlatforms } from '@/lib/data';
 import Link from 'next/link';
 import Image from 'next/image';
+import HeroSection from '@/components/hero/HeroSection';
 
 const TAG_COLORS: Record<string, string> = {
   emotion: 'var(--tag-emotion, #e8457a)',
@@ -16,38 +17,10 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Hero Section */}
-      <section style={{ marginBottom: 'var(--space-12)' }}>
-        <p className="section-label">Discovery Engine</p>
-        <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-5xl)', lineHeight: 1.1, letterSpacing: '-0.02em' }}>
-          Find Your Next<br />
-          <em style={{ fontStyle: 'italic', color: 'var(--accent-wine)' }}>Short Drama</em> Obsession
-        </h1>
-        <p style={{ color: 'var(--text-secondary)', marginTop: 'var(--space-4)', fontSize: 'var(--text-lg)', maxWidth: '520px' }}>
-          Browse {totalDramas}+ short dramas across {platformStats.length} platforms. 
-          Filter by mood, genre, and scene — discover where to watch legally.
-        </p>
-        
-        {/* Platform Stats */}
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--space-3)', marginTop: 'var(--space-6)' }}>
-          {platformStats.map((p) => (
-            <span key={p.id} style={{
-              padding: '6px 14px',
-              borderRadius: 'var(--radius-full)',
-              fontSize: 'var(--text-xs)',
-              fontFamily: 'var(--font-ui)',
-              fontWeight: 500,
-              background: `var(--platform-${p.slug})`,
-              color: 'white',
-              opacity: 0.9,
-            }}>
-              {p.name} · {p.dramaCount}
-            </span>
-          ))}
-        </div>
-      </section>
+      {/* ─── Disco Ball Hero ─── */}
+      <HeroSection />
 
-      {/* Browse by Tag */}
+      {/* ─── Browse by Tag ─── */}
       <section style={{ marginBottom: 'var(--space-12)' }}>
         <p className="section-label">Browse by Mood</p>
         <div className="tag-cloud">
@@ -63,7 +36,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Popular Dramas */}
+      {/* ─── Popular Dramas ─── */}
       <section style={{ marginBottom: 'var(--space-12)' }}>
         <p className="section-label">Trending Now</p>
         <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-3xl)', marginBottom: 'var(--space-6)' }}>
