@@ -392,7 +392,7 @@ export default function DiscoBall() {
 
       const clickMouse = new THREE.Vector2(
         ((e.clientX - rect.left) / rect.width) * 2 - 1,
-        -(e.clientY - rect.top) / rect.height) * 2 + 1
+        -((e.clientY - rect.top) / rect.height) * 2 + 1
       );
       raycaster.setFromCamera(clickMouse, camera);
       const hits = raycaster.intersectObjects(allTileMeshes, false);
@@ -445,7 +445,7 @@ export default function DiscoBall() {
     const onMouseMoveCanvas = (e: MouseEvent) => {
       const rect = container.getBoundingClientRect();
       mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
-      mouse.y = -(e.clientY - rect.top) / rect.height) * 2 + 1;
+      mouse.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
       mouseMoved = true;
     };
     renderer.domElement.addEventListener('mousemove', onMouseMoveCanvas);
