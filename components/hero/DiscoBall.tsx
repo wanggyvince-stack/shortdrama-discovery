@@ -142,6 +142,7 @@ export default function DiscoBall() {
   useEffect(() => {
     if (!containerRef.current) return;
     const container = containerRef.current;
+    const rect = container.getBoundingClientRect();
 
     // ─── Mobile detection ───
     const isMobile = window.innerWidth < MOBILE_BREAKPOINT;
@@ -155,10 +156,10 @@ export default function DiscoBall() {
 
     // ─── Renderer ───
     const renderer = new THREE.WebGLRenderer({ antialias: !isMobile });
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(rect.width, rect.height);
     renderer.setPixelRatio(pixelRatio);
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 0.85;
+    renderer.toneMappingExposure = 1.0;
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     container.appendChild(renderer.domElement);
 
@@ -167,7 +168,7 @@ export default function DiscoBall() {
     scene.background = new THREE.Color(BG);
 
     // ─── Camera ───
-    const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 500);
+    const camera = new THREE.PerspectiveCamera(60, rect.width / rect.height, 0.1, 500);
     camera.position.set(0, 0, 32);
     camera.lookAt(0, 0, 0);
 
@@ -260,7 +261,7 @@ export default function DiscoBall() {
         tex.magFilter = THREE.LinearFilter;
         tex.generateMipmaps = true;
         (mesh.material as THREE.Material).dispose();
-        mesh.material = new THREE.MeshStandardMaterial({ map: tex, side: THREE.DoubleSide, roughness: 0.6, metalness: 0.1 });
+        mesh.material = new THREE.MeshStandardMaterial({ map: tex, side: THREE.DoubleSide, roughness: 0.4, metalness: 0.05 });
       }
 
       if (texCache[posterUrl]) {
@@ -287,13 +288,13 @@ export default function DiscoBall() {
     });
 
     // ─── Hollywood Lighting ───
-    scene.add(new THREE.AmbientLight(0x2A1F0A, 0.6));
+    scene.add(new THREE.AmbientLight(0xFFF5E6, 1.2));
 
     const keyLight = new THREE.DirectionalLight(0xFFF0D0, 3);
     keyLight.position.set(-12, 18, 10);
     scene.add(keyLight);
 
-    const fillLight = new THREE.DirectionalLight(0x8899BB, 0.8);
+    const fillLight = new THREE.DirectionalLight(0xD4C5B0, 1.0);
     fillLight.position.set(15, 5, -8);
     scene.add(fillLight);
 
@@ -309,7 +310,7 @@ export default function DiscoBall() {
     ptLight2.position.set(-10, -5, 12);
     scene.add(ptLight2);
 
-    const ptLight3 = new THREE.PointLight(CRIMSON, 1.2, 35);
+    const ptLight3 = new THREE.PointLight(CRIMSON, 0.8, 35);
     ptLight3.position.set(5, 12, -14);
     scene.add(ptLight3);
 
@@ -390,8 +391,8 @@ export default function DiscoBall() {
       if (Math.sqrt(dx * dx + dy * dy) > 5) return; // was a drag, not a click
 
       const clickMouse = new THREE.Vector2(
-        (e.clientX / window.innerWidth) * 2 - 1,
-        -(e.clientY / window.innerHeight) * 2 + 1
+        ((e.clientX - rect.left) / rect.width) * 2 - 1,
+        -(e.clientY - rect.top) / rect.height) * 2 + 1
       );
       raycaster.setFromCamera(clickMouse, camera);
       const hits = raycaster.intersectObjects(allTileMeshes, false);
@@ -410,8 +411,8 @@ export default function DiscoBall() {
       if (Math.sqrt(dx * dx + dy * dy) > 10) return; // was a drag
 
       const tapMouse = new THREE.Vector2(
-        (touch.clientX / window.innerWidth) * 2 - 1,
-        -(touch.clientY / window.innerHeight) * 2 + 1
+        ((touch.clientX - rect.left) / rect.width) * 2 - 1,
+        -((touch.clientY - rect.top) / rect.height) * 2 + 1
       );
       raycaster.setFromCamera(tapMouse, camera);
       const hits = raycaster.intersectObjects(allTileMeshes, false);
@@ -442,8 +443,9 @@ export default function DiscoBall() {
     let pendingSwitchIdx = -1;
 
     const onMouseMoveCanvas = (e: MouseEvent) => {
-      mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
-      mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
+      const rect = container.getBoundingClientRect();
+      mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+      mouse.y = -(e.clientY - rect.top) / rect.height) * 2 + 1;
       mouseMoved = true;
     };
     renderer.domElement.addEventListener('mousemove', onMouseMoveCanvas);
@@ -572,8 +574,9 @@ export default function DiscoBall() {
           const worldPos = new THREE.Vector3();
           mesh.getWorldPosition(worldPos);
           worldPos.project(camera);
-          const x = (worldPos.x * 0.5 + 0.5) * window.innerWidth;
-          const y = (-worldPos.y * 0.5 + 0.5) * window.innerHeight;
+          const rect = container.getBoundingClientRect();
+          const x = (worldPos.x * 0.5 + 0.5) * rect.width;
+          const y = (-worldPos.y * 0.5 + 0.5) * rect.height;
           overlayRef.current.style.left = `${x}px`;
           overlayRef.current.style.top = `${y + 50}px`;
           overlayRef.current.style.transform = 'translate(-50%, 0)';
@@ -591,9 +594,10 @@ export default function DiscoBall() {
 
     // ─── Resize ───
     const onResize = () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
+      const rect = container.getBoundingClientRect();
+      camera.aspect = rect.width / rect.height;
       camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setSize(rect.width, rect.height);
     };
     window.addEventListener('resize', onResize);
 
