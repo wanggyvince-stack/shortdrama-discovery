@@ -158,7 +158,7 @@ export default function DiscoBall() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(pixelRatio);
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.15;
+    renderer.toneMappingExposure = 0.85;
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     container.appendChild(renderer.domElement);
 
@@ -260,7 +260,7 @@ export default function DiscoBall() {
         tex.magFilter = THREE.LinearFilter;
         tex.generateMipmaps = true;
         (mesh.material as THREE.Material).dispose();
-        mesh.material = new THREE.MeshBasicMaterial({ map: tex, side: THREE.DoubleSide });
+        mesh.material = new THREE.MeshStandardMaterial({ map: tex, side: THREE.DoubleSide, roughness: 0.6, metalness: 0.1 });
       }
 
       if (texCache[posterUrl]) {
