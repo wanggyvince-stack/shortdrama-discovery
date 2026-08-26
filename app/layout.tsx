@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Script from 'next/script';
+import MiniDiscoBall from '@/components/MiniDiscoBall';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -36,14 +37,17 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
       </head>
       <body>
         <header>
           <nav>
-            <Link href="/" className="logo">DramaDisco</Link>
+            <Link href="/" className="logo">
+              <MiniDiscoBall size={32} />
+              DramaDisco
+            </Link>
             <div style={{ display: 'flex', gap: 'var(--space-6)' }}>
               <Link href="/">Discover</Link>
               <Link href="/genres">Genres</Link>
