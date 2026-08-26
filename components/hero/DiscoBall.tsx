@@ -27,6 +27,12 @@ const SWITCH_DELAY = 150;
 // Mobile thresholds
 const MOBILE_BREAKPOINT = 768;
 
+// Proxy poster URLs through Next.js Image Optimization (same-origin, no CORS)
+function getProxiedPosterUrl(originalUrl: string): string {
+  const encoded = encodeURIComponent(originalUrl);
+  return `/_next/image?url=${encoded}&w=256&q=75`;
+}
+
 function structuredGrid(gridN: number, isMobile: boolean) {
   const pts: THREE.Vector3[] = [];
   const phiMax = Math.asin(CUT_Y);
@@ -128,7 +134,10 @@ function createCurvedTile(
 
 export default function DiscoBall() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const overlayRef = useRef<HTMLDivElement>(null);
   const cleanupRef = useRef<(() => void) | null>(null);
+  const hoveredSlugRef = useRef<string>('');
+  const clearHoverSignalRef = useRef(false);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -140,9 +149,9 @@ export default function DiscoBall() {
     const PART2_N = isMobile ? 30 : 60;
     const pixelRatio = isMobile ? 1 : Math.min(window.devicePixelRatio, 2);
 
-    // ─── Get poster URLs ───
+    // ─── Get poster URLs (proxied through _next/image for same-origin loading) ───
     const dramas = (dramasData as any).dramas || [];
-    const posterUrls: string[] = dramas.slice(0, 100).map((d: any) => d.coverUrl).filter(Boolean);
+    const posterUrls: string[] = dramas.slice(0, 200).map((d: any) => d.coverUrl ? getProxiedPosterUrl(d.coverUrl) : '').filter(Boolean);
 
     // ─── Renderer ───
     const renderer = new THREE.WebGLRenderer({ antialias: !isMobile });
@@ -189,7 +198,7 @@ export default function DiscoBall() {
 
     // ─── Create tiles ───
     const textureLoader = new THREE.TextureLoader();
-    textureLoader.crossOrigin = 'anonymous';
+    // No crossOrigin needed — URLs are proxied through _next/image (same-origin)
     const maxAniso = renderer.capabilities.getMaxAnisotropy();
     const pts = structuredGrid(GRID_N, isMobile);
     const allTileMeshes: THREE.Mesh[] = [];
@@ -209,6 +218,16 @@ export default function DiscoBall() {
         color: 0x666666, metalness: 0.1, roughness: 0.4, side: THREE.DoubleSide
       });
       const mesh = new THREE.Mesh(geom, fallbackMat);
+      // Store drama metadata for click navigation and overlay
+      const dramaIdx = idx % dramas.length;
+      const drama = dramas[dramaIdx];
+      mesh.userData = {
+        dramaIdx,
+        slug: drama?.slug || '',
+        title: drama?.title || '',
+        coverUrl: drama?.coverUrl || '',
+        posterUrl: drama?.coverUrl ? getProxiedPosterUrl(drama.coverUrl) : '',
+      };
       group.add(mesh);
       allTileMeshes.push(mesh);
 
@@ -330,10 +349,16 @@ export default function DiscoBall() {
     const particles2 = new THREE.Points(part2Geom, part2Mat);
     scene.add(particles2);
 
-    // ─── Drag (Y-axis only) ───
+    // ─── Drag (Y-axis only) + Click detection ───
     let dragging = false, prevX = 0, velY = 0;
+    let mouseDownPos = { x: 0, y: 0 };
 
-    const onMouseDown = (e: MouseEvent) => { dragging = true; prevX = e.clientX; velY = 0; };
+    const onMouseDown = (e: MouseEvent) => {
+      mouseDownPos = { x: e.clientX, y: e.clientY };
+      dragging = true;
+      prevX = e.clientX;
+      velY = 0;
+    };
     const onMouseMoveGlobal = (e: MouseEvent) => {
       if (!dragging) return;
       const dx = e.clientX - prevX;
@@ -343,7 +368,12 @@ export default function DiscoBall() {
     };
     const onMouseUp = () => { dragging = false; };
 
-    const onTouchStart = (e: TouchEvent) => { dragging = true; prevX = e.touches[0].clientX; velY = 0; };
+    const onTouchStart = (e: TouchEvent) => {
+      mouseDownPos = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+      dragging = true;
+      prevX = e.touches[0].clientX;
+      velY = 0;
+    };
     const onTouchMove = (e: TouchEvent) => {
       if (!dragging) return;
       const dx = e.touches[0].clientX - prevX;
@@ -353,12 +383,54 @@ export default function DiscoBall() {
     };
     const onTouchEnd = () => { dragging = false; };
 
+    // Click handler — navigate to drama detail page
+    const onClickCanvas = (e: MouseEvent) => {
+      const dx = e.clientX - mouseDownPos.x;
+      const dy = e.clientY - mouseDownPos.y;
+      if (Math.sqrt(dx * dx + dy * dy) > 5) return; // was a drag, not a click
+
+      const clickMouse = new THREE.Vector2(
+        (e.clientX / window.innerWidth) * 2 - 1,
+        -(e.clientY / window.innerHeight) * 2 + 1
+      );
+      raycaster.setFromCamera(clickMouse, camera);
+      const hits = raycaster.intersectObjects(allTileMeshes, false);
+      if (hits.length > 0) {
+        const data = hits[0].object.userData;
+        if (data?.slug) {
+          window.location.href = `/drama/${data.slug}`;
+        }
+      }
+    };
+    const onTouchEndTap = (e: TouchEvent) => {
+      if (e.changedTouches.length === 0) return;
+      const touch = e.changedTouches[0];
+      const dx = touch.clientX - mouseDownPos.x;
+      const dy = touch.clientY - mouseDownPos.y;
+      if (Math.sqrt(dx * dx + dy * dy) > 10) return; // was a drag
+
+      const tapMouse = new THREE.Vector2(
+        (touch.clientX / window.innerWidth) * 2 - 1,
+        -(touch.clientY / window.innerHeight) * 2 + 1
+      );
+      raycaster.setFromCamera(tapMouse, camera);
+      const hits = raycaster.intersectObjects(allTileMeshes, false);
+      if (hits.length > 0) {
+        const data = hits[0].object.userData;
+        if (data?.slug) {
+          window.location.href = `/drama/${data.slug}`;
+        }
+      }
+    };
+
     renderer.domElement.addEventListener('mousedown', onMouseDown);
     window.addEventListener('mousemove', onMouseMoveGlobal);
     window.addEventListener('mouseup', onMouseUp);
+    renderer.domElement.addEventListener('click', onClickCanvas);
     renderer.domElement.addEventListener('touchstart', onTouchStart, { passive: true });
     window.addEventListener('touchmove', onTouchMove, { passive: true });
     window.addEventListener('touchend', onTouchEnd);
+    renderer.domElement.addEventListener('touchend', onTouchEndTap);
 
     // ─── Hover ───
     const raycaster = new THREE.Raycaster();
@@ -484,7 +556,35 @@ export default function DiscoBall() {
       ptLight1.position.x = 14 + Math.sin(Date.now() * 0.0005) * 3;
       ptLight2.position.y = -4 + Math.cos(Date.now() * 0.0007) * 2;
 
+      // Check if Back button was clicked — force clear hover
+      if (clearHoverSignalRef.current) {
+        mouse.set(-9, -9);
+        mouseMoved = true;
+        clearHoverSignalRef.current = false;
+      }
+
       updateHover();
+
+      // Update overlay position and visibility
+      if (overlayRef.current) {
+        if (hoveredIdx >= 0 && allTileMeshes[hoveredIdx]) {
+          const mesh = allTileMeshes[hoveredIdx];
+          const worldPos = new THREE.Vector3();
+          mesh.getWorldPosition(worldPos);
+          worldPos.project(camera);
+          const x = (worldPos.x * 0.5 + 0.5) * window.innerWidth;
+          const y = (-worldPos.y * 0.5 + 0.5) * window.innerHeight;
+          overlayRef.current.style.left = `${x}px`;
+          overlayRef.current.style.top = `${y + 50}px`;
+          overlayRef.current.style.transform = 'translate(-50%, 0)';
+          overlayRef.current.style.opacity = '1';
+          hoveredSlugRef.current = mesh.userData?.slug || '';
+        } else {
+          overlayRef.current.style.opacity = '0';
+          hoveredSlugRef.current = '';
+        }
+      }
+
       renderer.render(scene, camera);
     }
     animate();
@@ -509,7 +609,9 @@ export default function DiscoBall() {
       window.removeEventListener('touchend', onTouchEnd);
       renderer.domElement.removeEventListener('mousedown', onMouseDown);
       renderer.domElement.removeEventListener('mousemove', onMouseMoveCanvas);
+      renderer.domElement.removeEventListener('click', onClickCanvas);
       renderer.domElement.removeEventListener('touchstart', onTouchStart);
+      renderer.domElement.removeEventListener('touchend', onTouchEndTap);
 
       // Dispose all geometries and materials
       allTileMeshes.forEach(m => {
@@ -544,17 +646,96 @@ export default function DiscoBall() {
   }, []);
 
   return (
-    <div
-      ref={containerRef}
-      style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        zIndex: 1,
-        pointerEvents: 'auto',
-      }}
-    />
+    <>
+      <div
+        ref={containerRef}
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          zIndex: 1,
+          pointerEvents: 'auto',
+        }}
+      />
+      {/* Hover overlay with action buttons */}
+      <div
+        ref={overlayRef}
+        style={{
+          position: 'fixed',
+          zIndex: 100,
+          pointerEvents: 'auto',
+          opacity: 0,
+          transition: 'opacity 200ms ease',
+          display: 'flex',
+          gap: '8px',
+        }}
+      >
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            // Signal the animate loop to clear hover state
+            clearHoverSignalRef.current = true;
+            hoveredSlugRef.current = '';
+          }}
+          style={{
+            padding: '6px 14px',
+            fontSize: '12px',
+            fontFamily: 'Outfit, sans-serif',
+            fontWeight: 600,
+            borderRadius: '9999px',
+            border: '1px solid #D4AF37',
+            background: 'rgba(10,10,10,0.85)',
+            color: '#D4AF37',
+            backdropFilter: 'blur(8px)',
+            cursor: 'pointer',
+            transition: 'all 0.2s',
+            whiteSpace: 'nowrap' as const,
+          }}
+          onMouseEnter={(e) => {
+            (e.target as HTMLButtonElement).style.background = '#D4AF37';
+            (e.target as HTMLButtonElement).style.color = '#0A0A0A';
+          }}
+          onMouseLeave={(e) => {
+            (e.target as HTMLButtonElement).style.background = 'rgba(10,10,10,0.85)';
+            (e.target as HTMLButtonElement).style.color = '#D4AF37';
+          }}
+        >
+          ← Back
+        </button>
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            const slug = hoveredSlugRef.current;
+            if (slug) window.location.href = `/drama/${slug}`;
+          }}
+          style={{
+            padding: '6px 14px',
+            fontSize: '12px',
+            fontFamily: 'Outfit, sans-serif',
+            fontWeight: 600,
+            borderRadius: '9999px',
+            border: '1px solid #D4AF37',
+            background: 'rgba(10,10,10,0.85)',
+            color: '#D4AF37',
+            backdropFilter: 'blur(8px)',
+            cursor: 'pointer',
+            transition: 'all 0.2s',
+            whiteSpace: 'nowrap' as const,
+          }}
+          onMouseEnter={(e) => {
+            (e.target as HTMLButtonElement).style.background = '#D4AF37';
+            (e.target as HTMLButtonElement).style.color = '#0A0A0A';
+          }}
+          onMouseLeave={(e) => {
+            (e.target as HTMLButtonElement).style.background = 'rgba(10,10,10,0.85)';
+            (e.target as HTMLButtonElement).style.color = '#D4AF37';
+          }}
+        >
+          Details →
+        </button>
+      </div>
+    </>
   );
 }
