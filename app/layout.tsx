@@ -5,6 +5,7 @@ import MiniDiscoBall from '@/components/MiniDiscoBall';
 import './globals.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://dramadisco.com'),
   title: {
     default: 'DramaDisco — Discover Your Next Short Drama Obsession',
     template: '%s | DramaDisco',
