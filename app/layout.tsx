@@ -97,6 +97,32 @@ export default function RootLayout({
             gtag('config', 'G-RMHH5XM5QN');
           `}
         </Script>
+        {/* GA4 Outbound Click Tracking */}
+        <Script id="ga4-outbound-click" strategy="afterInteractive">
+          {`
+            (function() {
+              var ownHosts = ['dramadisco.com', 'www.dramadisco.com'];
+              document.addEventListener('click', function(e) {
+                var link = e.target.closest('a');
+                if (!link || !link.href) return;
+                try {
+                  var u = new URL(link.href);
+                  if (ownHosts.indexOf(u.hostname) !== -1) return;
+                  var dramaTitle = '';
+                  var h1 = document.querySelector('h1');
+                  if (h1) dramaTitle = h1.textContent.trim();
+                  gtag('event', 'outbound_click', {
+                    event_category: 'CPS',
+                    event_label: link.href,
+                    drama_title: dramaTitle,
+                    button_text: link.textContent.trim().substring(0, 50),
+                    transport_type: 'beacon'
+                  });
+                } catch(ex) {}
+              }, true);
+            })();
+          `}
+        </Script>
         {/* Microsoft Clarity */}
         <Script id="clarity-init" strategy="afterInteractive">
           {`
