@@ -36,6 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: drama.title,
     description: desc.substring(0, 155),
+    alternates: { canonical: `/drama/${slug}` },
     openGraph: {
       title: drama.title,
       description: desc.substring(0, 155),

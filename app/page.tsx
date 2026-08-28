@@ -1,7 +1,12 @@
 import { getPopularDramas, getAllTags, getPlatforms } from '@/lib/data';
 import Link from 'next/link';
 import Image from 'next/image';
+import type { Metadata } from 'next';
 import HeroSection from '@/components/hero/HeroSection';
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+};
 
 const TAG_COLORS: Record<string, string> = {
   emotion: 'var(--tag-emotion, #e8457a)',

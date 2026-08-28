@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Platforms',
   description: 'Discover short drama platforms including ReelShort, ShortMax, GoodShort, FlexTV, and more. Browse 700+ titles across all apps.',
+  alternates: { canonical: '/platforms' },
 };
 
 export default function PlatformsPage() {

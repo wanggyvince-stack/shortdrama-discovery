@@ -26,6 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Best ${tag.name} Short Dramas`,
     description: `Discover the best ${tag.name.toLowerCase()} short dramas. Browse our curated collection of top-rated ${tag.name.toLowerCase()} micro dramas.`,
+    alternates: { canonical: `/tag/${slug}` },
   };
 }
 

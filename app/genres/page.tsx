@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Genres & Moods',
   description: 'Browse short dramas by genre and mood. Find romance, revenge, CEO, werewolf, and more micro dramas across all platforms.',
+  alternates: { canonical: '/genres' },
 };
 
 const CATEGORY_COLORS: Record<string, string> = {
