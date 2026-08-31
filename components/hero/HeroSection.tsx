@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import DiscoBall from './DiscoBall';
+import DiscoBallLazy from './DiscoBallLazy';
 
 export default function HeroSection() {
   return (
@@ -14,8 +14,8 @@ export default function HeroSection() {
         background: '#0A0A0A',
       }}
     >
-      {/* ─── Disco Ball (absolute canvas) ─── */}
-      <DiscoBall />
+      {/* ─── Disco Ball (lazy-loaded, no SSR) ─── */}
+      <DiscoBallLazy />
 
       {/* ─── CSS Spotlight Orbs ─── */}
       <div
@@ -273,6 +273,13 @@ export default function HeroSection() {
             text-align: center;
             padding: 0.75rem 1.8rem;
           }
+          .hero-spotlight {
+            filter: blur(50px);
+          }
+          .hero-spotlight-1 { width: 300px; height: 300px; }
+          .hero-spotlight-2 { width: 250px; height: 250px; }
+          .hero-spotlight-3 { width: 200px; height: 200px; }
+          .hero-spotlight-4 { display: none; }
         }
       `}</style>
     </section>

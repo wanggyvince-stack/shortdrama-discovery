@@ -2,7 +2,15 @@
 
 import { useRef, useEffect, useState } from 'react';
 import * as THREE from 'three';
-import dramasData from '@/lib/dramas-data.json';
+import discoBallData from '@/lib/disco-ball-data.json';
+
+// Slim data type: { s: slug, t: title, c: coverUrl }
+type SlimDrama = { s: string; t: string; c: string };
+const dramasData = (discoBallData as SlimDrama[]).map(d => ({
+  slug: d.s,
+  title: d.t,
+  coverUrl: d.c,
+}));
 
 // ─── Config (from prototype v4.0) ───
 const R = 16;
@@ -155,7 +163,7 @@ export default function DiscoBall() {
 
     // ─── Get poster URLs (proxied through _next/image for same-origin loading) ───
     const dramas = (dramasData as any).dramas || [];
-    const posterUrls: string[] = dramas.slice(0, 200).map((d: any) => d.coverUrl ? getProxiedPosterUrl(d.coverUrl) : '').filter(Boolean);
+    const posterUrls: string[] = dramas.slice(0, 60).map((d: any) => d.coverUrl ? getProxiedPosterUrl(d.coverUrl) : '').filter(Boolean);
 
     // ─── Renderer ───
     const renderer = new THREE.WebGLRenderer({ antialias: !isMobile });
@@ -555,11 +563,31 @@ export default function DiscoBall() {
       }
     }
 
-    // ─── Animation loop ───
+    // ─── Animation loop with visibility pause ───
     let animId: number;
+    let isVisible = true;
+
+    // IntersectionObserver: pause rendering when hero is off-screen
+    const observer = new IntersectionObserver(
+      ([entry]) => { isVisible = entry.isIntersecting; },
+      { threshold: 0.05 }
+    );
+    observer.observe(container);
+
+    // Throttle to ~30fps on mobile
+    let lastFrameTime = 0;
+    const frameInterval = isMobile ? 33 : 0; // 33ms = ~30fps on mobile, 0 = uncapped on desktop
 
     function animate() {
       animId = requestAnimationFrame(animate);
+      if (!isVisible) return; // Skip rendering when off-screen
+
+      // Frame rate throttle on mobile
+      if (frameInterval > 0) {
+        const now = performance.now();
+        if (now - lastFrameTime < frameInterval) return;
+        lastFrameTime = now;
+      }
 
       if (!dragging && hoveredIdx < 0) {
         group.rotation.y += AUTO_ROT + velY;
@@ -678,6 +706,7 @@ export default function DiscoBall() {
     cleanupRef.current = () => {
       cancelAnimationFrame(animId);
       clearTimers();
+      observer.disconnect();
 
       window.removeEventListener('resize', onResize);
       window.removeEventListener('mousemove', onMouseMoveGlobal);
