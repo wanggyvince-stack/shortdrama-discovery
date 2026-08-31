@@ -189,7 +189,7 @@ export default async function DramaPage({ params }: Props) {
               </div>
 
               {/* CTA Buttons */}
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '6px' }}>
+              <div className="drama-cta-wrap" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '6px' }}>
                 {(() => {
                   const cpsUrl = getCpsUrl(drama.source || '');
                   if (cpsUrl) {
@@ -216,13 +216,6 @@ export default async function DramaPage({ params }: Props) {
                           data-drama-slug={drama.slug}
                           data-platform={drama.source}
                           data-link-type="web"
-                          style={{
-                            fontFamily: 'var(--font-ui)',
-                            fontSize: 'var(--text-xs)',
-                            color: 'var(--text-muted)',
-                            textDecoration: 'none',
-                            padding: '0 4px',
-                          }}
                           className="cps-web-link"
                         >
                           or watch on web →
@@ -331,6 +324,65 @@ export default async function DramaPage({ params }: Props) {
           </section>
         )}
       </div>
+
+      {/* Mobile Sticky CTA */}
+      {(() => {
+        const cpsUrl = getCpsUrl(drama.source || '');
+        if (cpsUrl) {
+          return (
+            <div className="mobile-sticky-cta">
+              <a
+                href={cpsUrl}
+                className="mobile-sticky-cta__app"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                data-drama-id={drama.id}
+                data-drama-slug={drama.slug}
+                data-platform={drama.source}
+                data-link-type="app"
+                style={{ background: platformColor }}
+              >
+                📱 Watch on App
+              </a>
+              {drama.sourceUrl && (
+                <a
+                  href={drama.sourceUrl}
+                  className="mobile-sticky-cta__web"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  data-drama-id={drama.id}
+                  data-drama-slug={drama.slug}
+                  data-platform={drama.source}
+                  data-link-type="web"
+                >
+                  🌐 Watch on Web
+                </a>
+              )}
+            </div>
+          );
+        }
+        // No CPS link — single web button sticky
+        if (drama.sourceUrl) {
+          return (
+            <div className="mobile-sticky-cta">
+              <a
+                href={drama.sourceUrl}
+                className="mobile-sticky-cta__app"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                data-drama-id={drama.id}
+                data-drama-slug={drama.slug}
+                data-platform={drama.source}
+                data-link-type="web"
+                style={{ background: platformColor }}
+              >
+                🌐 Watch on Web
+              </a>
+            </div>
+          );
+        }
+        return null;
+      })()}
 
       {/* CPS Click Tracking Script */}
       <script dangerouslySetInnerHTML={{ __html: `

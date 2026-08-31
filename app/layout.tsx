@@ -117,6 +117,9 @@ export default function RootLayout({
                     event_label: link.href,
                     drama_title: dramaTitle,
                     button_text: link.textContent.trim().substring(0, 50),
+                    link_type: link.getAttribute('data-link-type') || 'unknown',
+                    drama_id: link.getAttribute('data-drama-id') || '',
+                    platform: link.getAttribute('data-platform') || '',
                     transport_type: 'beacon'
                   });
                 } catch(ex) {}

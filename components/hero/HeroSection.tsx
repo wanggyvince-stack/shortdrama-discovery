@@ -9,7 +9,7 @@ export default function HeroSection() {
       style={{
         position: 'relative',
         width: '100%',
-        minHeight: '100vh',
+        minHeight: '100dvh',
         overflow: 'hidden',
         background: '#0A0A0A',
       }}
@@ -59,7 +59,7 @@ export default function HeroSection() {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'flex-end',
-          minHeight: '100vh',
+          minHeight: '100dvh',
           padding: '0 6vw 7vh',
           pointerEvents: 'none',
         }}
