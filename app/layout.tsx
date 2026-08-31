@@ -19,11 +19,23 @@ export const metadata: Metadata = {
     siteName: 'DramaDisco',
     title: 'DramaDisco — Discover Your Next Short Drama Obsession',
     description: 'Discover 714+ short dramas across all major platforms. Filter by mood, genre & rating. Find where to watch legally.',
+    images: ['/og-image.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'DramaDisco — Short Drama Discovery Engine',
     description: '714+ short dramas across 5 platforms. Filter by mood, genre & rating.',
+    images: ['/og-image.png'],
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icon-512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
   },
 };
 
