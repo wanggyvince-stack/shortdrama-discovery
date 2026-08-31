@@ -1,5 +1,5 @@
-import { getDramaBySlug, getRelatedDramas, getAllDramaSlugs, getPlatforms } from '@/lib/data';
-import { getCpsUrl, hasCps } from '@/lib/cps';
+import { getDramaBySlug, getRelatedDramas, getAllDramaSlugs, getPlatforms, hasAnyCps } from '@/lib/data';
+import { getCpsUrl, hasPerDramaCps } from '@/lib/cps';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -26,26 +26,54 @@ function cleanSynopsis(raw: string | undefined, title: string, source?: string):
     .trim();
 }
 
+// Scraper placeholder text with zero story hook — hurts Google CTR when used
+// as meta description. Detect it so we can generate a hook from tags instead.
+function isPlaceholderSynopsis(raw: string | undefined): boolean {
+  if (!raw) return true;
+  return /follow the twists of fate|from the first episode to the last|this short drama story (delivers|is a)/i.test(raw);
+}
+
+// Build a click-worthy meta description from genres when synopsis is generic
+function buildTagDescription(title: string, tagNames: string[], source?: string): string {
+  const genre = tagNames.find(t => !/^(romance|drama)$/i.test(t)) || tagNames[0];
+  const lead = genre
+    ? `A ${genre.toLowerCase()} short drama`
+    : 'A binge-worthy short drama';
+  const where = source ? ` Stream every episode on ${source}.` : '';
+  return `${lead}: ${title}. Twists, secrets and non-stop suspense.${where} Watch free on DramaDisco.`;
+}
+
+// SEO title: full drama title first (the actual search term), punchy
+// high-CTR genre trailer, hard 60-char ceiling to avoid Google truncation.
+function buildSeoTitle(title: string, tagNames: string[]): string {
+  const genre = tagNames.find(t => !/^(romance|drama)$/i.test(t)) || tagNames[0];
+  if (genre) {
+    const withGenre = `${title} | ${genre} Short Drama`;
+    if (withGenre.length <= 60) return withGenre;
+  }
+  return title.length <= 60 ? `${title} | Short Drama` : title.slice(0, 59).trimEnd();
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const drama = getDramaBySlug(slug);
   if (!drama) return { title: 'Drama Not Found' };
 
-  const desc = cleanSynopsis(drama.synopsis, drama.title, drama.source);
+  const tagNames = drama.tags.map(t => t.name);
+  const desc = isPlaceholderSynopsis(drama.synopsis)
+    ? buildTagDescription(drama.title, tagNames, drama.source)
+    : cleanSynopsis(drama.synopsis, drama.title, drama.source);
+  const description = desc.substring(0, 155);
 
-  // Enhanced title for better CTR
-  const topGenres = drama.tags.slice(0, 2).map(t => t.name).join(', ');
-  const enhancedTitle = topGenres
-    ? `${drama.title} — ${topGenres} Short Drama | Watch Free`
-    : `${drama.title} | Watch Free on DramaDisco`;
+  const enhancedTitle = buildSeoTitle(drama.title, tagNames);
 
   return {
     title: enhancedTitle,
-    description: desc.substring(0, 155),
+    description,
     alternates: { canonical: `/drama/${slug}` },
     openGraph: {
       title: enhancedTitle,
-      description: desc.substring(0, 155),
+      description,
       images: drama.coverUrl ? [{ url: drama.coverUrl }] : [],
     },
   };
@@ -73,7 +101,12 @@ export default async function DramaPage({ params }: Props) {
   if (!drama) notFound();
 
   const tagNames = drama.tags.map(t => t.name);
-  const relatedDramas = getRelatedDramas(drama.id, tagNames, 6);
+  const dramaHasCps = hasAnyCps(drama);
+  // Zero-CPS pages (e.g. NetShort): every recommended slot must monetize
+  const relatedDramas = getRelatedDramas(drama.id, tagNames, 6, !dramaHasCps);
+  const displaySynopsis = isPlaceholderSynopsis(drama.synopsis)
+    ? buildTagDescription(drama.title, tagNames, drama.source)
+    : cleanSynopsis(drama.synopsis, drama.title, drama.source);
   const platformSlug = drama.source?.toLowerCase().replace(/\s+/g, '') || '';
   const platformColor = PLATFORM_COLORS[platformSlug] || 'var(--accent-wine)';
 
@@ -127,9 +160,7 @@ export default async function DramaPage({ params }: Props) {
               {drama.source && <span>{drama.source}</span>}
             </div>
 
-            {drama.synopsis && (
-              <p className="drama-hero__synopsis">{cleanSynopsis(drama.synopsis, drama.title, drama.source)}</p>
-            )}
+            <p className="drama-hero__synopsis">{displaySynopsis}</p>
 
             {/* Tags */}
             {drama.tags.length > 0 && (
@@ -287,23 +318,32 @@ export default async function DramaPage({ params }: Props) {
           </section>
         )}
 
-        {/* Related Dramas */}
+        {/* Related Dramas — zero-CPS pages divert traffic to monetizable titles */}
         {relatedDramas.length > 0 && (
           <section>
-            <p className="section-label">Similar Titles</p>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-2xl)', marginBottom: 'var(--space-6)' }}>
-              You May Also Like
+            <p className="section-label">{dramaHasCps ? 'Similar Titles' : 'Watch Free Now'}</p>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-2xl)', marginBottom: 'var(--space-2)' }}>
+              {dramaHasCps ? 'You May Also Like' : 'More Dramas You Can Watch Free'}
             </h2>
+            {!dramaHasCps && (
+              <p style={{ color: 'var(--text-muted)', fontSize: 'var(--text-sm)', marginBottom: 'var(--space-6)' }}>
+                This title isn&rsquo;t available on our partner apps yet — but these similar dramas are ready to watch free now.
+              </p>
+            )}
             <div className="drama-grid">
               {relatedDramas.map((rel) => {
                 const relPlatform = rel.source?.toLowerCase().replace(/\s+/g, '') || '';
                 const relColor = PLATFORM_COLORS[relPlatform] || 'var(--accent-wine)';
+                const relPerDrama = hasPerDramaCps(rel.title);
                 return (
                   <Link key={rel.id} href={`/drama/${rel.slug}`} className="drama-card">
                     {rel.source && (
                       <span className="drama-card__platform-badge" style={{ background: relColor }}>
                         {rel.source}
                       </span>
+                    )}
+                    {relPerDrama && (
+                      <span className="drama-card__watch-badge">▶ Watch Free</span>
                     )}
                     {rel.coverUrl && (
                       <Image
@@ -418,7 +458,7 @@ export default async function DramaPage({ params }: Props) {
             '@context': 'https://schema.org',
             '@type': 'TVEpisode',
             name: drama.title,
-            description: cleanSynopsis(drama.synopsis, drama.title, drama.source),
+            description: displaySynopsis,
             image: drama.coverUrl || '',
             url: `https://dramadisco.com/drama/${drama.slug}`,
             numberOfEpisodes: drama.chapterCount,

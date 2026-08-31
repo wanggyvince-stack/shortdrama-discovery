@@ -1,4 +1,5 @@
 import { getPopularDramas, getAllTags, getPlatforms } from '@/lib/data';
+import { hasPerDramaCps } from '@/lib/cps';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
@@ -58,7 +59,12 @@ export default function HomePage() {
                     {drama.source}
                   </span>
                 )}
-                
+
+                {/* Watch Free badge — per-drama CPS deep link available */}
+                {hasPerDramaCps(drama.title) && (
+                  <span className="drama-card__watch-badge">▶ Watch Free</span>
+                )}
+
                 {/* Poster */}
                 {drama.coverUrl && (
                   <Image

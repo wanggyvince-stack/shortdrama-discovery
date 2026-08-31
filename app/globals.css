@@ -295,6 +295,24 @@ h3 { font-size: var(--text-xl); margin-bottom: var(--space-2); }
 .drama-card__platform-badge.flextv { background: var(--platform-flextv); }
 .drama-card__platform-badge.netshort { background: var(--platform-netshort); }
 
+/* Gold "Watch Free" badge — per-drama CPS deep link available */
+.drama-card__watch-badge {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  padding: 3px 9px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 700;
+  color: #1a1a1a;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold-primary));
+  box-shadow: 0 2px 8px rgba(212,175,55,0.45);
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  z-index: 2;
+}
+
 .drama-card__info {
   padding: var(--space-3);
 }
