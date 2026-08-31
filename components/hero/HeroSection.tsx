@@ -9,7 +9,7 @@ export default function HeroSection() {
       style={{
         position: 'relative',
         width: '100%',
-        minHeight: '100dvh',
+        minHeight: '85dvh',
         overflow: 'hidden',
         background: '#0A0A0A',
       }}
@@ -59,8 +59,8 @@ export default function HeroSection() {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'flex-end',
-          minHeight: '100dvh',
-          padding: '0 6vw 7vh',
+          minHeight: '85dvh',
+          padding: '0 6vw 4vh',
           pointerEvents: 'none',
         }}
       >
@@ -80,6 +80,13 @@ export default function HeroSection() {
             Browse Platforms
           </Link>
         </div>
+      </div>
+
+      {/* ─── Scroll Down Arrow ─── */}
+      <div className="hero-scroll-arrow" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
       </div>
 
       {/* ─── Hero-specific styles ─── */}
@@ -236,6 +243,24 @@ export default function HeroSection() {
         @keyframes heroSpot4 {
           0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.3; }
           50% { transform: translate(-60px, 50px) scale(1.1); opacity: 0.5; }
+        }
+
+        /* ─── Scroll Down Arrow ─── */
+        .hero-scroll-arrow {
+          position: absolute;
+          bottom: 1.5rem;
+          left: 50%;
+          transform: translateX(-50%);
+          color: #D4AF37;
+          opacity: 0.6;
+          animation: heroScrollBounce 2s ease-in-out infinite;
+          z-index: 10;
+          pointer-events: none;
+        }
+
+        @keyframes heroScrollBounce {
+          0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.6; }
+          50% { transform: translateX(-50%) translateY(8px); opacity: 1; }
         }
 
         /* Mobile adjustments */

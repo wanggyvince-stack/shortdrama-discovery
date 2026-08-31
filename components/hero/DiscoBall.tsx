@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import * as THREE from 'three';
 import dramasData from '@/lib/dramas-data.json';
 
@@ -135,9 +135,11 @@ function createCurvedTile(
 export default function DiscoBall() {
   const containerRef = useRef<HTMLDivElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
+  const mobileLabelsRef = useRef<HTMLDivElement>(null);
   const cleanupRef = useRef<(() => void) | null>(null);
   const hoveredSlugRef = useRef<string>('');
   const clearHoverSignalRef = useRef(false);
+  const [isMobileState, setIsMobileState] = useState(false);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -146,6 +148,7 @@ export default function DiscoBall() {
 
     // ─── Mobile detection ───
     const isMobile = window.innerWidth < MOBILE_BREAKPOINT;
+    setIsMobileState(isMobile);
     const PART_N = isMobile ? 100 : 300;
     const PART2_N = isMobile ? 30 : 60;
     const pixelRatio = isMobile ? 1 : Math.min(window.devicePixelRatio, 2);
@@ -313,6 +316,35 @@ export default function DiscoBall() {
     const ptLight3 = new THREE.PointLight(CRIMSON, 0.8, 35);
     ptLight3.position.set(5, 12, -14);
     scene.add(ptLight3);
+
+    // ─── Mobile labels (show drama title under each tile) ───
+    const mobileLabelEls: HTMLDivElement[] = [];
+    if (isMobile && mobileLabelsRef.current) {
+      const labelContainer = mobileLabelsRef.current;
+      allTileMeshes.forEach((mesh, idx) => {
+        const label = document.createElement('div');
+        label.className = 'mobile-tile-label';
+        label.textContent = mesh.userData?.title || '';
+        label.style.cssText = `
+          position: absolute;
+          font-family: 'Outfit', sans-serif;
+          font-size: 9px;
+          font-weight: 500;
+          color: rgba(255, 255, 255, 0.75);
+          text-align: center;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 70px;
+          pointer-events: none;
+          text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+          opacity: 0;
+          transition: opacity 0.15s;
+        `;
+        labelContainer.appendChild(label);
+        mobileLabelEls.push(label);
+      });
+    }
 
     // ─── Gold Particles ───
     const partPos = new Float32Array(PART_N * 3);
@@ -588,6 +620,47 @@ export default function DiscoBall() {
         }
       }
 
+      // Update mobile labels positions
+      if (isMobile && mobileLabelEls.length > 0) {
+        const rect = container.getBoundingClientRect();
+        const cameraDir = new THREE.Vector3();
+        camera.getWorldDirection(cameraDir);
+        
+        for (let i = 0; i < mobileLabelEls.length; i++) {
+          const mesh = allTileMeshes[i];
+          const label = mobileLabelEls[i];
+          
+          // Get tile world position and normal
+          const worldPos = new THREE.Vector3();
+          mesh.getWorldPosition(worldPos);
+          
+          // Check if tile is facing camera (dot product of camera direction and tile normal)
+          const tileNormal = worldPos.clone().normalize();
+          const toCamera = camera.position.clone().sub(worldPos).normalize();
+          const dot = tileNormal.dot(toCamera);
+          
+          // Only show if facing camera (dot > 0.3 means reasonably facing)
+          if (dot > 0.3) {
+            // Project to screen
+            const projected = worldPos.clone().project(camera);
+            const x = (projected.x * 0.5 + 0.5) * rect.width;
+            const y = (-projected.y * 0.5 + 0.5) * rect.height;
+            
+            // Check if within viewport
+            if (x >= -50 && x <= rect.width + 50 && y >= -50 && y <= rect.height + 50) {
+              label.style.left = `${x}px`;
+              label.style.top = `${y + 22}px`; // Position below tile
+              label.style.transform = 'translateX(-50%)';
+              label.style.opacity = String(Math.min(1, (dot - 0.3) * 2));
+            } else {
+              label.style.opacity = '0';
+            }
+          } else {
+            label.style.opacity = '0';
+          }
+        }
+      }
+
       renderer.render(scene, camera);
     }
     animate();
@@ -642,6 +715,9 @@ export default function DiscoBall() {
       if (container.contains(renderer.domElement)) {
         container.removeChild(renderer.domElement);
       }
+
+      // Remove mobile labels
+      mobileLabelEls.forEach(el => el.remove());
     };
 
     return () => {
@@ -663,6 +739,22 @@ export default function DiscoBall() {
           pointerEvents: 'auto',
         }}
       />
+      {/* Mobile tile title overlays */}
+      {isMobileState && (
+        <div
+          ref={mobileLabelsRef}
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            pointerEvents: 'none',
+            zIndex: 50,
+            overflow: 'hidden',
+          }}
+        />
+      )}
       {/* Hover overlay with action buttons */}
       <div
         ref={overlayRef}

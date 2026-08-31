@@ -33,12 +33,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const desc = cleanSynopsis(drama.synopsis, drama.title, drama.source);
 
+  // Enhanced title for better CTR
+  const topGenres = drama.tags.slice(0, 2).map(t => t.name).join(', ');
+  const enhancedTitle = topGenres
+    ? `${drama.title} — ${topGenres} Short Drama | Watch Free`
+    : `${drama.title} | Watch Free on DramaDisco`;
+
   return {
-    title: drama.title,
+    title: enhancedTitle,
     description: desc.substring(0, 155),
     alternates: { canonical: `/drama/${slug}` },
     openGraph: {
-      title: drama.title,
+      title: enhancedTitle,
       description: desc.substring(0, 155),
       images: drama.coverUrl ? [{ url: drama.coverUrl }] : [],
     },
