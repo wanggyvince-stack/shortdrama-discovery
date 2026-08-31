@@ -197,7 +197,7 @@ export default async function DramaPage({ params }: Props) {
               {/* CTA Buttons */}
               <div className="drama-cta-wrap" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '6px' }}>
                 {(() => {
-                  const cpsUrl = getCpsUrl(drama.source || '');
+                  const cpsUrl = getCpsUrl(drama.source || '', drama.title);
                   if (cpsUrl) {
                     return (
                       <>
@@ -333,7 +333,7 @@ export default async function DramaPage({ params }: Props) {
 
       {/* Mobile Sticky CTA */}
       {(() => {
-        const cpsUrl = getCpsUrl(drama.source || '');
+        const cpsUrl = getCpsUrl(drama.source || '', drama.title);
         if (cpsUrl) {
           return (
             <div className="mobile-sticky-cta">
