@@ -1,7 +1,7 @@
 // =============================================================================
 // CPS Tracking Links
 // - RS Boost: per-drama resource promotion links (ReelShort deep links)
-// - DramaCPS: per-drama links across 11 platforms + platform-level fallback
+// - DramaCPS: per-drama links across 14 platforms + platform-level fallback
 // =============================================================================
 
 import { RS_BOOST_PER_DRAMA } from './rs-boost-links';
@@ -20,6 +20,9 @@ const PLATFORM_CPS: Record<string, string> = {
   'YourChannel': 'https://r.reelsgo.tv/5XY148Wi9Yxo',
   'FlickReels': 'https://r.reelsgo.tv/PgodfgKzTJXB',
   'TouchShort': 'https://r.reelsgo.tv/MkXqiPnbsGBf',
+  'Playlet': 'https://r.reelsgo.tv/__GF7RBLwQvt',
+  'TopShort': 'https://r.reelsgo.tv/CH9l_h5ZH-DM',
+  'StarShort': 'https://r.reelsgo.tv/2x293Jr1j6ny',
 };
 
 /**
