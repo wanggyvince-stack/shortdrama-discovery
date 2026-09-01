@@ -162,7 +162,7 @@ export default function DiscoBall() {
     const pixelRatio = isMobile ? 1 : Math.min(window.devicePixelRatio, 2);
 
     // ─── Get poster URLs (proxied through _next/image for same-origin loading) ───
-    const dramas = (dramasData as any).dramas || [];
+    const dramas = dramasData;
     const posterUrls: string[] = dramas.slice(0, 60).map((d: any) => d.coverUrl ? getProxiedPosterUrl(d.coverUrl) : '').filter(Boolean);
 
     // ─── Renderer ───
