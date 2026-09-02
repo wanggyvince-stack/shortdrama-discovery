@@ -1,7 +1,7 @@
 // =============================================================================
 // DramaCPS Per-Drama Links (Non-ReelShort platforms)
 // Auto-extracted from dramacps.com on 2026-09-01
-// 148 dramas mapped (130 original + 18 new from v5 full crawl)
+// 158 dramas mapped (130 original + 18 from v5 + 10 from v6 episode names)
 // ReelShort links excluded (handled by RS Boost)
 // =============================================================================
 
@@ -159,4 +159,14 @@ export const DRAMACPS_PER_DRAMA: Record<string, DramaCpsEntry> = {
   'Wolves at Her Back, Dragons at Her Side': { link: 'https://r.reelsgo.tv/5Y9yb9nw_4ri', platform: 'SEREAL+' },
   'Wrath of the Zeus‘s Son': { link: 'https://r.reelsgo.tv/PP8CYIHtcEMH', platform: 'SHORTMAX' },
   'Your Loser Husband Is the War God': { link: 'https://r.reelsgo.tv/xsJmREnOSFC9', platform: 'YOURCHANNEL' },
+  '[Dubbed] Spoiled by the boss': { link: 'https://r.reelsgo.tv/1Um3u4Xv4wUF', platform: 'KALOSTV' },
+  '[Dubbed] The Petite Healer': { link: 'https://r.reelsgo.tv/zW0q59EpZ9WU', platform: 'STARDUSTTV' },
+  '[ENG DUB] Rise Built on Forgotten Betrayals': { link: 'https://r.reelsgo.tv/w4MwHKyALa7F', platform: 'GOODSHORT' },
+  'By Marrying North I Won His Remorse': { link: 'https://r.reelsgo.tv/6hsPuhDyu--w', platform: 'GOODSHORT' },
+  'Daddy Don\'s Forbidden Pet': { link: 'https://r.reelsgo.tv/H9tPMTYaK0uZ', platform: 'GOODSHORT' },
+  'Fake Queen Bee, I\'m the true Heiress!': { link: 'https://r.reelsgo.tv/SSXu7yS9I4qY', platform: 'YOURCHANNEL' },
+  'From Mudblood to Atlantis\' Owner': { link: 'https://r.reelsgo.tv/SHNYfKAzedJx', platform: 'GOODSHORT' },
+  'The Last Month of No Masters': { link: 'https://r.reelsgo.tv/vP5W847Z-nIm', platform: 'GOODSHORT' },
+  'The Trash Heiress Is A Dragon Master': { link: 'https://r.reelsgo.tv/tA12-MdxytOP', platform: 'GOODSHORT' },
+  'Worlds Apart': { link: 'https://r.reelsgo.tv/jQqKqe73cTG3', platform: 'GOODSHORT' },
 };
