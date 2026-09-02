@@ -60,9 +60,9 @@ export default function HomePage() {
                   </span>
                 )}
 
-                {/* Watch Free badge — per-drama CPS deep link available */}
+                {/* Watch Now badge — per-drama CPS deep link available */}
                 {hasPerDramaCps(drama.title) && (
-                  <span className="drama-card__watch-badge">▶ Watch Free</span>
+                  <span className="drama-card__watch-badge">▶ Watch Now</span>
                 )}
 
                 {/* Poster */}

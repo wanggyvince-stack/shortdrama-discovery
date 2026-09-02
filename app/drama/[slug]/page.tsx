@@ -28,30 +28,39 @@ function cleanSynopsis(raw: string | undefined, title: string, source?: string):
 
 // Scraper placeholder text with zero story hook — hurts Google CTR when used
 // as meta description. Detect it so we can generate a hook from tags instead.
+// v1.3: expanded from 3 to 9 patterns to catch 90%+ of template synopsis variants
 function isPlaceholderSynopsis(raw: string | undefined): boolean {
   if (!raw) return true;
-  return /follow the twists of fate|from the first episode to the last|this short drama story (delivers|is a)/i.test(raw);
+  return /follow the twists of fate|from the first episode to the last|this short drama story (delivers|is a)|dive into a world of|a gripping tale of .+? (that keeps|shaped)|experience the drama unfold|passion, power, and unexpected turns|keeps you hooked|^an? \d+-episode a /i.test(raw);
 }
 
 // Build a click-worthy meta description from genres when synopsis is generic
-function buildTagDescription(title: string, tagNames: string[], source?: string): string {
-  const genre = tagNames.find(t => !/^(romance|drama)$/i.test(t)) || tagNames[0];
-  const lead = genre
-    ? `A ${genre.toLowerCase()} short drama`
-    : 'A binge-worthy short drama';
-  const where = source ? ` Stream every episode on ${source}.` : '';
-  return `${lead}: ${title}. Twists, secrets and non-stop suspense.${where} Watch free on DramaDisco.`;
+// v1.3: new template — fixed text ≤110 chars, total ≤155 chars, no "Watch Free"
+// Format: "{title}: {episodes}-episode {genre} drama on {platform}. Compare where to watch..."
+function buildTagDescription(title: string, tagNames: string[], source?: string, chapterCount?: number): string {
+  const genre = tagNames.find(t => !/^(romance|drama)$/i.test(t)) || tagNames[0] || 'short';
+  const eps = chapterCount ? `${chapterCount}` : '';
+  const onPlatform = source ? ` on ${source}` : '';
+  // Truncate title to 40 chars max
+  let displayTitle = title;
+  if (displayTitle.length > 40) {
+    displayTitle = displayTitle.slice(0, 37) + '...';
+  }
+  return `${displayTitle}: ${eps ? eps + '-episode ' : ''}${genre.toLowerCase()} drama${onPlatform}. Compare where to watch and stream every episode on DramaDisco.`;
 }
 
 // SEO title: full drama title first (the actual search term), punchy
-// high-CTR genre trailer, hard 60-char ceiling to avoid Google truncation.
+// high-CTR genre trailer with "Where to Watch" for search differentiation.
+// v1.3: added "Where to Watch" prefix to genre trailer for CTR boost
 function buildSeoTitle(title: string, tagNames: string[]): string {
   const genre = tagNames.find(t => !/^(romance|drama)$/i.test(t)) || tagNames[0];
   if (genre) {
+    const withWhereToWatch = `${title} — Where to Watch ${genre} Short Drama`;
+    if (withWhereToWatch.length <= 70) return withWhereToWatch;
     const withGenre = `${title} | ${genre} Short Drama`;
-    if (withGenre.length <= 60) return withGenre;
+    if (withGenre.length <= 70) return withGenre;
   }
-  return title.length <= 60 ? `${title} | Short Drama` : title.slice(0, 59).trimEnd();
+  return title.length <= 70 ? `${title} | Short Drama` : title.slice(0, 69).trimEnd();
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -61,7 +70,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const tagNames = drama.tags.map(t => t.name);
   const desc = isPlaceholderSynopsis(drama.synopsis)
-    ? buildTagDescription(drama.title, tagNames, drama.source)
+    ? buildTagDescription(drama.title, tagNames, drama.source, drama.chapterCount)
     : cleanSynopsis(drama.synopsis, drama.title, drama.source);
   const description = desc.substring(0, 155);
 
@@ -105,7 +114,7 @@ export default async function DramaPage({ params }: Props) {
   // Zero-CPS pages (e.g. NetShort): every recommended slot must monetize
   const relatedDramas = getRelatedDramas(drama.id, tagNames, 6, !dramaHasCps);
   const displaySynopsis = isPlaceholderSynopsis(drama.synopsis)
-    ? buildTagDescription(drama.title, tagNames, drama.source)
+    ? buildTagDescription(drama.title, tagNames, drama.source, drama.chapterCount)
     : cleanSynopsis(drama.synopsis, drama.title, drama.source);
   const platformSlug = drama.source?.toLowerCase().replace(/\s+/g, '') || '';
   const platformColor = PLATFORM_COLORS[platformSlug] || 'var(--accent-wine)';
@@ -321,13 +330,13 @@ export default async function DramaPage({ params }: Props) {
         {/* Related Dramas — zero-CPS pages divert traffic to monetizable titles */}
         {relatedDramas.length > 0 && (
           <section>
-            <p className="section-label">{dramaHasCps ? 'Similar Titles' : 'Watch Free Now'}</p>
+            <p className="section-label">{dramaHasCps ? 'Similar Titles' : 'Watch Now'}</p>
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'var(--text-2xl)', marginBottom: 'var(--space-2)' }}>
-              {dramaHasCps ? 'You May Also Like' : 'More Dramas You Can Watch Free'}
+              {dramaHasCps ? 'You May Also Like' : 'More Dramas to Watch Now'}
             </h2>
             {!dramaHasCps && (
               <p style={{ color: 'var(--text-muted)', fontSize: 'var(--text-sm)', marginBottom: 'var(--space-6)' }}>
-                This title isn&rsquo;t available on our partner apps yet — but these similar dramas are ready to watch free now.
+                This title isn&rsquo;t available on our partner apps yet — but these similar dramas are ready to watch now.
               </p>
             )}
             <div className="drama-grid">
@@ -343,7 +352,7 @@ export default async function DramaPage({ params }: Props) {
                       </span>
                     )}
                     {relPerDrama && (
-                      <span className="drama-card__watch-badge">▶ Watch Free</span>
+                      <span className="drama-card__watch-badge">▶ Watch Now</span>
                     )}
                     {rel.coverUrl && (
                       <Image
@@ -469,6 +478,15 @@ export default async function DramaPage({ params }: Props) {
               bestRating: 10,
               worstRating: 1,
               ratingCount: Math.max(drama.readCount || 1, 1),
+            } : undefined,
+            // v1.3: AggregateOffer for "Available on N platforms" structured data
+            offers: drama.platforms && drama.platforms.length > 0 ? {
+              '@type': 'AggregateOffer',
+              offerCount: drama.platforms.length,
+              availability: 'https://schema.org/InStock',
+              lowPrice: '0',
+              highPrice: '0',
+              priceCurrency: 'USD',
             } : undefined,
             provider: drama.source ? { '@type': 'Organization', name: drama.source, url: currentPlatform?.websiteUrl } : undefined,
             publisher: { '@type': 'Organization', name: 'DramaDisco', url: 'https://dramadisco.com' },
