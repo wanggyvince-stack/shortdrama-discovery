@@ -1,4 +1,5 @@
 import { getTagBySlug, getAllTags, getAllTagSlugs } from '@/lib/data';
+import { getTagSEOContent } from '@/lib/tag-seo-content';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -22,10 +23,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const { tag } = result;
+  const seoContent = getTagSEOContent(slug);
+  
+  // Use first 155 chars of intro as description if available
+  const description = seoContent 
+    ? seoContent.intro.replace(/\*\*/g, '').replace(/\n/g, ' ').substring(0, 155) + '...'
+    : `Discover the best ${tag.name.toLowerCase()} short dramas. Browse our curated collection of top-rated ${tag.name.toLowerCase()} micro dramas.`;
 
   return {
-    title: `Best ${tag.name} Short Dramas`,
-    description: `Discover the best ${tag.name.toLowerCase()} short dramas. Browse our curated collection of top-rated ${tag.name.toLowerCase()} micro dramas.`,
+    title: `Best ${tag.name} Short Dramas — Where to Watch Full Series`,
+    description,
     alternates: { canonical: `/tag/${slug}` },
   };
 }
@@ -45,6 +52,7 @@ export default async function TagPage({ params }: Props) {
   }
 
   const { tag, dramas } = result;
+  const seoContent = getTagSEOContent(slug);
 
   // Get related tags (same category)
   const allTags = getAllTags();
@@ -75,6 +83,31 @@ export default async function TagPage({ params }: Props) {
           Browse {dramas.length} curated titles.
         </p>
       </section>
+
+      {/* Editorial Introduction */}
+      {seoContent && (
+        <section style={{ 
+          marginBottom: 'var(--space-8)',
+          padding: 'var(--space-6)',
+          background: 'var(--bg-card)',
+          borderRadius: 'var(--radius-lg)',
+          borderLeft: `4px solid ${tagColor}`
+        }}>
+          <div 
+            style={{ 
+              fontSize: 'var(--text-base)',
+              lineHeight: 1.7,
+              color: 'var(--text-primary)'
+            }}
+            dangerouslySetInnerHTML={{
+              __html: seoContent.intro
+                .split('\n\n')
+                .map(para => `<p style="margin-bottom: var(--space-4)">${para.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</p>`)
+                .join('')
+            }}
+          />
+        </section>
+      )}
 
       {/* Stats Cards */}
       <section style={{ marginBottom: 'var(--space-8)' }}>
