@@ -35,14 +35,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // Tag pages
+  // Tag pages — only include tags with 10+ dramas to avoid thin content signals
   const tags = getAllTags();
-  const tagPages = tags.map((tag) => ({
-    url: `${baseUrl}/tag/${tag.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.6,
-  }));
+  const tagPages = tags
+    .filter((tag) => tag.dramaCount >= 10)
+    .map((tag) => ({
+      url: `${baseUrl}/tag/${tag.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.6,
+    }));
 
   return [...staticPages, ...dramaPages, ...tagPages];
 }
