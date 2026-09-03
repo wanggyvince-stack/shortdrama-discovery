@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-09-02T09:37:48Z",
+  "generatedAt": "2026-09-03T12:50:00Z",
   "stats": {
     "totalDramas": 714,
     "totalTags": 140,
-    "totalPlatforms": 5
+    "totalPlatforms": 5,
+    "withSynopsis": 310
   },
   "platforms": [
     {
@@ -1382,7 +1383,7 @@
       "source": "NetShort",
       "title": "30 Years Frozen,3 Brothers Regret",
       "slug": "30-years-frozen-3-brothers-regret-65662721",
-      "synopsis": "After enduring relentless abuse from her three brothers, the younger sister volunteered for a human cryopreservation experiment\u2014sleeping for three decades. Selene, abused by her adopted brothers and real sister, volunteers for a 30-year cryopreservation experiment to escape her torment, leaving behind a life where she was never truly accepted.",
+      "synopsis": "After enduring relentless abuse from her three brothers, the younger sister volunteered for a human cryopreservation experiment—sleeping for three decades. Selene, abused by her adopted brothers and real sister, volunteers for a 30-year cryopreservation experiment to escape her torment, leaving behind a life where she was never truly accepted.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/30-years-frozen-3-brothers-regret-6d764635c434.webp",
       "score": 7.2,
       "readCount": null,
@@ -1424,7 +1425,7 @@
       "source": "NetShort",
       "title": "30 Years Frozen, Emergency Rescue",
       "slug": "30-years-frozen-emergency-rescue-01327873",
-      "synopsis": "When Selene Onassis's cryo-pod fails, Dr. Charlotte Reed must deliver the only serum in 3 hours. Sabotaged by Isabella\u2014a woman claiming to be engaged to Selene's brother\u2014Charlotte faces mid-air attacks and a ground ambush in a desperate race against time to save Selene's life.",
+      "synopsis": "When Selene Onassis's cryo-pod fails, Dr. Charlotte Reed must deliver the only serum in 3 hours. Sabotaged by Isabella—a woman claiming to be engaged to Selene's brother—Charlotte faces mid-air attacks and a ground ambush in a desperate race against time to save Selene's life.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/30-years-frozen-emergency-rescue-fca2d89b8124.webp",
       "score": 6.7,
       "readCount": null,
@@ -1471,7 +1472,7 @@
       "source": "ReelShort",
       "title": "99 Forgiveness, One Goodbye",
       "slug": "99-forgiveness-one-goodbye-2e0f83bc",
-      "synopsis": "",
+      "synopsis": "Brianna has been married to boxer Mark Maddix for three years. Despite her silent sacrifices, he has never publicly acknowledged her as his wife. She made a silent vow to give her husband 99 chances, collecting a single pearl for every time he broke her heart. On the night of his championship victory, Mark publicly dedicates his glory to another woman, Maylin. The suppressed grievances and profound disappointment of their three-year marriage finally erupt. This ultimate betrayal marks her 99th heartbreak. Resolving to end it all, Brianna resolutely leaves behind a divorce agreement and walks away for good. Returning to her true identity as the heiress of a wealthy family, Brianna reunites with business elite Savion Blake. What begins as a contract marriage gradually blossoms into genuine love, and the two decide to officially wed. Meanwhile, Mark discovers the truth about Maylin's deceit—including her faked miscarriage and malicious setups. Overcome with a sudden awakening, he embarks on a desperate, frantic pursuit to win Brianna back, even risking his life in an underground boxing match to win the legendary \"Tears of the Ocean\" diamond as a plea for reconciliation. In the end, Brianna firmly chooses Savion, the man who truly cherishes her, and they share a beautiful church wedding. Mark wins the diamond but loses the love of his life forever, left with nothing but endless remorse.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-04/99-forgiveness-one-goodbye-202a8aaf2b78.jpg",
       "score": 9.4,
       "readCount": null,
@@ -1516,7 +1517,27 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "亿万富翁",
+        "先婚后爱",
+        "离婚",
+        "坚强",
+        "独立女性",
+        "隐藏身份",
+        "身份揭露",
+        "真相",
+        "爱情"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-24",
+        "totalChapters": 36,
+        "freeChapters": 9
+      }
     },
     {
       "id": "a-billionaire-queens-fight-for-justice-00813271",
@@ -1991,7 +2012,7 @@
       "source": "FlexTV",
       "title": "A Matter of Sin and Love",
       "slug": "a-matter-of-sin-and-love-3nv2vn86",
-      "synopsis": "A Matter of Sin and Love follows MLove-TortureTen years ago Christian adopted\u2026. A captivating short drama on FlexTV.",
+      "synopsis": "A Matter of Sin and Love follows MLove-TortureTen years ago Christian adopted…. A captivating short drama on FlexTV.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/a-matter-of-sin-and-love-3c163f0e958f.webp",
       "score": 6.7,
       "readCount": null,
@@ -2342,7 +2363,7 @@
       "source": "FlexTV",
       "title": "Abstinent CEO's Pregnant Sweetheart",
       "slug": "abstinent-ceos-pregnant-sweetheart-zj0knzxy",
-      "synopsis": "MCEOMarried FirstSweet RomanceA\u2026. Dive into this wealth, status, and boardroom pressure colliding with romance drama on FlexTV.",
+      "synopsis": "MCEOMarried FirstSweet RomanceA…. Dive into this wealth, status, and boardroom pressure colliding with romance drama on FlexTV.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/abstinent-ceos-pregnant-sweetheart-8c7158fbee87.webp",
       "score": 7.0,
       "readCount": null,
@@ -2612,7 +2633,7 @@
       "source": "ReelShort",
       "title": "After I Bought Sperm, the Alpha Claimed Me",
       "slug": "after-i-bought-sperm-the-alpha-claimed-me-dd0d4a4e",
-      "synopsis": "One secret that changes everything,\u2026. Dive into this 60-episode identity reveals, secrets, and status reversals drama on ReelShort.",
+      "synopsis": "One secret that changes everything,…. Dive into this 60-episode identity reveals, secrets, and status reversals drama on ReelShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/after-i-bought-sperm-the-alpha-claimed-me-63ae3602fa4d.jpg",
       "score": 7.9,
       "readCount": null,
@@ -2667,7 +2688,7 @@
     {
       "id": "after-my-fiances-lover-stole-my-necklace-2-01524910",
       "source": "GoodShort",
-      "title": "After my fianc\u00e9\u2019s lover stole my necklace 2",
+      "title": "After my fiancé’s lover stole my necklace 2",
       "slug": "after-my-fiances-lover-stole-my-necklace-2-01524910",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-11/after-my-fiances-lover-stole-my-necklace-2-5f60ddd4c3fc.jpg",
@@ -2785,7 +2806,7 @@
       "source": "NetShort",
       "title": "After the Divorce, the Mafia Boss Went crazy",
       "slug": "after-the-divorce-the-mafia-boss-went-crazy-38919938",
-      "synopsis": "A Mafia boss's wife discovers her husband's affair \u2014 with her own sister. She disappears, changes her name, and chooses to raise their daughter alone. He finds her. He gives up everything just to watch over her from a distance... Can a man who destroyed everything really earn a second chance?",
+      "synopsis": "A Mafia boss's wife discovers her husband's affair — with her own sister. She disappears, changes her name, and chooses to raise their daughter alone. He finds her. He gives up everything just to watch over her from a distance... Can a man who destroyed everything really earn a second chance?",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-31/after-the-divorce-the-mafia-boss-went-crazy-3a6c950c82fb.webp",
       "score": 6.2,
       "readCount": null,
@@ -3203,7 +3224,7 @@
       "source": "FlexTV",
       "title": "Back to 1993: My Smartphone Empire",
       "slug": "back-to-1993-my-smartphone-empire-nm67wzl4",
-      "synopsis": "KPeriod DramaUrbanFamilyComebackClapbackA ruthless business queen from 2026 wakes up in 1993\u2014inside the life of a ruined wife left for dead",
+      "synopsis": "KPeriod DramaUrbanFamilyComebackClapbackA ruthless business queen from 2026 wakes up in 1993—inside the life of a ruined wife left for dead",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-13/back-to-1993-my-smartphone-empire-4a6136522001.webp",
       "score": 7.1,
       "readCount": null,
@@ -3468,7 +3489,7 @@
       "source": "NetShort",
       "title": "Bankrupt My Cheating Husband",
       "slug": "bankrupt-my-cheating-husband-54318593",
-      "synopsis": "Leah, a top-tier billionaire heiress, hides her identity to marry a nobody. She pours everything into turning Leo into a CEO and even saves his sick mother, Susan. But after eight years of him cheating on her with the vicious Shirley, Leah hits her limit when Shirley beats her and Susan in public\u2014while Leo cozies up to Shirley on the phone and blows Leah off. Done playing nice, Leah teams up with her ride-or-die mother-in-law and her childhood best friend Sean to destroy the cheaters completely.",
+      "synopsis": "Leah, a top-tier billionaire heiress, hides her identity to marry a nobody. She pours everything into turning Leo into a CEO and even saves his sick mother, Susan. But after eight years of him cheating on her with the vicious Shirley, Leah hits her limit when Shirley beats her and Susan in public—while Leo cozies up to Shirley on the phone and blows Leah off. Done playing nice, Leah teams up with her ride-or-die mother-in-law and her childhood best friend Sean to destroy the cheaters completely.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/bankrupt-my-cheating-husband-5534f8417f6d.webp",
       "score": 6.3,
       "readCount": null,
@@ -3508,7 +3529,7 @@
     {
       "id": "beast-whisperers-mountain-fortune-hunt-28048",
       "source": "ShortMax",
-      "title": "Beast Whisperer\u2019s Mountain Fortune Hunt",
+      "title": "Beast Whisperer’s Mountain Fortune Hunt",
       "slug": "beast-whisperers-mountain-fortune-hunt-28048",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/beast-whisperers-mountain-fortune-hunt-2e4c6502605b.jpg",
@@ -3545,7 +3566,7 @@
     {
       "id": "becoming-my-exs-mother-in-law-00768973",
       "source": "GoodShort",
-      "title": "Becoming My Ex\u2019s Mother in Law",
+      "title": "Becoming My Ex’s Mother in Law",
       "slug": "becoming-my-exs-mother-in-law-00768973",
       "synopsis": "After serving six years in prison for her boyfriend's crime, Crystal is released only to discover her boyfriend's betrayal: he's engaged to the billionaire Governor's daughter, leaving Crystal heartbroken. Determined to take back her life, Crystal starts an exciting journey dating the Governor and becoming her ex's mother-in-law.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-16/becoming-my-exs-mother-in-law-f9d8fd9196a6.jpg",
@@ -3656,7 +3677,7 @@
       "source": "FlexTV",
       "title": "Begging for Her Grace",
       "slug": "begging-for-her-grace-oer18znr",
-      "synopsis": "KContemporaryFamilyRebirthSweet RomanceLove-TortureIn her last life, she gave everything\u2014and got nothing but betrayal",
+      "synopsis": "KContemporaryFamilyRebirthSweet RomanceLove-TortureIn her last life, she gave everything—and got nothing but betrayal",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-18/begging-for-her-grace-63675681a9e9.webp",
       "score": 8.0,
       "readCount": null,
@@ -3874,7 +3895,26 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "has_reelshort_cps": true,
+      "reelshort_tags": [
+        "男性",
+        "女性",
+        "浪漫",
+        "复仇",
+        "悬疑",
+        "动作",
+        "秘密身份",
+        "LGBTQ",
+        "青春",
+        "幻想"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-20",
+        "totalChapters": 25,
+        "freeChapters": 6
+      }
     },
     {
       "id": "billionaire-brothers-and-their-country-brides-01534136",
@@ -3931,7 +3971,7 @@
     {
       "id": "billionaire-ceos-obsession-00584793",
       "source": "GoodShort",
-      "title": "Billionaire CEO\u2019s Obsession",
+      "title": "Billionaire CEO’s Obsession",
       "slug": "billionaire-ceos-obsession-00584793",
       "synopsis": "Naomi who was born with a silver spoon in her mouth ended up poor because she was secretly swapped at birth by a backstabber",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/billionaire-ceos-obsession-c623344d8144.jpg",
@@ -4641,7 +4681,21 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "has_reelshort_cps": true,
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "坚强",
+        "青春",
+        "真相"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-24",
+        "totalChapters": 62,
+        "freeChapters": 8
+      }
     },
     {
       "id": "bringing-my-ceo-boss-home-oply2orl",
@@ -4841,7 +4895,7 @@
       "source": "FlexTV",
       "title": "Call Me By Your Heart",
       "slug": "call-me-by-your-heart-ogrxjzye",
-      "synopsis": "MLove- years ago, Emma was pregnant with Michael\u2019s child, but Rebecca, who secretly loved him, discovered the truth",
+      "synopsis": "MLove- years ago, Emma was pregnant with Michael’s child, but Rebecca, who secretly loved him, discovered the truth",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/call-me-by-your-heart-4fe9f3611713.webp",
       "score": 8.5,
       "readCount": null,
@@ -5512,7 +5566,7 @@
       "source": "GoodShort",
       "title": "Cousins by Name Lovers in Secret",
       "slug": "cousins-by-name-lovers-in-secret-01238685",
-      "synopsis": "Plagued by an embarrassing condition, Bille seeks an intimate checkup from her cousin Vincent, the college physician\u2014only to awaken a forbidden desire",
+      "synopsis": "Plagued by an embarrassing condition, Bille seeks an intimate checkup from her cousin Vincent, the college physician—only to awaken a forbidden desire",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/cousins-by-name-lovers-in-secret-3315f8bfe369.jpg",
       "score": 6.1,
       "readCount": null,
@@ -5569,7 +5623,7 @@
       "source": "GoodShort",
       "title": "Crimson Palace: The Maid's Rise to the Throne",
       "slug": "crimson-palace-the-maids-rise-to-the-throne-00943780",
-      "synopsis": "When after spending over a decade in\u2026, nothing is as it seems. Stream this 76-episode drama on GoodShort.",
+      "synopsis": "When after spending over a decade in…, nothing is as it seems. Stream this 76-episode drama on GoodShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-05/crimson-palace-the-maids-rise-to-the-throne-4a253e196cf9.jpg",
       "score": 9.2,
       "readCount": null,
@@ -5683,7 +5737,7 @@
       "source": "ReelShort",
       "title": "Crowned in His Claws",
       "slug": "crowned-in-his-claws-9108d8ca",
-      "synopsis": "",
+      "synopsis": "Back in 1985, a time ripe with opportunity, she arrives with just $200. After being scammed, her resilience leads her to reclaim her money. Using her modern wisdom, she becomes the town's first private clothing retailer. Her 1980s journey is fraught with challenges, but her grit turns ambition into a thriving business empire.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/crowned-in-his-claws-fe0f483722fd.jpg",
       "score": 6.2,
       "readCount": null,
@@ -5738,7 +5792,21 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "先婚后爱",
+        "独立女性",
+        "真相"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-23",
+        "totalChapters": 101,
+        "freeChapters": 6
+      }
     },
     {
       "id": "cursed-i-married-the-don-in-my-sisters-place-27431",
@@ -5829,7 +5897,7 @@
       "source": "GoodShort",
       "title": "Daddy Don's Forbidden Pet",
       "slug": "daddy-dons-forbidden-pet-01589956",
-      "synopsis": "After her parents' death, Sienna is forced to accept\u2026. Dive into this 62-episode dangerous romance, loyalty tests, and criminal-world stakes drama on GoodShort.",
+      "synopsis": "After her parents' death, Sienna is forced to accept…. Dive into this 62-episode dangerous romance, loyalty tests, and criminal-world stakes drama on GoodShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/daddy-dons-forbidden-pet-5fb586227675.jpg",
       "score": 9.4,
       "readCount": null,
@@ -6475,7 +6543,7 @@
       "source": "GoodShort",
       "title": "Destined Redemption",
       "slug": "destined-redemption-00681978",
-      "synopsis": "When after experiencing a period of boyfriend's domestic\u2026, nothing is as it seems. Stream this 67-episode drama on GoodShort.",
+      "synopsis": "When after experiencing a period of boyfriend's domestic…, nothing is as it seems. Stream this 67-episode drama on GoodShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/destined-redemption-835eca14d519.jpg",
       "score": 6.9,
       "readCount": null,
@@ -6564,7 +6632,7 @@
       "source": "FlexTV",
       "title": "Destiny: Do-Over Edition",
       "slug": "destiny-do-over-edition-z5vmwnde",
-      "synopsis": "When now amber wants gavin\u2014too bad diana already\u2026, nothing is as it seems. Stream this drama on FlexTV.",
+      "synopsis": "When now amber wants gavin—too bad diana already…, nothing is as it seems. Stream this drama on FlexTV.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/destiny-do-over-edition-c0c067fb8045.webp",
       "score": 8.6,
       "readCount": null,
@@ -7081,7 +7149,25 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "has_reelshort_cps": true,
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "复仇",
+        "三角恋",
+        "隐藏身份",
+        "秘密身份",
+        "身份揭露",
+        "青春",
+        "真相"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2025-09-13",
+        "totalChapters": 58,
+        "freeChapters": 6
+      }
     },
     {
       "id": "dont-mess-with-the-new-guard-22079234",
@@ -7128,7 +7214,7 @@
     {
       "id": "dont-piss-off-your-suger-mommys-husband-85919234",
       "source": "NetShort",
-      "title": "Don\u2019t Piss off Your Suger Mommy\u2019s Husband",
+      "title": "Don’t Piss off Your Suger Mommy’s Husband",
       "slug": "dont-piss-off-your-suger-mommys-husband-85919234",
       "synopsis": "A a comeback arc shaped by betrayal, payback, and shifting power dynamics drama filled with unexpected twists and emotional depth. Stream on NetShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-18/dont-piss-off-your-suger-mommys-husband-26ae95806083.webp",
@@ -7552,7 +7638,7 @@
       "source": "NetShort",
       "title": "(Dubbed) Born to Dominate",
       "slug": "dubbed-born-to-dominate-16050689",
-      "synopsis": "Yannick Young thought he was just another weak disciple. But when he aces a deadly sect trial, the truth hits\u2014he's anything but ordinary. Jealous rivals, secret mentors, and ancient enemies stand in his way. Is he ready to claim the power he never knew he had?",
+      "synopsis": "Yannick Young thought he was just another weak disciple. But when he aces a deadly sect trial, the truth hits—he's anything but ordinary. Jealous rivals, secret mentors, and ancient enemies stand in his way. Is he ready to claim the power he never knew he had?",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/dubbed-born-to-dominate-db1adbfa6800.webp",
       "score": 8.7,
       "readCount": null,
@@ -7952,7 +8038,7 @@
     {
       "id": "dubbed-dragon-lords-revenge-29103",
       "source": "ShortMax",
-      "title": "[Dubbed]Dragon Lord\u2019s Revenge",
+      "title": "[Dubbed]Dragon Lord’s Revenge",
       "slug": "dubbed-dragon-lords-revenge-29103",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-31/dubbed-dragon-lords-revenge-a7d0d5a24c75.jpg",
@@ -9640,7 +9726,7 @@
     {
       "id": "dubbed-shes-gone-grand-secretary-28205",
       "source": "ShortMax",
-      "title": "[Dubbed]She\u2019s Gone, Grand Secretary",
+      "title": "[Dubbed]She’s Gone, Grand Secretary",
       "slug": "dubbed-shes-gone-grand-secretary-28205",
       "synopsis": "A ambition, workplace hierarchy, and professional rivalry drama filled with unexpected twists and emotional depth. Stream on ShortMax.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/dubbed-shes-gone-grand-secretary-489d6f64b640.jpg",
@@ -11395,7 +11481,7 @@
       "source": "GoodShort",
       "title": "[ENG DUB] All or Nothing: The Fatal Gamble",
       "slug": "eng-dub-all-or-nothing-the-fatal-gamble-01306634",
-      "synopsis": "After losing his down payment in a gamble, Luke Lovell attempts suicide\u2014but survives. His father, Bryce Lovell, brings him into the casino, secretly plotting to turn every thousand against the house. Amid cheating and hidden dangers, he outsmarts everyone in a high-stakes game, redeeming both father and son.",
+      "synopsis": "After losing his down payment in a gamble, Luke Lovell attempts suicide—but survives. His father, Bryce Lovell, brings him into the casino, secretly plotting to turn every thousand against the house. Amid cheating and hidden dangers, he outsmarts everyone in a high-stakes game, redeeming both father and son.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-13/eng-dub-all-or-nothing-the-fatal-gamble-6acd794856a4.jpg",
       "score": 6.3,
       "readCount": null,
@@ -11447,7 +11533,7 @@
       "source": "GoodShort",
       "title": "[ENG DUB] Daughter of Beast Taming",
       "slug": "eng-dub-daughter-of-beast-taming-01315307",
-      "synopsis": "Casey Stone and Melly Stone, daughters of the Stone family\u2014the strongest beast tamers in the beast world\u2014awaken their beast-taming arts on their coming-of-age day",
+      "synopsis": "Casey Stone and Melly Stone, daughters of the Stone family—the strongest beast tamers in the beast world—awaken their beast-taming arts on their coming-of-age day",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-28/eng-dub-daughter-of-beast-taming-7fc577c8efba.jpg",
       "score": 7.4,
       "readCount": null,
@@ -11712,7 +11798,7 @@
       "source": "GoodShort",
       "title": "[ENG DUB] He's Poor... Or Is He?",
       "slug": "eng-dub-hes-poor-or-is-he-01363064",
-      "synopsis": "To prevent her stepmother from\u2026. Dive into this 80-episode wealth, status, and boardroom pressure colliding with romance drama on GoodShort.",
+      "synopsis": "To prevent her stepmother from…. Dive into this 80-episode wealth, status, and boardroom pressure colliding with romance drama on GoodShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-18/eng-dub-hes-poor-or-is-he-d515cee0c802.jpg",
       "score": 6.8,
       "readCount": null,
@@ -12319,7 +12405,7 @@
       "source": "GoodShort",
       "title": "[ENG DUB] The Sun Shines on Hometown Roads",
       "slug": "eng-dub-the-sun-shines-on-hometown-roads-01209700",
-      "synopsis": "Village doctor Shannon Lewis worked hard to pay for her fianc\u00e9 Nathan Hardin's college education, only to discover that he had already married another woman in the city.Heartbroken,Shannon cut ties with Nathan.During",
+      "synopsis": "Village doctor Shannon Lewis worked hard to pay for her fiancé Nathan Hardin's college education, only to discover that he had already married another woman in the city.Heartbroken,Shannon cut ties with Nathan.During",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-16/eng-dub-the-sun-shines-on-hometown-roads-9e20ff3e41b3.jpg",
       "score": 6.8,
       "readCount": null,
@@ -12606,7 +12692,7 @@
       "source": "ReelShort",
       "title": "Everything Plus, Everyone Else Shuts",
       "slug": "everything-plus-everyone-else-shuts-5205fe4c",
-      "synopsis": "",
+      "synopsis": "Seo Hae In, MK Group heiress who decides to conceal her true identity when she transfers to a public school. Tired of being known only for her family's wealth, Hae In hopes to make genuine friends and experience a normal teenage life. However, her plans are thrown into chaos when Seo Si Eun, the daughter of the Hae In family's maid, arrives at school posing as the MK Group heiress. Si Eun quickly rises to the top of the social hierarchy, while Hae In finds herself at the bottom, subjected to bullying and ridicule.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-31/everything-plus-everyone-else-shuts-aa2aa18692b4.jpg",
       "score": 7.1,
       "readCount": null,
@@ -12656,7 +12742,22 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "悬疑",
+        "隐藏身份",
+        "身份揭露",
+        "青春"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-23",
+        "totalChapters": 94,
+        "freeChapters": 9
+      }
     },
     {
       "id": "exiled-to-rule-28060",
@@ -12980,7 +13081,23 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "has_reelshort_cps": true,
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "亿万富翁",
+        "浪漫",
+        "复仇",
+        "先婚后爱",
+        "独立女性"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-09-01",
+        "totalChapters": 63,
+        "freeChapters": 11
+      }
     },
     {
       "id": "false-weakling-true-power-38881281",
@@ -13286,7 +13403,7 @@
       "source": "ReelShort",
       "title": "Final Skill: Win Her Heart",
       "slug": "final-skill-win-her-heart-e702b93f",
-      "synopsis": "",
+      "synopsis": "The richest man in the world's missing one last thing — his childhood sweetheart. He's determined to marry her, but never realizes she's right beside him! He searches everywhere for the girl who captured her heart. When will he realize he's already married to his Mrs. Right?",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-31/final-skill-win-her-heart-d504f7e68498.jpg",
       "score": 6.6,
       "readCount": null,
@@ -13331,7 +13448,23 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "首席执行官",
+        "霸总",
+        "浪漫",
+        "甜宠",
+        "先婚后爱"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-02-24",
+        "totalChapters": 58,
+        "freeChapters": 8
+      }
     },
     {
       "id": "find-your-way-back-to-me-my-childhood-sweetheart-3209fc33",
@@ -13479,7 +13612,7 @@
       "source": "ReelShort",
       "title": "Fix You",
       "slug": "fix-you-c30528bf",
-      "synopsis": "",
+      "synopsis": "Based on the novel by Christine Bell. Olivia Beckett’s perfect life is unraveling—her family’s broke, college is slipping away, and her high school sweetheart has turned violent. Enter Sebastian “Bash” McDaniels, a rising boxer working nights at a bar to escape his past. When he rescues Olivia from her ex, their connection sparks, but as danger closes in, Bash must choose between his dreams and saving the girl who could break him.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-14/fix-you-a4a537cfadc7.jpg",
       "score": 8.2,
       "readCount": null,
@@ -13519,7 +13652,22 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "浪漫",
+        "甜宠",
+        "三角恋",
+        "少女"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-01-29",
+        "totalChapters": 58,
+        "freeChapters": 9
+      }
     },
     {
       "id": "flash-marriage-my-husband-is-a-super-tycoon-subtitled-version2-7c108fff",
@@ -13959,7 +14107,7 @@
       "source": "GoodShort",
       "title": "Found My Daddy at the Construction Site",
       "slug": "found-my-daddy-at-the-construction-site-01368041",
-      "synopsis": "Tristen Bolton is a broke bricklayer mocked by everyone\u2014until his billionaire CEO boss Gisele Duvall\u2019s daughter suddenly points at him and calls him \u201cDaddy.\u201d A matching necklace reveals the truth Gisele has searched",
+      "synopsis": "Tristen Bolton is a broke bricklayer mocked by everyone—until his billionaire CEO boss Gisele Duvall’s daughter suddenly points at him and calls him “Daddy.” A matching necklace reveals the truth Gisele has searched",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-16/found-my-daddy-at-the-construction-site-01d99590101e.jpg",
       "score": 8.7,
       "readCount": null,
@@ -14435,7 +14583,7 @@
     {
       "id": "getting-even-the-secret-prodigys-playbook-kzo5oz4q",
       "source": "FlexTV",
-      "title": "Getting Even: the Secret Prodigy\u2019s playbook",
+      "title": "Getting Even: the Secret Prodigy’s playbook",
       "slug": "getting-even-the-secret-prodigys-playbook-kzo5oz4q",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/getting-even-the-secret-prodigys-playbook-5611a98d96fd.webp",
@@ -14494,7 +14642,7 @@
       "source": "NetShort",
       "title": "Girls Help Girls: Divorce or Die",
       "slug": "girls-help-girls-divorce-or-die-02100993",
-      "synopsis": "Caroline, a top Abuse Intervention Specialist at PunishDash with an unmatched record of subduing abusers, fell for Richard\u2014a disguised domestic violator\u2014during a blind date. They married swiftly. When Richard attempted to control her, she overpowered him, delivering brutal retaliation. Ironically, Richard as the abuser ended up a victim of his own abuse.",
+      "synopsis": "Caroline, a top Abuse Intervention Specialist at PunishDash with an unmatched record of subduing abusers, fell for Richard—a disguised domestic violator—during a blind date. They married swiftly. When Richard attempted to control her, she overpowered him, delivering brutal retaliation. Ironically, Richard as the abuser ended up a victim of his own abuse.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/girls-help-girls-divorce-or-die-8dd18b8d7f29.webp",
       "score": 8.7,
       "readCount": null,
@@ -14635,7 +14783,7 @@
       "source": "ReelShort",
       "title": "God of Snow",
       "slug": "god-of-snow-3300a244",
-      "synopsis": "",
+      "synopsis": "In a world where the sun has long vanished and eternal winter reigns, fire is condemned as the greatest forbidden power. The all-seeing Snow God rules the frozen world through colossal Snow Dragons, relentless guardians that patrol the skies, hunting down every trace of warmth and anyone guilty of the ancient sin known as fire. When young Lyra is struck by a deadly frost sickness, her father, Aldric, Lord of Winterfall, makes an impossible choice. Defying the Snow God's absolute law, he enters the forbidden ruins of an ancient civilization and awakens a forgotten flame. The fire saves Lyra's life—but at a devastating cost. As the Snow Dragons descend upon Winterfall, Aldric sacrifices himself so his daughter can escape. His final act awakens something far greater than anyone could have imagined. The Snow God has sensed the return of fire. An endless storm of Snow Dragons descends upon the city, reducing Winterfall to ice and ruin. Far away, a young noble named Kael, heir to the Darkhold, witnesses the destruction. Haunted since childhood by mysterious dreams of fire, he begins searching for the truth behind the world's greatest taboo. The deeper he investigates, the more he realizes that history itself may have been rewritten. Perhaps fire was never the true enemy. As Lyra grows older, she discovers that she is no ordinary survivor—she is the only person chosen by the fire itself. And now, the Snow God has turned its gaze toward her. Together, Lyra and Kael embark on a journey across the frozen world, pursued by the ruthless Ravok, the Snow God, and its relentless Snow Dragons. Their path leads them toward the legendary Hollow Sea, where long-buried secrets may finally be revealed. As the truth begins to emerge, Lyra realizes that what the Snow God fears most may not be fire itself—but humanity's ability to reclaim warmth, hope, and freedom. The battle between a god determined to preserve absolute order and the people destined to change the world has only just begun.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-31/god-of-snow-cc60d4390d29.jpg",
       "score": 7.6,
       "readCount": null,
@@ -14685,12 +14833,26 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "坚强",
+        "独立女性",
+        "真相"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-21",
+        "totalChapters": 40,
+        "freeChapters": 4
+      }
     },
     {
       "id": "golden-dragon-mothers-rampage-29802",
       "source": "ShortMax",
-      "title": "Golden Dragon Mother\u2019s Rampage",
+      "title": "Golden Dragon Mother’s Rampage",
       "slug": "golden-dragon-mothers-rampage-29802",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/golden-dragon-mothers-rampage-e6af6465ca81.jpg",
@@ -14766,7 +14928,7 @@
       "source": "ReelShort",
       "title": "Group Chat Divinity",
       "slug": "group-chat-divinity-a60c5857",
-      "synopsis": "",
+      "synopsis": "At the magic academy, classmates mock Zayden as a hillbilly, and his fiancée publicly breaks off their engagement. However, Zayden’s true identity is actually Zeus, the King of Gods, and his phone can summon the gods through a chat group!",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/group-chat-divinity-30986108391a.jpg",
       "score": 7.2,
       "readCount": null,
@@ -14816,7 +14978,20 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "男性",
+        "所有年龄段",
+        "隐藏身份",
+        "身份揭露"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-24",
+        "totalChapters": 40,
+        "freeChapters": 11
+      }
     },
     {
       "id": "he-dumped-me-live-i-took-over-his-team-29160706",
@@ -14976,7 +15151,7 @@
       "source": "ReelShort",
       "title": "He Pulled a Prank on Me and Lost Everything",
       "slug": "he-pulled-a-prank-on-me-and-lost-everything-1205e865",
-      "synopsis": "",
+      "synopsis": "When her childhood best friend Leo ties her to the school goalpost as a prank to impress another girl, Eleanor Vance transfers to a California high school to start over. As she heals, excels academically, and finds new love, Leo spirals into regret—but some betrayals can never be undone.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/he-pulled-a-prank-on-me-and-lost-everything-ae4b583466b8.jpg",
       "score": 7.7,
       "readCount": null,
@@ -15016,7 +15191,19 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "复仇",
+        "三角恋"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-18",
+        "totalChapters": 29,
+        "freeChapters": 3
+      }
     },
     {
       "id": "he-saved-a-boy-who-returns-a-billion-01609851",
@@ -15080,7 +15267,7 @@
       "source": "GoodShort",
       "title": "He Took A Mistress I Took the Sky",
       "slug": "he-took-a-mistress-i-took-the-sky-01309511",
-      "synopsis": "Jiyoung dreamed of becoming a\u2026. Dive into this 62-episode second chances, altered choices, and time-shifted revenge drama on GoodShort.",
+      "synopsis": "Jiyoung dreamed of becoming a…. Dive into this 62-episode second chances, altered choices, and time-shifted revenge drama on GoodShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/he-took-a-mistress-i-took-the-sky-7d75d8500877.jpg",
       "score": 6.7,
       "readCount": null,
@@ -15464,7 +15651,7 @@
     {
       "id": "heres-my-baby-dub-rza1vzly",
       "source": "FlexTV",
-      "title": "Here\u2019s My Baby[DUB]",
+      "title": "Here’s My Baby[DUB]",
       "slug": "heres-my-baby-dub-rza1vzly",
       "synopsis": "family bonds, parent-child reveals, and protective romance. Dive into this family bonds, parent-child reveals, and protective romance drama on FlexTV.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/heres-my-baby-dub-a2fc9e3799b4.webp",
@@ -15909,7 +16096,7 @@
       "source": "NetShort",
       "title": "Horror Game: Seduce My Ghost Teacher or Die",
       "slug": "horror-game-seduce-my-ghost-teacher-or-die-74346497",
-      "synopsis": "Audrey wakes inside a deadly school horror game and is bound to a Love Survival System. She must seduce Wyatt, a cold but hot ghost teacher. To stay alive, Audrey is forced to complete one intimate mission after another, drawing closer and closer to the man who could kill her at any moment \u2014 often right in front of everyone.",
+      "synopsis": "Audrey wakes inside a deadly school horror game and is bound to a Love Survival System. She must seduce Wyatt, a cold but hot ghost teacher. To stay alive, Audrey is forced to complete one intimate mission after another, drawing closer and closer to the man who could kill her at any moment — often right in front of everyone.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/horror-game-seduce-my-ghost-teacher-or-die-0f086b8b3273.webp",
       "score": 6.1,
       "readCount": null,
@@ -16164,7 +16351,7 @@
       "source": "ReelShort",
       "title": "How to Wreck My Bully's Heart",
       "slug": "how-to-wreck-my-bullys-heart-130cb57d",
-      "synopsis": "",
+      "synopsis": "Kristina Cooper's a scholarship student by day, online masked singer by night. She's got the perfect internet boyfriend in Dax – sweet, caring, and supportive – until she finds out he's Daxter, the monsterous thug who's been bullying her at school! Will she forgive Dexter, the damaged, broken boy she once loved, or will their anonymous love end in Dexter's never ending regret as Kristina choses a brighter future without him?",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-31/how-to-wreck-my-bullys-heart-9c277d7e9197.jpg",
       "score": 6.9,
       "readCount": null,
@@ -16204,7 +16391,21 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "浪漫",
+        "身份揭露",
+        "青春"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-30",
+        "totalChapters": 67,
+        "freeChapters": 11
+      }
     },
     {
       "id": "hubby-youre-toast-01186605",
@@ -16357,7 +16558,7 @@
       "source": "ReelShort",
       "title": "I Dumped the Heirs for the Alpha King",
       "slug": "i-dumped-the-heirs-for-the-alpha-king-2f05096a",
-      "synopsis": "When ten years ago, elara was adopted by the\u2026, nothing is as it seems. Stream this 46-episode drama on ReelShort.",
+      "synopsis": "When ten years ago, elara was adopted by the…, nothing is as it seems. Stream this 46-episode drama on ReelShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-04/i-dumped-the-heirs-for-the-alpha-king-ecd2086bb9cd.jpg",
       "score": 7.2,
       "readCount": null,
@@ -16412,7 +16613,7 @@
     {
       "id": "i-helped-my-husbands-brother-take-the-mafia-throne-25614",
       "source": "ShortMax",
-      "title": "I Helped My Husband\u2019s Brother Take The Mafia Throne",
+      "title": "I Helped My Husband’s Brother Take The Mafia Throne",
       "slug": "i-helped-my-husbands-brother-take-the-mafia-throne-25614",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/i-helped-my-husbands-brother-take-the-mafia-throne-7f04798449ed.webp",
@@ -16449,9 +16650,9 @@
     {
       "id": "i-kicked-out-my-three-fiances-in-my-second-life-01212813",
       "source": "GoodShort",
-      "title": "I Kicked Out My Three Fianc\u00e9s in My Second Life",
+      "title": "I Kicked Out My Three Fiancés in My Second Life",
       "slug": "i-kicked-out-my-three-fiances-in-my-second-life-01212813",
-      "synopsis": "In her past life, Dahlia Whitmore\u2014the precious heiress of the Whitmore family\u2014was tortured to death by the three foster brothers she grew up with and the scheming scholarship girl, Chloe",
+      "synopsis": "In her past life, Dahlia Whitmore—the precious heiress of the Whitmore family—was tortured to death by the three foster brothers she grew up with and the scheming scholarship girl, Chloe",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/i-kicked-out-my-three-fiances-in-my-second-life-b7424c76fe63.jpg",
       "score": 8.9,
       "readCount": null,
@@ -16674,7 +16875,7 @@
     {
       "id": "i-married-my-exs-uncle-at-his-wedding-18575361",
       "source": "NetShort",
-      "title": "I Married My Ex\u2019s Uncle at His Wedding",
+      "title": "I Married My Ex’s Uncle at His Wedding",
       "slug": "i-married-my-exs-uncle-at-his-wedding-18575361",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/i-married-my-exs-uncle-at-his-wedding-a31257f1a5ab.jpg",
@@ -16736,7 +16937,7 @@
     {
       "id": "i-married-my-exs-uncle-at-his-wedding-29619",
       "source": "ShortMax",
-      "title": "I Married My Ex\u2019s Uncle at His Wedding",
+      "title": "I Married My Ex’s Uncle at His Wedding",
       "slug": "i-married-my-exs-uncle-at-his-wedding-29619",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/i-married-my-exs-uncle-at-his-wedding-a31257f1a5ab.jpg",
@@ -16775,7 +16976,7 @@
       "source": "ReelShort",
       "title": "I Married the Alpha They Threw Away",
       "slug": "i-married-the-alpha-they-threw-away-fd03a48b",
-      "synopsis": "",
+      "synopsis": "After being betrayed by her Alpha mate and watching him lead the pack to slaughter both her and her newborn daughter, Lyra is given a second life. This time, she rejects fate, chooses a new mate, and awakens the legendary White Wolf. As the truth behind the pureblood bloodline unravels, the Alpha realizes he destroyed the very bloodline his family hunted for generations. But when Lyra becomes pregnant again, the hunt begins once more.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-31/i-married-the-alpha-they-threw-away-25ac464bb9a4.jpg",
       "score": 6.0,
       "readCount": null,
@@ -16820,14 +17021,29 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "浪漫",
+        "复仇",
+        "秘密身份",
+        "幻想",
+        "狼人"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-21",
+        "totalChapters": 24,
+        "freeChapters": 4
+      }
     },
     {
       "id": "i-only-have-brisket-for-you-9c072588",
       "source": "ReelShort",
       "title": "I Only Have Brisket for You",
       "slug": "i-only-have-brisket-for-you-9c072588",
-      "synopsis": "",
+      "synopsis": "master Katelyn clashes with her cheating ex at a fancy restaurant, accidentally splattering Texas brisket on elite surgeon Benjamin. He hires her to pretend to be his fiancée for ten dollars to disrupt his rigid medical family. Her bold, down-to-earth personality melts the household’s cold etiquette, cures Benjamin’s long-term anorexia, and unravels his trauma over his late brother. As they bicker and bond over homemade barbecue, the fake engagement blooms into genuine love, with Katelyn’s secret rich uncle shocking high-society gossips.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/i-only-have-brisket-for-you-e19ffea03040.jpg",
       "score": 9.1,
       "readCount": null,
@@ -16872,7 +17088,24 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "亿万富翁",
+        "霸总",
+        "独立女性",
+        "隐藏身份",
+        "真相",
+        "爱情"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-27",
+        "totalChapters": 59,
+        "freeChapters": 5
+      }
     },
     {
       "id": "i-take-back-the-light-i-found-a-dynasty-24213",
@@ -16914,9 +17147,9 @@
     {
       "id": "i-took-in-8-bastards-they-were-mafia-heirs-28471",
       "source": "ShortMax",
-      "title": "I Took In 8 \u201cBastards\u201d\u2014They Were Mafia Heirs",
+      "title": "I Took In 8 “Bastards”—They Were Mafia Heirs",
       "slug": "i-took-in-8-bastards-they-were-mafia-heirs-28471",
-      "synopsis": "I Took In 8 \u201cBastards\u201d\u2014They Were Mafia Heirs follows wealth, status, and boardroom pressure colliding with romance. A captivating short drama on ShortMax.",
+      "synopsis": "I Took In 8 “Bastards”—They Were Mafia Heirs follows wealth, status, and boardroom pressure colliding with romance. A captivating short drama on ShortMax.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/i-took-in-8-bastards-they-were-mafia-heirs-f58554cbbdc5.png",
       "score": 7.3,
       "readCount": null,
@@ -17148,7 +17381,7 @@
       "source": "ReelShort",
       "title": "Illegal Touching",
       "slug": "illegal-touching-a007809e",
-      "synopsis": "",
+      "synopsis": "An injury brings Ian, the cold and distant team doctor, and Noah, the hot-shot rugby captain, together. Forced into a 24-hour close-contact physical therapy session, they survive homophobic backlash, a terrifying rescue, and a toxic ex-boyfriend’s dark obsession. In a dramatic rainstorm, they finally lay their hearts bare, embracing a love they fought so hard for. But heartbreak strikes when Noah lands a multi-million-dollar pro contract. Threatened by a blackmailing cheerleader, Ian chooses to sacrifice his own happiness. To save Noah’s career, Ian breaks his heart with a brutal lie. While Noah numbly signs his life away under the spotlight, Ian quietly drops out of school and disappears into a raging blizzard. Will their love survive the ultimate sacrifice, or have they lost each other forever?",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/illegal-touching-b1dbe8a0b56f.jpg",
       "score": 8.3,
       "readCount": null,
@@ -17198,7 +17431,21 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "所有年龄段",
+        "坚强",
+        "身份揭露",
+        "LGBTQ",
+        "真相"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-17",
+        "totalChapters": 40,
+        "freeChapters": 5
+      }
     },
     {
       "id": "im-a-queen-not-a-mistress-00938056",
@@ -17408,7 +17655,7 @@
       "source": "FlexTV",
       "title": "Justice in Blood",
       "slug": "justice-in-blood-nxgarz8k",
-      "synopsis": "MComebackRevengeContemporaryUrbanHidden IdentityFive years ago, he lost everything\u2014family, love, and a life he once knew",
+      "synopsis": "MComebackRevengeContemporaryUrbanHidden IdentityFive years ago, he lost everything—family, love, and a life he once knew",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-17/justice-in-blood-cd93795e69b1.webp",
       "score": 9.1,
       "readCount": null,
@@ -17604,7 +17851,21 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "has_reelshort_cps": true,
+      "reelshort_tags": [
+        "男性",
+        "所有年龄段",
+        "坚强",
+        "隐藏身份",
+        "身份揭露"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-17",
+        "totalChapters": 67,
+        "freeChapters": 7
+      }
     },
     {
       "id": "leashed-to-my-demanding-boss-24-7-00848316",
@@ -18462,7 +18723,7 @@
     {
       "id": "loves-u-turn-from-a-mistake-00576256",
       "source": "GoodShort",
-      "title": "Love's U-Turn\uff0cFrom a Mistake",
+      "title": "Love's U-Turn，From a Mistake",
       "slug": "loves-u-turn-from-a-mistake-00576256",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/loves-u-turn-from-a-mistake-55064ff1b5ec.jpg",
@@ -18571,7 +18832,7 @@
     {
       "id": "lunas-verdict-the-sacrificed-wolf-queen-29625",
       "source": "ShortMax",
-      "title": "Luna\u2019s Verdict-The Sacrificed Wolf Queen",
+      "title": "Luna’s Verdict-The Sacrificed Wolf Queen",
       "slug": "lunas-verdict-the-sacrificed-wolf-queen-29625",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-17/lunas-verdict-the-sacrificed-wolf-queen-780f0a3ea976.jpg",
@@ -18771,7 +19032,7 @@
       "source": "NetShort",
       "title": "Married a CEO, Reclaimed My Legacy",
       "slug": "married-a-ceo-reclaimed-my-legacy-54171649",
-      "synopsis": "Dumped by his ex, Nathan is pulled into a whirlwind marriage with Claudia, a stunning CEO fleeing her business marriage with playboy Lex Norrington. With Claudia's help, Nathan learns he's actually the lost true heir of the Norringtons. Dragged into an inheritance war, Nathan shocks the world as Cipher, an AI genius\u2014and uncovers his stolen past.",
+      "synopsis": "Dumped by his ex, Nathan is pulled into a whirlwind marriage with Claudia, a stunning CEO fleeing her business marriage with playboy Lex Norrington. With Claudia's help, Nathan learns he's actually the lost true heir of the Norringtons. Dragged into an inheritance war, Nathan shocks the world as Cipher, an AI genius—and uncovers his stolen past.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-04/married-a-ceo-reclaimed-my-legacy-a930c6e254b6.webp",
       "score": 6.1,
       "readCount": null,
@@ -18957,7 +19218,7 @@
     {
       "id": "max-maids-survival-rules-96097977",
       "source": "ReelShort",
-      "title": "Max Maid\u2019s Survival Rules",
+      "title": "Max Maid’s Survival Rules",
       "slug": "max-maids-survival-rules-96097977",
       "synopsis": "When identity reveals, secrets, and status reversals, nothing is as it seems. Stream this 18-episode drama on ReelShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/max-maids-survival-rules-6a5da8121cbe.jpg",
@@ -19004,7 +19265,22 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "has_reelshort_cps": true,
+      "reelshort_tags": [
+        "男性",
+        "女性",
+        "浪漫",
+        "秘密身份",
+        "背叛",
+        "重生"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-21",
+        "totalChapters": 18,
+        "freeChapters": 5
+      }
     },
     {
       "id": "maxed-knightwatch-system-expose-the-noble-treachery-21984",
@@ -19155,7 +19431,7 @@
     {
       "id": "mommy-im-not-lying-updating-18550",
       "source": "ShortMax",
-      "title": "Mommy I'm not lying\uff08updating\uff09",
+      "title": "Mommy I'm not lying（updating）",
       "slug": "mommy-im-not-lying-updating-18550",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-05-25/mommy-im-not-lying-updating-cad7be0e83e4.webp",
@@ -19231,7 +19507,7 @@
       "source": "FlexTV",
       "title": "More Than a Trainer: The Secret Matriarch",
       "slug": "more-than-a-trainer-the-secret-matriarch-zl8nmz2m",
-      "synopsis": "an elite high-society gala, self-made real estate CEO Rella unexpectedly runs into her mother, Catherine\u2014a humble horse trainer",
+      "synopsis": "an elite high-society gala, self-made real estate CEO Rella unexpectedly runs into her mother, Catherine—a humble horse trainer",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/more-than-a-trainer-the-secret-matriarch-bca9fd72765a.webp",
       "score": 7.4,
       "readCount": null,
@@ -19518,7 +19794,7 @@
     {
       "id": "my-besties-father-became-my-sanctuary-29630",
       "source": "ShortMax",
-      "title": "My Bestie\u2019s Father Became My Sanctuary",
+      "title": "My Bestie’s Father Became My Sanctuary",
       "slug": "my-besties-father-became-my-sanctuary-29630",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/my-besties-father-became-my-sanctuary-41571a2d957d.jpg",
@@ -19609,7 +19885,7 @@
       "source": "FlexTV",
       "title": "My Billionaire Ex Wants Me Back",
       "slug": "my-billionaire-ex-wants-me-back-gz1aezp0",
-      "synopsis": "My Billionaire Ex Wants Me Back follows MLove-TortureCEOHe gave her hope\u2026. A captivating short drama on FlexTV.",
+      "synopsis": "My Billionaire Ex Wants Me Back follows MLove-TortureCEOHe gave her hope…. A captivating short drama on FlexTV.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/my-billionaire-ex-wants-me-back-72439f85dd22.webp",
       "score": 8.4,
       "readCount": null,
@@ -19649,7 +19925,7 @@
     {
       "id": "my-billionaire-husband-left-me-for-him-bc09ef21",
       "source": "ReelShort",
-      "title": "My Billionaire Husband Left Me for Him\uff1f",
+      "title": "My Billionaire Husband Left Me for Him？",
       "slug": "my-billionaire-husband-left-me-for-him-bc09ef21",
       "synopsis": "Joyce wants to divorce her husband Henry because he can't get hard, but Henry won't let her leave their sexless marriage",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-14/my-billionaire-husband-left-me-for-him-23678eb41a41.jpg",
@@ -19696,7 +19972,26 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "has_reelshort_cps": true,
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "亿万富翁",
+        "浪漫",
+        "甜宠",
+        "三角恋",
+        "秘密关系",
+        "闪婚",
+        "独立女性",
+        "隐藏身份"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-08-15",
+        "totalChapters": 61,
+        "freeChapters": 15
+      }
     },
     {
       "id": "my-boss-is-now-my-stepmom-15496",
@@ -19770,7 +20065,7 @@
     {
       "id": "my-brother-got-your-mistress-pregnant-93322497",
       "source": "NetShort",
-      "title": "My \u201cBrother\u201d Got Your Mistress Pregnant",
+      "title": "My “Brother” Got Your Mistress Pregnant",
       "slug": "my-brother-got-your-mistress-pregnant-93322497",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/my-brother-got-your-mistress-pregnant-f16b42aa3cba.webp",
@@ -20047,12 +20342,28 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "has_reelshort_cps": true,
+      "reelshort_tags": [
+        "男性",
+        "所有年龄段",
+        "亿万富翁",
+        "复仇",
+        "离婚",
+        "坚强",
+        "身份揭露"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-27",
+        "totalChapters": 105,
+        "freeChapters": 11
+      }
     },
     {
       "id": "my-fake-fiance-is-the-war-god-nr8ykomo",
       "source": "FlexTV",
-      "title": "My Fake Fianc\u00e9 Is the War GodOne night with the God of War leaves Serena pregnant with a forbidden child. To save the baby, she strikes a bargain with Fate and forgets the father completely. But when she enters his temple, Ares is drawn to her with an obsession he can\u2019t explain. And he\u2019s already willing to give up everything for her.HistoricalRomanceFantasy3.7K104.1KPlay",
+      "title": "My Fake Fiancé Is the War GodOne night with the God of War leaves Serena pregnant with a forbidden child. To save the baby, she strikes a bargain with Fate and forgets the father completely. But when she enters his temple, Ares is drawn to her with an obsession he can’t explain. And he’s already willing to give up everything for her.HistoricalRomanceFantasy3.7K104.1KPlay",
       "slug": "my-fake-fiance-is-the-war-god-nr8ykomo",
       "synopsis": "KHistoricalRomanceFantasySweet RomanceComebackOne night with the God of War leaves Serena pregnant with a forbidden child",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/my-fake-fiance-is-the-war-godone-night-with-the-god-of-war-leaves-serena-pregnan-794fa426f809.webp",
@@ -20099,9 +20410,9 @@
     {
       "id": "my-fiance-betrayed-me-so-i-bankrupted-him-7c0846fb",
       "source": "ReelShort",
-      "title": "My Fianc\u00e9 Betrayed Me, So I Bankrupted Him",
+      "title": "My Fiancé Betrayed Me, So I Bankrupted Him",
       "slug": "my-fiance-betrayed-me-so-i-bankrupted-him-7c0846fb",
-      "synopsis": "Minutes before her engagement, Manhattan's richest heiress catches her fianc\u00e9 in bed with the scholarship student she personally sponsored",
+      "synopsis": "Minutes before her engagement, Manhattan's richest heiress catches her fiancé in bed with the scholarship student she personally sponsored",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/my-fiance-betrayed-me-so-i-bankrupted-him-3a62c057ffd3.jpg",
       "score": 8.0,
       "readCount": null,
@@ -20146,12 +20457,26 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "has_reelshort_cps": true,
+      "reelshort_tags": [
+        "女性",
+        "霸总",
+        "浪漫",
+        "复仇",
+        "悬疑"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-22",
+        "totalChapters": 21,
+        "freeChapters": 7
+      }
     },
     {
       "id": "my-fiance-humiliated-me-i-wed-the-war-general-25513",
       "source": "ShortMax",
-      "title": "My Fianc\u00e9 Humiliated Me, I Wed the War General",
+      "title": "My Fiancé Humiliated Me, I Wed the War General",
       "slug": "my-fiance-humiliated-me-i-wed-the-war-general-25513",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-26/my-fiance-humiliated-me-i-wed-the-war-general-0aebf3240980.jpg",
@@ -20536,7 +20861,7 @@
       "source": "GoodShort",
       "title": "My New Daddy is a Five-Star General",
       "slug": "my-new-daddy-is-a-five-star-general-01308118",
-      "synopsis": "Desperate to save her son from a brain tumor, Jessica seeks out her husband, Patrick, only to find he\u2019s betrayed their marriage for his career, hiding in an affair with an officer\u2019s daughter",
+      "synopsis": "Desperate to save her son from a brain tumor, Jessica seeks out her husband, Patrick, only to find he’s betrayed their marriage for his career, hiding in an affair with an officer’s daughter",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/my-new-daddy-is-a-five-star-general-7b0246db29aa.jpg",
       "score": 9.2,
       "readCount": null,
@@ -20576,7 +20901,7 @@
     {
       "id": "my-second-husbands-a-prince-charming-00843365",
       "source": "GoodShort",
-      "title": "My Second Husband\u2019s A Prince Charming!",
+      "title": "My Second Husband’s A Prince Charming!",
       "slug": "my-second-husbands-a-prince-charming-00843365",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/my-second-husbands-a-prince-charming-111cae94901c.jpg",
@@ -20677,7 +21002,7 @@
       "source": "ReelShort",
       "title": "My Secret Affair with the Duke",
       "slug": "my-secret-affair-with-the-duke-e30fa409",
-      "synopsis": "",
+      "synopsis": "In Regency London, slum orphan Elle is bought by Duke Alistair Belgrave to impersonate his half-sister \"Estelle\" and marry Percy Vane, freeing Alistair from a forced engagement with the obsessive Beatrix Vane. What begins as a cold transaction turns into forbidden desire as the fake siblings fall for each other, complicated by a secret execution order Alistair prepared for Elle. When Beatrix exposes Elle's true identity at her engagement ball, scandal erupts and Elle flees, convinced Alistair planned to kill her. As Beatrix closes in with a gun, Alistair takes a bullet for Elle and confesses: the order was never signed. They discover matching childhood scars proving fate bound them long before the bargain.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/my-secret-affair-with-the-duke-fab76a874358.jpg",
       "score": 8.2,
       "readCount": null,
@@ -20727,14 +21052,28 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "秘密关系",
+        "坚强",
+        "真相"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-28",
+        "totalChapters": 64,
+        "freeChapters": 10
+      }
     },
     {
       "id": "my-secret-alpha-is-my-lucky-puppy-5b0eda5a",
       "source": "ReelShort",
       "title": "My Secret Alpha is My Lucky Puppy",
       "slug": "my-secret-alpha-is-my-lucky-puppy-5b0eda5a",
-      "synopsis": "",
+      "synopsis": "After a bizarre accident, immortal worker Aurelius is reincarnated into the body of Hank Lynch, a spoiled heir with a wasted life. After 1,000 years of lonely cultivation, Aurelius finally finds the warmth of family in the mortal world. Using his celestial medical arts, he heals his father-in-law, restores his mother-in-law's youth, and helps his wife awaken her potential. But when enemies from the immortal realm arrive, Aurelius must reveal the true power he has hidden for a millennium.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/my-secret-alpha-is-my-lucky-puppy-d1dacb41ab4f.jpg",
       "score": 6.5,
       "readCount": null,
@@ -20789,7 +21128,22 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "男性",
+        "所有年龄段",
+        "隐藏身份",
+        "秘密身份",
+        "身份揭露",
+        "真相"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-27",
+        "totalChapters": 60,
+        "freeChapters": 10
+      }
     },
     {
       "id": "my-sister-is-not-someone-to-mess-with-00994189",
@@ -20974,7 +21328,7 @@
       "source": "GoodShort",
       "title": "My Three Protective Brothers",
       "slug": "my-three-protective-brothers-00727799",
-      "synopsis": "On the eve of her wedding, Natalia was cruelly betrayed by her scumbag fianc\u00e9, her reputation was ruined, and she lost everything",
+      "synopsis": "On the eve of her wedding, Natalia was cruelly betrayed by her scumbag fiancé, her reputation was ruined, and she lost everything",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-18/my-three-protective-brothers-f6dddafde10c.jpg",
       "score": 6.1,
       "readCount": null,
@@ -21162,7 +21516,7 @@
       "source": "ReelShort",
       "title": "My Wife Replaced Me With An AI Lover",
       "slug": "my-wife-replaced-me-with-an-ai-lover-150afc08",
-      "synopsis": "",
+      "synopsis": "Sun god Apollo angers Zeus, loses his power, and becomes a dying wolf. To survive, he bites Hecate, triggering an ancient fated-bond contract that shares their life and power. A fallen god and a shattered goddess—reluctant master and servant—struggle through Olympus trials. He regains strength by drinking her blood; she heals with his solar essence. From wolf to wolf-eared youth to human, Apollo evolves as Hecate sacrifices herself to save him. He builds her a sun-wolf pack and storms the underworld. When Hades unleashes the primordial god-king Cronus, Apollo realizes his fall and love for Hecate were all Zeus and the Fates' final move. They are the only answer to Ragnarök.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/my-wife-replaced-me-with-an-ai-lover-add714e50be0.jpg",
       "score": 6.2,
       "readCount": null,
@@ -21222,7 +21576,22 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "复仇",
+        "身份揭露",
+        "狼人",
+        "真相"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-24",
+        "totalChapters": 59,
+        "freeChapters": 4
+      }
     },
     {
       "id": "my-wolf-is-the-sun-god-6d0db96e",
@@ -21375,7 +21744,7 @@
       "source": "ReelShort",
       "title": "Never Reject A Wolf Princess",
       "slug": "never-reject-a-wolf-princess-c408726f",
-      "synopsis": "",
+      "synopsis": "Lia was born a princess, but all she really wants is a life of her own. So she chooses love over duty—only to be betrayed and rejected by her mate. But she’s not one to stay broken for long. When she unexpectedly bonds with a new mate hiding his own secrets, Lia is thrust into a world of power, deception, and second chances. Now, she’s done following the rules. It’s time to reclaim her throne—and make everyone who doubted her regret it!",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-14/never-reject-a-wolf-princess-c5997e7e3bcc.jpg",
       "score": 8.7,
       "readCount": null,
@@ -21420,7 +21789,25 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "复仇",
+        "闪婚",
+        "隐藏身份",
+        "秘密身份",
+        "身份揭露",
+        "幻想",
+        "狼人"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2025-06-07",
+        "totalChapters": 58,
+        "freeChapters": 8
+      }
     },
     {
       "id": "no-favor-no-strife-28157",
@@ -21667,7 +22054,7 @@
       "source": "ReelShort",
       "title": "Nothing Escapes My Eyes",
       "slug": "nothing-escapes-my-eyes-5a02f556",
-      "synopsis": "",
+      "synopsis": "An unexpected pregnancy in middle age brings torment from cruel in-laws and scheming foes. At her lowest, she meets a mysterious billionaire, who protects her, crushes toxic relatives, and takes down villains, keeping her safe from every danger.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/nothing-escapes-my-eyes-5ef1bf4ac411.jpg",
       "score": 8.3,
       "readCount": null,
@@ -21707,7 +22094,23 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "亿万富翁",
+        "隐藏身份",
+        "秘密身份",
+        "身份揭露",
+        "爱情"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-23",
+        "totalChapters": 65,
+        "freeChapters": 13
+      }
     },
     {
       "id": "olympic-glory-the-volley-queens-legacy-00800028",
@@ -22123,7 +22526,7 @@
     {
       "id": "playing-the-fool-the-ceo-wifes-revengebelleen-is-abused-and-broken-ox4q9oqx",
       "source": "FlexTV",
-      "title": "Playing the Fool: The CEO Wife\u2019s Revenge",
+      "title": "Playing the Fool: The CEO Wife’s Revenge",
       "slug": "playing-the-fool-the-ceo-wifes-revengebelleen-is-abused-and-broken-ox4q9oqx",
       "synopsis": "A wealth, status, and boardroom pressure colliding with romance drama filled with unexpected twists and emotional depth. Stream on FlexTV.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-20/playing-the-fool-the-ceo-wifes-revenge-2491afdb348b.webp",
@@ -22509,7 +22912,22 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "has_reelshort_cps": true,
+      "reelshort_tags": [
+        "男性",
+        "所有年龄段",
+        "亿万富翁",
+        "隐藏身份",
+        "秘密身份",
+        "身份揭露"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-22",
+        "totalChapters": 71,
+        "freeChapters": 9
+      }
     },
     {
       "id": "racing-cars-and-chasing-love-01639934",
@@ -22754,7 +23172,7 @@
     {
       "id": "reborn-before-the-impostors-wedding-29634",
       "source": "ShortMax",
-      "title": "Reborn Before the Impostor\u2019s Wedding",
+      "title": "Reborn Before the Impostor’s Wedding",
       "slug": "reborn-before-the-impostors-wedding-29634",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/reborn-before-the-impostors-wedding-8b7cea0fec91.jpg",
@@ -22793,7 +23211,7 @@
       "source": "FlexTV",
       "title": "Reborn:The Cure",
       "slug": "reborn-the-cure-zrablovb",
-      "synopsis": "When mrevengerebirthhannah marshall, a medical student in\u2026, nothing is as it seems. Stream this drama on FlexTV.",
+      "synopsis": "When mrevengerebirthhannah marshall, a medical student in…, nothing is as it seems. Stream this drama on FlexTV.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/reborn-the-cure-9906413393fe.webp",
       "score": 8.6,
       "readCount": null,
@@ -23036,7 +23454,7 @@
     {
       "id": "regret-your-husband-is-a-tycoon-26201",
       "source": "ShortMax",
-      "title": "Regret\uff01Your Husband is A Tycoon!",
+      "title": "Regret！Your Husband is A Tycoon!",
       "slug": "regret-your-husband-is-a-tycoon-26201",
       "synopsis": "When wealth, status, and boardroom pressure colliding with romance, nothing is as it seems. Stream this drama on ShortMax.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-31/regret-your-husband-is-a-tycoon-6fd093dfc69b.jpg",
@@ -23298,7 +23716,7 @@
       "source": "GoodShort",
       "title": "Returned To Make Them Pay",
       "slug": "returned-to-make-them-pay-00980606",
-      "synopsis": "On her wedding day, Elena dies \u2014 betrayed by her fianc\u00e9 and his mistress, who stole her love, her family\u2019s fortune, and even her organs",
+      "synopsis": "On her wedding day, Elena dies — betrayed by her fiancé and his mistress, who stole her love, her family’s fortune, and even her organs",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/returned-to-make-them-pay-0bd13754693c.jpg",
       "score": 8.0,
       "readCount": null,
@@ -23756,7 +24174,7 @@
       "source": "ReelShort",
       "title": "Rustblade Witcher",
       "slug": "rustblade-witcher-9c0a7f02",
-      "synopsis": "",
+      "synopsis": "Abandoned as a baby by his father because of his strange appearance, Rex was raised by an Immortal into the ultimate monster hunter. Years later, his search for kin leads him to the Radiant Knights. His mother instantly recognizes him, but his commander father rejects him, despising his hunter status. When the Templar Order crushed the Radiant Knights in a surprise attack, leaving his mother dying. Rex’s sister reveals the truth of his heritage—prompting him to step in and turn the tide.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-31/rustblade-witcher-98db5fc342f1.jpg",
       "score": 8.9,
       "readCount": null,
@@ -23806,7 +24224,18 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "男性",
+        "所有年龄段"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-24",
+        "totalChapters": 40,
+        "freeChapters": 14
+      }
     },
     {
       "id": "save-me-baby-daddy-00942852",
@@ -23910,9 +24339,9 @@
     {
       "id": "secret-marriage-swap-the-war-gods-late-remorse-f30de854",
       "source": "ReelShort",
-      "title": "Secret Marriage Swap, The War God\u2019s Late Remorse",
+      "title": "Secret Marriage Swap, The War God’s Late Remorse",
       "slug": "secret-marriage-swap-the-war-gods-late-remorse-f30de854",
-      "synopsis": "Titaness Cassandra accidentally discovers that Perseus, her fianc\u00e9 of five years, has long been head over heels for her stepsister and would even sacrifice her life to keep the girl safe",
+      "synopsis": "Titaness Cassandra accidentally discovers that Perseus, her fiancé of five years, has long been head over heels for her stepsister and would even sacrifice her life to keep the girl safe",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/secret-marriage-swap-the-war-gods-late-remorse-ebba67cd8fc8.jpg",
       "score": 8.7,
       "readCount": null,
@@ -23957,7 +24386,22 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "has_reelshort_cps": true,
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "先婚后爱",
+        "独立女性",
+        "真相",
+        "爱情"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-24",
+        "totalChapters": 38,
+        "freeChapters": 9
+      }
     },
     {
       "id": "secrets-behind-the-wreck-28909",
@@ -24004,9 +24448,9 @@
     {
       "id": "seduced-by-my-boyfriends-uncle-7a0a97f4",
       "source": "ReelShort",
-      "title": "Seduced by My Boyfriend\u2019s Uncle",
+      "title": "Seduced by My Boyfriend’s Uncle",
       "slug": "seduced-by-my-boyfriends-uncle-7a0a97f4",
-      "synopsis": "",
+      "synopsis": "Blinded by tragedy, genius musician Ciel Frost survived the dark by clinging to the suffocating love of a brilliant director, Marco Kingsley. But a conspiracy tore them apart. a sighted Ciel falls into a web of lies—mistaking Marco's manipulative nephew, Liam, for the savior from his past. Three years later, Marco returns as an all-powerful capitalist tyrant. Concealing his identity as the chief investor and \"family elder,\" he closes in on Ciel’s world. When the familiar, dangerous breath and scalding touch overlap once more, Ciel’s memory floods back in a shiver of shock, instantly tearing through the lies. Ultimately, Liam faces utter ruin for his deceit, while Marco and Ciel shatter all barriers to reunite in an unstoppable destiny.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/seduced-by-my-boyfriends-uncle-6c57708e73c5.jpg",
       "score": 6.0,
       "readCount": null,
@@ -24056,7 +24500,24 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "所有年龄段",
+        "亿万富翁",
+        "首席执行官",
+        "坚强",
+        "身份揭露",
+        "LGBTQ",
+        "真相",
+        "爱情"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-17",
+        "totalChapters": 48,
+        "freeChapters": 9
+      }
     },
     {
       "id": "seduced-by-the-wolfless-male-luna-b10a3b74",
@@ -24397,7 +24858,7 @@
       "source": "GoodShort",
       "title": "She Used Love as a Weapon",
       "slug": "she-used-love-as-a-weapon-01473109",
-      "synopsis": "To avenge her father's\u2026. Dive into this 60-episode a comeback arc shaped by betrayal, payback, and shifting power dynamics drama on GoodShort.",
+      "synopsis": "To avenge her father's…. Dive into this 60-episode a comeback arc shaped by betrayal, payback, and shifting power dynamics drama on GoodShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/she-used-love-as-a-weapon-5c9fae3898f3.jpg",
       "score": 8.2,
       "readCount": null,
@@ -25011,7 +25472,7 @@
       "source": "ReelShort",
       "title": "Stardust and Lies",
       "slug": "stardust-and-lies-5a0af2fb",
-      "synopsis": "",
+      "synopsis": "Stan Shaw, a skilled master of medicine and martial arts, disguises himself as a beggar to escape a marriage contract with the Miller family. Contrary to his plan, they insist on the marriage. Yet the one they want him to marry isn't necessarily the one he thought.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-29/stardust-and-lies-ecdb1831ddfb.jpg",
       "score": 6.9,
       "readCount": null,
@@ -25056,12 +25517,19 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-21",
+        "totalChapters": 86,
+        "freeChapters": 9
+      }
     },
     {
       "id": "steal-my-code-ill-steal-your-future-18866",
       "source": "ShortMax",
-      "title": "Steal My Code, I\u2019ll Steal Your Future",
+      "title": "Steal My Code, I’ll Steal Your Future",
       "slug": "steal-my-code-ill-steal-your-future-18866",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/steal-my-code-ill-steal-your-future-33227232764e.jpg",
@@ -25377,7 +25845,7 @@
       "source": "NetShort",
       "title": "Swapped to a Beggar But He is Apollo",
       "slug": "swapped-to-a-beggar-but-he-is-apollo-49566465",
-      "synopsis": "Tricked by her stepsister into a marriage swap, Irene marries a poor wandering bard\u2014hidden in mortal form is Apollo, the Light God. Her cruel family pushes her to despair, igniting his divine fury. Apollo unleashes holy wrath to destroy Athens' nobles, then lifts his wronged mortal bride to the Light Queen's throne with supreme divine glory.",
+      "synopsis": "Tricked by her stepsister into a marriage swap, Irene marries a poor wandering bard—hidden in mortal form is Apollo, the Light God. Her cruel family pushes her to despair, igniting his divine fury. Apollo unleashes holy wrath to destroy Athens' nobles, then lifts his wronged mortal bride to the Light Queen's throne with supreme divine glory.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/swapped-to-a-beggar-but-he-is-apollo-e1038abfc21d.webp",
       "score": 6.3,
       "readCount": null,
@@ -25414,7 +25882,7 @@
       "source": "GoodShort",
       "title": "Sweet Revenge for the Wrong Diagnosis",
       "slug": "sweet-revenge-for-the-wrong-diagnosis-01036694",
-      "synopsis": "When Lily and her doctor meet in private to discuss the results of a cancer screening, her husband Mason accidentally overhears. Believing that Lily has cancer, he divorces her, kicks her out of their house, and shacks up with her best friend\u2014all so he can cut her loose before she can drag him down. Just as Lily is left with nothing, she meets Adam: a billionaire CEO who needs a fake relationship to appease his nagging grandfather. But what Mason doesn't know is that Lily isn't the one with late-stage cancer\u2014he is!",
+      "synopsis": "When Lily and her doctor meet in private to discuss the results of a cancer screening, her husband Mason accidentally overhears. Believing that Lily has cancer, he divorces her, kicks her out of their house, and shacks up with her best friend—all so he can cut her loose before she can drag him down. Just as Lily is left with nothing, she meets Adam: a billionaire CEO who needs a fake relationship to appease his nagging grandfather. But what Mason doesn't know is that Lily isn't the one with late-stage cancer—he is!",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/sweet-revenge-for-the-wrong-diagnosis-6fbf883fe31d.jpg",
       "score": 6.2,
       "readCount": null,
@@ -25701,9 +26169,9 @@
     {
       "id": "the-ace-attorneys-masked-secret-z4gl2nve",
       "source": "FlexTV",
-      "title": "The Ace Attorney\u2019s Masked Secret",
+      "title": "The Ace Attorney’s Masked Secret",
       "slug": "the-ace-attorneys-masked-secret-z4gl2nve",
-      "synopsis": "The Ace Attorney\u2019s Masked Secret follows wealth, status, and boardroom pressure colliding with romance. A captivating short drama on FlexTV.",
+      "synopsis": "The Ace Attorney’s Masked Secret follows wealth, status, and boardroom pressure colliding with romance. A captivating short drama on FlexTV.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/the-ace-attorneys-masked-secret-b3f85b467534.webp",
       "score": 7.1,
       "readCount": null,
@@ -25765,7 +26233,7 @@
       "source": "ReelShort",
       "title": "The Alpha King's Virgin Bride",
       "slug": "the-alpha-kings-virgin-bride-550687c5",
-      "synopsis": "",
+      "synopsis": "Annie, a human, fell in love with Fenrir, the wolf king, and bore twin half-blood children. Yet they were brutally exiled due to blood prejudice and Mara’s malicious schemes. Five years later, the twins’ werewolf blood awakens unexpectedly, dragging the whole family back into power struggles and deadly hunts. Following the clues, Fenrir uncovers the truth of the past. While protecting his wife and daughters, he exacts revenge on the real mastermind behind all the crimes.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/the-alpha-kings-virgin-bride-1b42f1852793.jpg",
       "score": 7.5,
       "readCount": null,
@@ -25815,14 +26283,29 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "浪漫",
+        "复仇",
+        "幻想",
+        "狼人",
+        "真相"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-09-01",
+        "totalChapters": 44,
+        "freeChapters": 4
+      }
     },
     {
       "id": "the-alpha-made-his-savior-the-packs-slave-0d0fdcb9",
       "source": "ReelShort",
       "title": "The Alpha Made His Savior the Pack's Slave",
       "slug": "the-alpha-made-his-savior-the-packs-slave-0d0fdcb9",
-      "synopsis": "",
+      "synopsis": "Aria Voss lost her voice and scarred her face dragging Alpha Damon Kade out of a wolfsbane fire. Three years later, Damon believes Vivienne, the woman wearing Aria's stolen pendant, is his savior. He calls Aria a liar, gives her to his warriors as a reward, and ties her to the border for execution. Aria has no voice, no wolf, and no pack left to trust. Then Frostfang's Caleb cuts her free. With her voice returning and her pendant back in hand, Aria walks into Blackthorn as Ravyn Vale to expose the fraud and reject the Alpha who ruined her.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/the-alpha-made-his-savior-the-packs-slave-e87d74ae72dc.jpg",
       "score": 9.5,
       "readCount": null,
@@ -25862,7 +26345,22 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "浪漫",
+        "复仇",
+        "秘密身份",
+        "幻想",
+        "狼人"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-21",
+        "totalChapters": 31,
+        "freeChapters": 4
+      }
     },
     {
       "id": "the-alpha-wolf-is-a-husky-29593",
@@ -25899,7 +26397,7 @@
     {
       "id": "the-alphas-forbidden-vampire-bride-21619713",
       "source": "NetShort",
-      "title": "The Alpha\u2019s Forbidden Vampire Bride",
+      "title": "The Alpha’s Forbidden Vampire Bride",
       "slug": "the-alphas-forbidden-vampire-bride-21619713",
       "synopsis": "relationship pressure built around marriage, obligation, and emotional turns. Dive into this relationship pressure built around marriage, obligation, and emotional turns drama on NetShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-28/the-alphas-forbidden-vampire-bride-a449f920ca84.webp",
@@ -25948,7 +26446,7 @@
       "source": "GoodShort",
       "title": "The Alpha's Rejected Mate",
       "slug": "the-alphas-rejected-mate-00636867",
-      "synopsis": "Mira kills her alpha's brother on her\u2026. Dive into this 75-episode supernatural attraction, pack hierarchy, and fated-bond tension drama on GoodShort.",
+      "synopsis": "Mira kills her alpha's brother on her…. Dive into this 75-episode supernatural attraction, pack hierarchy, and fated-bond tension drama on GoodShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/the-alphas-rejected-mate-4b2e3d50aa54.jpg",
       "score": 9.0,
       "readCount": null,
@@ -25993,7 +26491,7 @@
     {
       "id": "the-alphas-unclaimed-mate-i-rose-to-lycan-royalty-2c08064f",
       "source": "ReelShort",
-      "title": "The Alpha's Unclaimed Mate\u2014I Rose to Lycan Royalty",
+      "title": "The Alpha's Unclaimed Mate—I Rose to Lycan Royalty",
       "slug": "the-alphas-unclaimed-mate-i-rose-to-lycan-royalty-2c08064f",
       "synopsis": "Ava, a wolf-less Omega raised for four years by Alpha David, believes she is finally ready to awaken her wolf with a Moon Tear flower and become David's fated mate",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-31/the-alphas-unclaimed-mate-i-rose-to-lycan-royalty-6065426af14a.jpg",
@@ -26109,7 +26607,7 @@
       "source": "ReelShort",
       "title": "The Beast King Worships the Worthless",
       "slug": "the-beast-king-worships-the-worthless-1a059d89",
-      "synopsis": "",
+      "synopsis": "Wren Calloway spent three years saving Dorian, a voiceless siren heir. He calls Wren a worthless null and tears their bond apart to protect Wren'sister, Celeste. But Wren was never worthless. Her devouring aura had been suppressed, and Celeste's genius was stolen from her. The unwanted white lion sent as Wren's replacement bond-partner is Kane, the kitten she once loved, now the beast king the rift monsters obey. When Wren takes back every stolen power, Dorian learns too late he was only holding Kane's light.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-31/the-beast-king-worships-the-worthless-2e6fc69d9156.jpg",
       "score": 8.4,
       "readCount": null,
@@ -26154,7 +26652,22 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "浪漫",
+        "复仇",
+        "秘密身份",
+        "幻想",
+        "狼人"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-24",
+        "totalChapters": 25,
+        "freeChapters": 4
+      }
     },
     {
       "id": "the-betas-regret-she-wont-beg-this-time-01534176",
@@ -26201,7 +26714,7 @@
     {
       "id": "the-billionaire-i-sued-is-my-best-friends-father-29609",
       "source": "ShortMax",
-      "title": "The Billionaire I Sued Is My Best Friend\u2019s Father",
+      "title": "The Billionaire I Sued Is My Best Friend’s Father",
       "slug": "the-billionaire-i-sued-is-my-best-friends-father-29609",
       "synopsis": "When wealth, status, and boardroom pressure colliding with romance, nothing is as it seems. Stream this drama on ShortMax.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/the-billionaire-i-sued-is-my-best-friends-father-08360a96701f.jpg",
@@ -26285,7 +26798,26 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "has_reelshort_cps": true,
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "亿万富翁",
+        "霸总",
+        "浪漫",
+        "甜宠",
+        "喜剧",
+        "少女",
+        "身份揭露",
+        "爱情"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2025-09-14",
+        "totalChapters": 58,
+        "freeChapters": 14
+      }
     },
     {
       "id": "the-billionaires-long-lost-bride-0opyazrl",
@@ -26347,9 +26879,9 @@
     {
       "id": "the-billionaires-rescue-moj88nla",
       "source": "FlexTV",
-      "title": "The Billionaire\u2019s Rescue",
+      "title": "The Billionaire’s Rescue",
       "slug": "the-billionaires-rescue-moj88nla",
-      "synopsis": "The Billionaire\u2019s Rescue follows wealth, status, and boardroom pressure colliding with romance. A captivating short drama on FlexTV.",
+      "synopsis": "The Billionaire’s Rescue follows wealth, status, and boardroom pressure colliding with romance. A captivating short drama on FlexTV.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/the-billionaires-rescue-489fb3e56bab.webp",
       "score": 7.8,
       "readCount": null,
@@ -26463,7 +26995,7 @@
       "source": "ReelShort",
       "title": "The Blacksmith You Dumped Is the Red Dragon King",
       "slug": "the-blacksmith-you-dumped-is-the-red-dragon-king-3202497d",
-      "synopsis": "When blacksmith arthur is secretly\u2026, nothing is as it seems. Stream this 40-episode drama on ReelShort.",
+      "synopsis": "When blacksmith arthur is secretly…, nothing is as it seems. Stream this 40-episode drama on ReelShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-31/the-blacksmith-you-dumped-is-the-red-dragon-king-ab58e090bd13.jpg",
       "score": 6.1,
       "readCount": null,
@@ -26619,7 +27151,7 @@
       "source": "ReelShort",
       "title": "The Boss Affair",
       "slug": "the-boss-affair-14613d43",
-      "synopsis": "",
+      "synopsis": "Lucy has a one night stand with a mysterious hottie - who just so happens to be her new boss! When sparks fly at the office will they be able to resist each other?",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-16/the-boss-affair-5ca572370764.jpg",
       "score": 9.1,
       "readCount": null,
@@ -26664,14 +27196,31 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "亿万富翁",
+        "首席执行官",
+        "浪漫",
+        "甜宠",
+        "悬疑",
+        "独立女性"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2022-12-16",
+        "totalChapters": 54,
+        "freeChapters": 4
+      }
     },
     {
       "id": "the-breaking-point-of-love-01186509",
       "source": "GoodShort",
       "title": "The Breaking Point of Love",
       "slug": "the-breaking-point-of-love-01186509",
-      "synopsis": "After seven years of marriage, Kelly Jones's husband, Eric Brown, remains cold and distant. Still, Kelly faces everything with a smile because she loves him deeply. On her birthday, she flies abroad to be with Eric and their daughter, Sophia. To her devastation, she discovers that Eric has taken Sophia to meet her stepsister, Bella\u2014and Sophia even asks Bella to replace Kelly as her mother. Utterly heartbroken, Kelly finally gives up on him.",
+      "synopsis": "After seven years of marriage, Kelly Jones's husband, Eric Brown, remains cold and distant. Still, Kelly faces everything with a smile because she loves him deeply. On her birthday, she flies abroad to be with Eric and their daughter, Sophia. To her devastation, she discovers that Eric has taken Sophia to meet her stepsister, Bella—and Sophia even asks Bella to replace Kelly as her mother. Utterly heartbroken, Kelly finally gives up on him.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/the-breaking-point-of-love-2153177ff9b9.jpg",
       "score": 7.0,
       "readCount": null,
@@ -26973,7 +27522,7 @@
       "source": "ReelShort",
       "title": "The Crown of Thorns and Tide",
       "slug": "the-crown-of-thorns-and-tide-ac04d330",
-      "synopsis": "",
+      "synopsis": "After three years of healing lost souls in a cursed wasteland, Astraia, the hidden daughter of Zeus, returns to Athens to marry her mortal lover. Instead, she is met with cruel betrayal. By fate, she encounters Leon Thalos, the powerful son of Poseidon, who desperately seeks divine reinforcements for a looming war. Bound by shared adversaries and family pressures, Astraia and Leon forge a strategic alliance. As hidden divine powers awaken and noble conspiracies unravel, they must stand together to punish the betrayers and alter the continent's destiny. Will love and divine justice prevail?",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/the-crown-of-thorns-and-tide-2ba55c819c4c.jpg",
       "score": 7.3,
       "readCount": null,
@@ -27018,7 +27567,22 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "闪婚",
+        "独立女性",
+        "隐藏身份",
+        "身份揭露"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-25",
+        "totalChapters": 60,
+        "freeChapters": 10
+      }
     },
     {
       "id": "the-cuckolds-rise-21254",
@@ -27203,7 +27767,7 @@
       "source": "ReelShort",
       "title": "The Deadliest Operative Alive",
       "slug": "the-deadliest-operative-alive-ca027178",
-      "synopsis": "",
+      "synopsis": "Fifteen years after losing his younger sister in Bayhaven, Kyle has become the only 5S-level agent in the elite Dire Wolf Agency. Sent back to the city to protect Georgia Smith and her groundbreaking stealth-coating formula from the powerful Zeller family, Kyle must battle ruthless enemies and uncover a dangerous conspiracy. But behind the mission lies his true goal: finding the sister he has searched for all these years.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/the-deadliest-operative-alive-0252f029bedc.jpg",
       "score": 8.3,
       "readCount": null,
@@ -27253,7 +27817,25 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "男性",
+        "所有年龄段",
+        "亿万富翁",
+        "复仇",
+        "动作",
+        "隐藏身份",
+        "秘密身份",
+        "身份揭露",
+        "真相"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-17",
+        "totalChapters": 70,
+        "freeChapters": 8
+      }
     },
     {
       "id": "the-delivery-boy-is-a-racing-god-37202433",
@@ -27297,7 +27879,7 @@
       "source": "ReelShort",
       "title": "The Diary of a Workshop Veteran",
       "slug": "the-diary-of-a-workshop-veteran-870fd65c",
-      "synopsis": "",
+      "synopsis": "After being forced into retirement, factory expert Theresa is replaced by her ambitious mentee, who refuses her guidance. As Theresa starts a new life elsewhere, her former company begins collapsing without the one person who truly understood its machines.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/the-diary-of-a-workshop-veteran-e58357d45dff.jpg",
       "score": 6.3,
       "readCount": null,
@@ -27342,7 +27924,20 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "复仇",
+        "独立女性"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-24",
+        "totalChapters": 34,
+        "freeChapters": 9
+      }
     },
     {
       "id": "the-doctor-they-threw-off-the-plane-24211",
@@ -27478,7 +28073,7 @@
     {
       "id": "the-elf-kings-only-star-40738049",
       "source": "NetShort",
-      "title": "The Elf King\u2019s Only Star",
+      "title": "The Elf King’s Only Star",
       "slug": "the-elf-kings-only-star-40738049",
       "synopsis": "When a comeback arc shaped by betrayal, payback, and shifting power dynamics, nothing is as it seems. Stream this drama on NetShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-28/the-elf-kings-only-star-6d1ab246826d.webp",
@@ -27666,7 +28261,7 @@
     {
       "id": "the-ex-husbands-layoff-notice-z9vvqo7y",
       "source": "FlexTV",
-      "title": "The Ex-Husband\u2019s Layoff Notice",
+      "title": "The Ex-Husband’s Layoff Notice",
       "slug": "the-ex-husbands-layoff-notice-z9vvqo7y",
       "synopsis": "-SeveranceLove-TortureHidden years of a secret marriage and five years of raising a child alone earn Avery nothing but neglect and a suspension notice",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/the-ex-husbands-layoff-notice-c89310870af8.webp",
@@ -27767,7 +28362,7 @@
       "source": "ReelShort",
       "title": "The Fake Dating Spell",
       "slug": "the-fake-dating-spell-2d00406b",
-      "synopsis": "",
+      "synopsis": "One drunken night, one humiliating ex, fake-date her worst enemy Blake or watch the Greenharts lose every point because of her. Hannah signs the contract expecting torture. Instead, she finds the cold, untouchable rival everyone fears has a side no one's ever seen, fiercely protective, quietly devoted, and hiding a secret of his own. When the pretending stops feeling like pretending, is it still an act? Then her ex Tristan discovers the truth—Hannah is Miss H, the anonymous genius the whole school idolizes. Now he's on his knees, begging for a second chance. Two boys, one choice.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/the-fake-dating-spell-75417c59bf98.jpg",
       "score": 7.8,
       "readCount": null,
@@ -27802,7 +28397,20 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "身份揭露",
+        "青春"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-18",
+        "totalChapters": 52,
+        "freeChapters": 8
+      }
     },
     {
       "id": "the-fake-heiress-inherits-a-100-billion-debt-81025282",
@@ -27846,7 +28454,7 @@
       "source": "ReelShort",
       "title": "The Fake Hero Never Saw Me Coming",
       "slug": "the-fake-hero-never-saw-me-coming-cb09947d",
-      "synopsis": "",
+      "synopsis": "Yale's younger brother steals the coveted SSS-class mech core, believing it will make him humanity's savior, unaware it's actually bait for disaster. Seeing through the trap, Yale chooses the ridiculed F-class \"junk\" core and is exiled to a frontier star system. Teaming up with three fellow outcasts, he unlocks its hidden power and builds the galaxy's strongest mech squad. When the false hero falls, Yale becomes humanity's only hope.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-04/the-fake-hero-never-saw-me-coming-f9766a03a6b2.jpg",
       "score": 9.0,
       "readCount": null,
@@ -27886,7 +28494,22 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "男性",
+        "所有年龄段",
+        "复仇",
+        "坚强",
+        "真相",
+        "重生"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-27",
+        "totalChapters": 47,
+        "freeChapters": 4
+      }
     },
     {
       "id": "the-fated-crown-princess-28757",
@@ -28230,7 +28853,7 @@
     {
       "id": "the-gambling-kings-bet-89741058",
       "source": "NetShort",
-      "title": "The Gambling King\u2019s Bet",
+      "title": "The Gambling King’s Bet",
       "slug": "the-gambling-kings-bet-89741058",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-28/the-gambling-kings-bet-0388216dbade.webp",
@@ -28640,7 +29263,7 @@
       "source": "FlexTV",
       "title": "The Intern is the Undercover Boss",
       "slug": "the-intern-is-the-undercover-boss-yzr10ovb",
-      "synopsis": "MSweet RomanceCEORomanceHidden\u2026. Dive into this wealth, status, and boardroom pressure colliding with romance drama on FlexTV.",
+      "synopsis": "MSweet RomanceCEORomanceHidden…. Dive into this wealth, status, and boardroom pressure colliding with romance drama on FlexTV.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/the-intern-is-the-undercover-boss-9093cc1e39f2.webp",
       "score": 7.0,
       "readCount": null,
@@ -28732,7 +29355,7 @@
     {
       "id": "the-janitors-goddess-harem-merlins-choice-nxywmz8k",
       "source": "FlexTV",
-      "title": "The Janitor\u2019s Goddess Harem: Merlin\u2019s Choice",
+      "title": "The Janitor’s Goddess Harem: Merlin’s Choice",
       "slug": "the-janitors-goddess-harem-merlins-choice-nxywmz8k",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/the-janitors-goddess-harem-merlins-choice-8116c5f04750.webp",
@@ -29106,14 +29729,29 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "has_reelshort_cps": true,
+      "reelshort_tags": [
+        "女性",
+        "浪漫",
+        "复仇",
+        "秘密身份",
+        "幻想",
+        "狼人"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-25",
+        "totalChapters": 55,
+        "freeChapters": 9
+      }
     },
     {
       "id": "the-mafia-boss-my-husband-betrayed-c30ef75f",
       "source": "ReelShort",
       "title": "The Mafia Boss My Husband Betrayed",
       "slug": "the-mafia-boss-my-husband-betrayed-c30ef75f",
-      "synopsis": "",
+      "synopsis": "On their wedding night, the CEO of the Walker Group, Griffin Walker, is tied up to a chair and forced to witness his wife Isabella cheat on him with three men at the same time. Enraged, he seeks revenge, but Isabella stops him in his tracks with a single photograph. For the next eighteen years, Griffin willingly raises Isabella's twins - a boy and a girl - born from her and one of those men, Ethan. He endures humiliation and mockery from them and is forced to transfer his company and all assets to the twins when they turn eighteen. Everyone thinks Griffin is held captive by that single photo, but at the moment Isabella's family celebrates their triumph, Griffin finally reveals the truth...",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-29/the-mafia-boss-my-husband-betrayed-954c0786b608.jpg",
       "score": 6.0,
       "readCount": null,
@@ -29168,7 +29806,21 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "男性",
+        "所有年龄段",
+        "亿万富翁",
+        "复仇",
+        "悬疑"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-04-12",
+        "totalChapters": 58,
+        "freeChapters": 15
+      }
     },
     {
       "id": "the-mafia-bosss-runaway-bride-qoey3onr",
@@ -29746,7 +30398,7 @@
       "source": "GoodShort",
       "title": "The Path to My True Self",
       "slug": "the-path-to-my-true-self-00706540",
-      "synopsis": "When ashley and her mother became separated\u2026, nothing is as it seems. Stream this 81-episode drama on GoodShort.",
+      "synopsis": "When ashley and her mother became separated…, nothing is as it seems. Stream this 81-episode drama on GoodShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-13/the-path-to-my-true-self-182c62b64475.jpg",
       "score": 9.5,
       "readCount": null,
@@ -30123,12 +30775,25 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "has_reelshort_cps": true,
+      "reelshort_tags": [
+        "所有年龄段",
+        "LGBTQ",
+        "真相",
+        "爱情"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-27",
+        "totalChapters": 28,
+        "freeChapters": 14
+      }
     },
     {
       "id": "the-proud-ex-husbands-clueless-contracthe-wants-revenge-she-refuses-z0xpkzq7",
       "source": "FlexTV",
-      "title": "The Proud Ex-Husband\u2019s Clueless Contract",
+      "title": "The Proud Ex-Husband’s Clueless Contract",
       "slug": "the-proud-ex-husbands-clueless-contracthe-wants-revenge-she-refuses-z0xpkzq7",
       "synopsis": "a comeback arc shaped by betrayal, payback, and shifting power dynamics. Dive into this a comeback arc shaped by betrayal, payback, and shifting power dynamics drama on FlexTV.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-20/the-proud-ex-husbands-clueless-contract-30365def6d1d.webp",
@@ -30172,7 +30837,7 @@
       "source": "GoodShort",
       "title": "The Queen Strikes Back with Three Tycoons",
       "slug": "the-queen-strikes-back-with-three-tycoons-01061776",
-      "synopsis": "Molly was caught between three powerful suitors\u2014the world's richest man, a genius doctor, and a mafia godfather\u2014but her heart belonged to her rescuer, Dante",
+      "synopsis": "Molly was caught between three powerful suitors—the world's richest man, a genius doctor, and a mafia godfather—but her heart belonged to her rescuer, Dante",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/the-queen-strikes-back-with-three-tycoons-78169d568f49.jpg",
       "score": 9.4,
       "readCount": null,
@@ -30568,7 +31233,7 @@
     {
       "id": "the-silent-lunas-secret-33014cfd",
       "source": "ReelShort",
-      "title": "The Silent Luna\u2019s Secret",
+      "title": "The Silent Luna’s Secret",
       "slug": "the-silent-lunas-secret-33014cfd",
       "synopsis": "When identity reveals, secrets, and status reversals, nothing is as it seems. Stream this 35-episode drama on ReelShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/the-silent-lunas-secret-bc6ec6941931.jpg",
@@ -30610,7 +31275,23 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "has_reelshort_cps": true,
+      "reelshort_tags": [
+        "女性",
+        "复仇",
+        "三角恋",
+        "幻想",
+        "吸血鬼",
+        "狼人",
+        "重生"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-25",
+        "totalChapters": 25,
+        "freeChapters": 5
+      }
     },
     {
       "id": "the-sirens-vengeance-2b02b0e0",
@@ -30729,7 +31410,7 @@
     {
       "id": "the-soccer-king-my-ai-powered-eye-nxy8pz8k",
       "source": "FlexTV",
-      "title": "The Soccer King\uff1a My AI-Powered Eye",
+      "title": "The Soccer King： My AI-Powered Eye",
       "slug": "the-soccer-king-my-ai-powered-eye-nxy8pz8k",
       "synopsis": "KClapbackSystemHidden IdentityPower GapUnderdogJace Wilde, son of legendary footballer Arthur Wilde, hides his identity for twelve years after his father was murdered by Alister Sterling, a corrupt tycoon who rigs",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/the-soccer-king-my-ai-powered-eye-a5702ccf7ad2.webp",
@@ -30991,7 +31672,7 @@
       "source": "ReelShort",
       "title": "The Surgeon You Shouldn't Have Crossed",
       "slug": "the-surgeon-you-shouldnt-have-crossed-ca04046d",
-      "synopsis": "When iain stone, the legendary national healer,\u2026, nothing is as it seems. Stream this 60-episode drama on ReelShort.",
+      "synopsis": "When iain stone, the legendary national healer,…, nothing is as it seems. Stream this 60-episode drama on ReelShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/the-surgeon-you-shouldnt-have-crossed-63343ca838bd.jpg",
       "score": 6.8,
       "readCount": null,
@@ -31031,7 +31712,21 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "has_reelshort_cps": true,
+      "reelshort_tags": [
+        "男性",
+        "所有年龄段",
+        "复仇",
+        "坚强",
+        "身份揭露"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-17",
+        "totalChapters": 60,
+        "freeChapters": 9
+      }
     },
     {
       "id": "the-tofu-girl-who-refused-the-crown-28020",
@@ -31184,7 +31879,7 @@
       "source": "GoodShort",
       "title": "The Trash Miner Is the Secret King of Golantis",
       "slug": "the-trash-miner-is-the-secret-king-of-golantis-01622928",
-      "synopsis": "Betrayed by his fianc\u00e9e and brother at his own wedding, the trash miner Severin reveals his true identity \u2014 the Sovereign Godfather",
+      "synopsis": "Betrayed by his fiancée and brother at his own wedding, the trash miner Severin reveals his true identity — the Sovereign Godfather",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/the-trash-miner-is-the-secret-king-of-golantis-71e63743fbee.jpg",
       "score": 8.3,
       "readCount": null,
@@ -31345,7 +32040,7 @@
       "source": "ReelShort",
       "title": "The Tyrant's Max-Level Dragon Bride",
       "slug": "the-tyrants-max-level-dragon-bride-410a581f",
-      "synopsis": "",
+      "synopsis": "Scarlett was a lonely orphan, living in the streets when the Vampire Lord Sean saved her. Moved to pity, Sean took her home as his Thrall and lover, swearing a Blood Oath and promising to keep her safe. Their happy, loving days came to an end when the sexy, dangerous human girl Chelsea swooped in, seducing Sean away. Not only did Sean Turn Chelsea into a vampire, he let Chelsea drink from Scarlett as well. Obsessed with his new lover, Sean missed the night of their Blood Oath, leaving Scarlett to die. Humiliated and hurt, Scarlett finally chooses to live for herself, risking her life to leave Sean behind and sever their bond as Thrall and Master. As her life hangs in the balance, Vampire Prince Alder suddenly appears to save her. Grateful and intimidated by his kindness, Scarlett doesn't realize her new prince charming is someone she's helped before.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-31/the-tyrants-max-level-dragon-bride-6ca1a78a44c7.jpg",
       "score": 7.1,
       "readCount": null,
@@ -31400,7 +32095,22 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "浪漫",
+        "三角恋",
+        "幻想",
+        "吸血鬼"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-01-27",
+        "totalChapters": 58,
+        "freeChapters": 10
+      }
     },
     {
       "id": "the-unbeatable-slacker-zldkozr0",
@@ -31779,9 +32489,9 @@
     {
       "id": "the-veterans-promise-48024066",
       "source": "NetShort",
-      "title": "The Veteran\u2019s Promise",
+      "title": "The Veteran’s Promise",
       "slug": "the-veterans-promise-48024066",
-      "synopsis": "The Veteran\u2019s Promise follows \"Marine veteran Jack Holt built Ridgeline Farm Supply from\u2026. A captivating short drama on NetShort.",
+      "synopsis": "The Veteran’s Promise follows \"Marine veteran Jack Holt built Ridgeline Farm Supply from…. A captivating short drama on NetShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-29/the-veterans-promise-6041f2277547.jpg",
       "score": 9.1,
       "readCount": null,
@@ -31811,14 +32521,29 @@
       ],
       "platforms": [
         "NetShort"
-      ]
+      ],
+      "has_reelshort_cps": true,
+      "reelshort_tags": [
+        "男性",
+        "所有年龄段",
+        "复仇",
+        "坚强",
+        "隐藏身份",
+        "身份揭露"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-22",
+        "totalChapters": 58,
+        "freeChapters": 9
+      }
     },
     {
       "id": "the-veterans-promise-cf09566c",
       "source": "ReelShort",
-      "title": "The Veteran\u2019s Promise",
+      "title": "The Veteran’s Promise",
       "slug": "the-veterans-promise-cf09566c",
-      "synopsis": "",
+      "synopsis": "\"Marine veteran Jack Holt built Ridgeline Farm Supply from nothing — a lifeline for the 200 disabled vets who served beside him. But the one brother he could never repay was Sam Russo, the man who gave his leg to save the entire squad. Now Sam is gone. And the wife and nine-year-old daughter he left behind stand alone against Derek Malone — a market boss who thinks a grieving widow is his for the taking. Sam left his little girl only one thing: a phone number, and a promise that whoever answers will come. When Sofia finally dials it… Jack picks up. Saving them was the easy part. Derek's brother is Connor Malone — the tycoon who owns half of Pittsburgh. Overnight, he tears away every contract Ridgeline has, and brings Jack to his knees. They stripped him bare. They made him beg. But they forgot one thing: You do not humiliate a fallen soldier's widow in front of the men who bled for this country. The reckoning is coming —\"",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-29/the-veterans-promise-6041f2277547.jpg",
       "score": 9.1,
       "readCount": null,
@@ -31868,14 +32593,29 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "男性",
+        "所有年龄段",
+        "复仇",
+        "坚强",
+        "隐藏身份",
+        "身份揭露"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-22",
+        "totalChapters": 58,
+        "freeChapters": 9
+      }
     },
     {
       "id": "the-veterans-promise-zrwk2nvb",
       "source": "FlexTV",
-      "title": "The Veteran\u2019s Promise",
+      "title": "The Veteran’s Promise",
       "slug": "the-veterans-promise-zrwk2nvb",
-      "synopsis": "The Veteran\u2019s Promise follows \"Marine veteran Jack Holt built Ridgeline Farm Supply from\u2026. A captivating short drama on FlexTV.",
+      "synopsis": "The Veteran’s Promise follows \"Marine veteran Jack Holt built Ridgeline Farm Supply from…. A captivating short drama on FlexTV.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-29/the-veterans-promise-6041f2277547.jpg",
       "score": 9.1,
       "readCount": null,
@@ -31925,14 +32665,29 @@
       ],
       "platforms": [
         "FlexTV"
-      ]
+      ],
+      "has_reelshort_cps": true,
+      "reelshort_tags": [
+        "男性",
+        "所有年龄段",
+        "复仇",
+        "坚强",
+        "隐藏身份",
+        "身份揭露"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-22",
+        "totalChapters": 58,
+        "freeChapters": 9
+      }
     },
     {
       "id": "the-villainess-who-edits-reality-01233489",
       "source": "GoodShort",
       "title": "The Villainess Who Edits Reality",
       "slug": "the-villainess-who-edits-reality-01233489",
-      "synopsis": "Jessica Parker transmigrates into\u2026. Dive into this 75-episode family bonds, parent-child reveals, and protective romance drama on GoodShort.",
+      "synopsis": "Jessica Parker transmigrates into…. Dive into this 75-episode family bonds, parent-child reveals, and protective romance drama on GoodShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-13/the-villainess-who-edits-reality-5f14e86223c6.jpg",
       "score": 7.3,
       "readCount": null,
@@ -31992,7 +32747,7 @@
     {
       "id": "the-virgin-lawyers-fake-son-27305985",
       "source": "NetShort",
-      "title": "The Virgin Lawyer\u2019s Fake Son",
+      "title": "The Virgin Lawyer’s Fake Son",
       "slug": "the-virgin-lawyers-fake-son-27305985",
       "synopsis": "Gold-medal lawyer Victoria moves into a luxury mansion with her 'son', Philly. But when an old classmate accuses Philly of sexually assaulting her 18-year-old daughter, and the public turns fiercely against Victoria, she reveals the truth: Philly is just a dog.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-07/the-virgin-lawyers-fake-son-f0356ba08707.webp",
@@ -32200,7 +32955,7 @@
     {
       "id": "the-widows-stand-28538",
       "source": "ShortMax",
-      "title": "The Widow\u2019s Stand",
+      "title": "The Widow’s Stand",
       "slug": "the-widows-stand-28538",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/the-widows-stand-ec54e09cc1fe.jpg",
@@ -32269,7 +33024,7 @@
     {
       "id": "the-wife-they-shouldnt-have-betrayed-12896769",
       "source": "NetShort",
-      "title": "The Wife They Shouldn\u2019t Have Betrayed",
+      "title": "The Wife They Shouldn’t Have Betrayed",
       "slug": "the-wife-they-shouldnt-have-betrayed-12896769",
       "synopsis": "When a comeback arc shaped by betrayal, payback, and shifting power dynamics, nothing is as it seems. Stream this drama on NetShort.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-28/the-wife-they-shouldnt-have-betrayed-58fc3d18f37d.webp",
@@ -32402,7 +33157,7 @@
       "source": "ReelShort",
       "title": "They Bet I'd Cry, I Bet They'd Fall",
       "slug": "they-bet-id-cry-i-bet-theyd-fall-a20836b1",
-      "synopsis": "",
+      "synopsis": "Aria hides her identity as the sole heiress of America's richest family and enters college disguised as a scholarship student to evaluate her arranged fiancé. Instead, she becomes the target of a cruel dating game where wealthy students compete to break girls' hearts for money. She plays along until the night they publicly dump and humiliate her. Just when everyone expects tears, Aria ends the game with a single phone call. Their fortunes, reputations, and futures begin collapsing one by one. But the revenge she prepared is far from over.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/they-bet-id-cry-i-bet-theyd-fall-21bcab070941.jpg",
       "score": 8.9,
       "readCount": null,
@@ -32452,7 +33207,22 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "霸总",
+        "浪漫",
+        "复仇",
+        "喜剧",
+        "秘密身份"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-21",
+        "totalChapters": 25,
+        "freeChapters": 5
+      }
     },
     {
       "id": "thirteen-years-wasted-a-lifetime-cherished-28381",
@@ -32976,7 +33746,7 @@
     {
       "id": "touch-the-dons-wife-pay-the-price-25844",
       "source": "ShortMax",
-      "title": "Touch the Don\u2019s Wife.Pay the Price",
+      "title": "Touch the Don’s Wife.Pay the Price",
       "slug": "touch-the-dons-wife-pay-the-price-25844",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/touch-the-dons-wife-pay-the-price-15ee97c52660.jpg",
@@ -33010,7 +33780,7 @@
       "source": "GoodShort",
       "title": "Trapped and Redeemed By His Love",
       "slug": "trapped-and-redeemed-by-his-love-01099700",
-      "synopsis": "Saddled with her father\u2019s crippling debt, Yvette breaks up with her boyfriend Archer by pretending to sleep with another man",
+      "synopsis": "Saddled with her father’s crippling debt, Yvette breaks up with her boyfriend Archer by pretending to sleep with another man",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/trapped-and-redeemed-by-his-love-cc01ad319289.jpg",
       "score": 8.2,
       "readCount": null,
@@ -33611,7 +34381,7 @@
       "source": "GoodShort",
       "title": "When Family Offered My Life Away",
       "slug": "when-family-offered-my-life-away-01125226",
-      "synopsis": "Dean Zela was forced by his daughter and son-in-law into a nursing home, only to realize it was nothing more than a prison for the elderly\u2014once inside, there was no escape",
+      "synopsis": "Dean Zela was forced by his daughter and son-in-law into a nursing home, only to realize it was nothing more than a prison for the elderly—once inside, there was no escape",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/when-family-offered-my-life-away-8880a8773ec9.jpg",
       "score": 9.4,
       "readCount": null,
@@ -33824,7 +34594,7 @@
       "source": "GoodShort",
       "title": "Whirlwind Marriage, Secret Twins",
       "slug": "whirlwind-marriage-secret-twins-00857313",
-      "synopsis": "Adorable Twins find perfect Mom for their Billionaire CEO dad to marry in a whim, only to find she\u2019s their long lost biological mom",
+      "synopsis": "Adorable Twins find perfect Mom for their Billionaire CEO dad to marry in a whim, only to find she’s their long lost biological mom",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/whirlwind-marriage-secret-twins-6f84002f4ebc.jpg",
       "score": 9.0,
       "readCount": null,
@@ -34027,7 +34797,7 @@
       "source": "ShortMax",
       "title": "Wolfless? Bow to the Queen!",
       "slug": "wolfless-bow-to-the-queen-28745",
-      "synopsis": "",
+      "synopsis": "Stella Hart loved Ashton Voss without a shred of dignity. Heir to a century-old Old Money jewelry empire, he blamed her for a fire seven years ago — convinced she'd ignored his cries to save a stranger instead. For three years he punished her for it: one hundred divorce letters, and one hundred times she came crawling back to sign them away. The hundred-and-first, she didn't. Not after he forced allergic Stella to drink in front of his friends. Not after her stepsister shattered her dead mother's locket on the floor. Not after his slap broke the hearing aid she'd worn since her father's fists stole her hearing at nineteen. In a blood-red dress, she signed — and walked into the arms of Ethan Morrow, the Silicon Valley titan who'd quietly funded her late mother's cancer research for years. Ashton realized what he'd thrown away far too late. He begged. He drank. He tried to burn her name down so no one else could have her. But you don't get to break a woman who's already walked away — you just get to watch her shine somewhere you can't reach. He spent three years calling her nothing. Now he'll spend a lifetime wondering where his star went.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-31/wolfless-bow-to-the-queen-4c087380d983.jpg",
       "score": 8.6,
       "readCount": null,
@@ -34062,14 +34832,31 @@
       ],
       "platforms": [
         "ShortMax"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "亿万富翁",
+        "先婚后爱",
+        "离婚",
+        "独立女性",
+        "真相",
+        "爱情"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-21",
+        "totalChapters": 59,
+        "freeChapters": 10
+      }
     },
     {
       "id": "wolfless-bow-to-the-queen-3c0331de",
       "source": "ReelShort",
       "title": "Wolfless? Bow to the Queen!",
       "slug": "wolfless-bow-to-the-queen-3c0331de",
-      "synopsis": "",
+      "synopsis": "Stella Hart loved Ashton Voss without a shred of dignity. Heir to a century-old Old Money jewelry empire, he blamed her for a fire seven years ago — convinced she'd ignored his cries to save a stranger instead. For three years he punished her for it: one hundred divorce letters, and one hundred times she came crawling back to sign them away. The hundred-and-first, she didn't. Not after he forced allergic Stella to drink in front of his friends. Not after her stepsister shattered her dead mother's locket on the floor. Not after his slap broke the hearing aid she'd worn since her father's fists stole her hearing at nineteen. In a blood-red dress, she signed — and walked into the arms of Ethan Morrow, the Silicon Valley titan who'd quietly funded her late mother's cancer research for years. Ashton realized what he'd thrown away far too late. He begged. He drank. He tried to burn her name down so no one else could have her. But you don't get to break a woman who's already walked away — you just get to watch her shine somewhere you can't reach. He spent three years calling her nothing. Now he'll spend a lifetime wondering where his star went.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-31/wolfless-bow-to-the-queen-4c087380d983.jpg",
       "score": 8.6,
       "readCount": null,
@@ -34119,7 +34906,24 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "亿万富翁",
+        "先婚后爱",
+        "离婚",
+        "独立女性",
+        "真相",
+        "爱情"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-21",
+        "totalChapters": 59,
+        "freeChapters": 10
+      }
     },
     {
       "id": "wolves-at-her-back-dragons-at-her-side-01534153",
@@ -34265,7 +35069,7 @@
     {
       "id": "wrath-of-the-zeus-s-son-25497",
       "source": "ShortMax",
-      "title": "Wrath of the Zeus\u2018s Son",
+      "title": "Wrath of the Zeus‘s Son",
       "slug": "wrath-of-the-zeus-s-son-25497",
       "synopsis": "",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-31/wrath-of-the-zeus-s-son-ba931e53c6c6.jpg",
@@ -34304,7 +35108,7 @@
       "source": "ReelShort",
       "title": "You Fired A Tech Genius",
       "slug": "you-fired-a-tech-genius-8007f0f1",
-      "synopsis": "",
+      "synopsis": "After Erik, the biggest tech hotshot in all of Silicon Valley, gets sacked by his CEO's son William, he joins forces with Evelyn, the beautiful CEO of his old company's competitor. This causes his former employer to go bankrupt, and when William realizes he's fired the wrong guy, it's already too late...",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-14/you-fired-a-tech-genius-b849a8752b3f.jpg",
       "score": 9.1,
       "readCount": null,
@@ -34354,7 +35158,20 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "男性",
+        "所有年龄段",
+        "秘密身份",
+        "身份揭露"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2025-01-16",
+        "totalChapters": 59,
+        "freeChapters": 15
+      }
     },
     {
       "id": "you-had-your-chance-01065028",
@@ -34512,7 +35329,7 @@
       "source": "ReelShort",
       "title": "You've Been Replaced, First Love",
       "slug": "youve-been-replaced-first-love-7f095b8a",
-      "synopsis": "",
+      "synopsis": "To Jason, Tessa was only a disposable practice run for the girl he actually wanted. After the blood on the sheets became a public trophy and her dignity a ghost, young Tessa finally stops trying to mend the shards. She is done with her first love. She is leaving him behind for a future that doesn't taste like salt and shame. But at the edge of the wreckage stands the one person who shouldn’t be there: another boy with no intention of letting her go alone.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/youve-been-replaced-first-love-20d607463809.jpg",
       "score": 8.4,
       "readCount": null,
@@ -34557,14 +35374,27 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "女性",
+        "所有年龄段",
+        "三角恋",
+        "青春"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-08-01",
+        "totalChapters": 73,
+        "freeChapters": 13
+      }
     },
     {
       "id": "zero-to-alpha-return-of-the-wolf-king-5d04c33b",
       "source": "ReelShort",
       "title": "Zero to Alpha: Return of the Wolf King",
       "slug": "zero-to-alpha-return-of-the-wolf-king-5d04c33b",
-      "synopsis": "",
+      "synopsis": "Exiled for failing to awaken his wolf form, Nory trained twenty years under three Masters beyond Sacred Rank. Returning to see his mother, he enters the Clan Tournament, shatters the test stone, crushes every foe, and is revealed as the savior three Gold Leaders sought. When vampires invade, he slams the Legendary First Sire through seven walls. Learning his mother was injured saving him, he gathers three sacred relics to heal her. But crimson eyes in distant mist hint a greater threat.",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-31/zero-to-alpha-return-of-the-wolf-king-e54be096e372.jpg",
       "score": 7.4,
       "readCount": null,
@@ -34614,7 +35444,21 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
+      ],
+      "synopsis_source": "reelshort_cps",
+      "reelshort_tags": [
+        "男性",
+        "所有年龄段",
+        "隐藏身份",
+        "秘密身份",
+        "狼人"
+      ],
+      "reelshort_metadata": {
+        "language": "英语",
+        "publishDate": "2026-07-21",
+        "totalChapters": 51,
+        "freeChapters": 10
+      }
     },
     {
       "id": "zoo-of-the-apocalypse-24593",
