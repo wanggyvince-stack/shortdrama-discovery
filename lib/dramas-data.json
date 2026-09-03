@@ -1,10 +1,10 @@
 {
   "generatedAt": "2026-09-03T12:50:00Z",
   "stats": {
-    "totalDramas": 714,
+    "totalDramas": 706,
     "totalTags": 140,
     "totalPlatforms": 5,
-    "withSynopsis": 394
+    "withSynopsis": 434
   },
   "platforms": [
     {
@@ -10491,43 +10491,6 @@
       ]
     },
     {
-      "id": "dubbed-the-invincible-bodyguard-11953",
-      "source": "ShortMax",
-      "title": "[Dubbed]The Invincible Bodyguard",
-      "slug": "dubbed-the-invincible-bodyguard-11953",
-      "synopsis": "",
-      "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-31/dubbed-the-invincible-bodyguard-c7fa908b294a.jpg",
-      "score": 8.2,
-      "readCount": null,
-      "collectCount": null,
-      "chapterCount": 0,
-      "duration": null,
-      "releaseDate": null,
-      "createdAt": null,
-      "updatedAt": null,
-      "sourceUrl": "https://www.shorttv.live/drama/dubbedthe-invincible-bodyguard-11953",
-      "tags": [
-        {
-          "name": "Romance",
-          "slug": "romance",
-          "category": "genre"
-        },
-        {
-          "name": "Drama",
-          "slug": "drama",
-          "category": "genre"
-        },
-        {
-          "name": "Romantic",
-          "slug": "romantic",
-          "category": "emotion"
-        }
-      ],
-      "platforms": [
-        "ShortMax"
-      ]
-    },
-    {
       "id": "dubbed-the-invisible-guardian-29111",
       "source": "ShortMax",
       "title": "[Dubbed] The Invisible Guardian",
@@ -14259,53 +14222,6 @@
       ]
     },
     {
-      "id": "from-mudblood-to-atlantis-owner-zl844z2m",
-      "source": "FlexTV",
-      "title": "From Mudblood to Atlantis' Owner",
-      "slug": "from-mudblood-to-atlantis-owner-zl844z2m",
-      "synopsis": "",
-      "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-15/from-mudblood-to-atlantis-owner-0a2733f8fbde.jpg",
-      "score": 8.1,
-      "readCount": null,
-      "collectCount": null,
-      "chapterCount": 0,
-      "duration": null,
-      "releaseDate": null,
-      "createdAt": null,
-      "updatedAt": null,
-      "sourceUrl": "https://www.flextv.cc/episodes/episode-1-from-mudblood-to-atlantis-owner-3xzl844z2M",
-      "tags": [
-        {
-          "name": "Second Chance Romance",
-          "slug": "second-chance-romance",
-          "category": "genre"
-        },
-        {
-          "name": "Romance",
-          "slug": "romance",
-          "category": "genre"
-        },
-        {
-          "name": "Fantasy / Superpower",
-          "slug": "fantasy---superpower",
-          "category": "genre"
-        },
-        {
-          "name": "Historical",
-          "slug": "historical",
-          "category": "genre"
-        },
-        {
-          "name": "Romantic",
-          "slug": "romantic",
-          "category": "emotion"
-        }
-      ],
-      "platforms": [
-        "FlexTV"
-      ]
-    },
-    {
       "id": "from-nba-dropout-to-tennis-ace-z0xpnzq7",
       "source": "FlexTV",
       "title": "From NBA Dropout to Tennis Ace",
@@ -15092,58 +15008,6 @@
       ],
       "platforms": [
         "ShortMax"
-      ]
-    },
-    {
-      "id": "he-knew-i-was-the-wrong-bride-67472386",
-      "source": "NetShort",
-      "title": "He Knew I Was the Wrong Bride",
-      "slug": "he-knew-i-was-the-wrong-bride-67472386",
-      "synopsis": "",
-      "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/he-knew-i-was-the-wrong-bride-2a0dd4ecf355.jpg",
-      "score": 8.3,
-      "readCount": null,
-      "collectCount": null,
-      "chapterCount": 0,
-      "duration": null,
-      "releaseDate": null,
-      "createdAt": null,
-      "updatedAt": null,
-      "sourceUrl": "https://netshort.com/episode/he-knew-i-was-the-wrong-bride-2081959805267472386",
-      "tags": [
-        {
-          "name": "Romantic Marriage",
-          "slug": "romantic-marriage",
-          "category": "genre"
-        },
-        {
-          "name": "Contract Marriage",
-          "slug": "contract-marriage",
-          "category": "genre"
-        },
-        {
-          "name": "Flash Marriage / Contract",
-          "slug": "flash-marriage---contract",
-          "category": "genre"
-        },
-        {
-          "name": "Modern Romance",
-          "slug": "modern-romance",
-          "category": "genre"
-        },
-        {
-          "name": "Romantic",
-          "slug": "romantic",
-          "category": "emotion"
-        },
-        {
-          "name": "Wedding",
-          "slug": "wedding",
-          "category": "scene"
-        }
-      ],
-      "platforms": [
-        "NetShort"
       ]
     },
     {
@@ -16870,68 +16734,6 @@
       ],
       "platforms": [
         "ShortMax"
-      ]
-    },
-    {
-      "id": "i-married-my-exs-uncle-at-his-wedding-18575361",
-      "source": "NetShort",
-      "title": "I Married My Ex\u2019s Uncle at His Wedding",
-      "slug": "i-married-my-exs-uncle-at-his-wedding-18575361",
-      "synopsis": "",
-      "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-01/i-married-my-exs-uncle-at-his-wedding-a31257f1a5ab.jpg",
-      "score": 8.0,
-      "readCount": null,
-      "collectCount": null,
-      "chapterCount": 0,
-      "duration": null,
-      "releaseDate": null,
-      "createdAt": null,
-      "updatedAt": null,
-      "sourceUrl": "https://netshort.com/episode/i-married-my-exs-uncle-at-his-wedding-2081919716818575361",
-      "tags": [
-        {
-          "name": "Powerful Family",
-          "slug": "powerful-family",
-          "category": "genre"
-        },
-        {
-          "name": "Second Chance Romance",
-          "slug": "second-chance-romance",
-          "category": "genre"
-        },
-        {
-          "name": "Fantasy / Superpower",
-          "slug": "fantasy---superpower",
-          "category": "genre"
-        },
-        {
-          "name": "Family / Cute Kids",
-          "slug": "family---cute-kids",
-          "category": "genre"
-        },
-        {
-          "name": "Modern Romance",
-          "slug": "modern-romance",
-          "category": "genre"
-        },
-        {
-          "name": "Sweet / Heartwarming",
-          "slug": "sweet---heartwarming",
-          "category": "emotion"
-        },
-        {
-          "name": "Romantic",
-          "slug": "romantic",
-          "category": "emotion"
-        },
-        {
-          "name": "Wedding",
-          "slug": "wedding",
-          "category": "scene"
-        }
-      ],
-      "platforms": [
-        "NetShort"
       ]
     },
     {
@@ -21648,58 +21450,6 @@
       ],
       "platforms": [
         "ReelShort"
-      ]
-    },
-    {
-      "id": "my-wolf-is-the-sun-god-o6wdwzwe",
-      "source": "FlexTV",
-      "title": "My Wolf is the Sun God",
-      "slug": "my-wolf-is-the-sun-god-o6wdwzwe",
-      "synopsis": "",
-      "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-08-04/my-wolf-is-the-sun-god-e97716345651.webp",
-      "score": 7.4,
-      "readCount": null,
-      "collectCount": null,
-      "chapterCount": 0,
-      "duration": null,
-      "releaseDate": null,
-      "createdAt": null,
-      "updatedAt": null,
-      "sourceUrl": "https://www.flextv.cc/episodes/episode-1-my-wolf-is-the-sun-god-r6O6wdwzWE",
-      "tags": [
-        {
-          "name": "Second Chance Romance",
-          "slug": "second-chance-romance",
-          "category": "genre"
-        },
-        {
-          "name": "Romance",
-          "slug": "romance",
-          "category": "genre"
-        },
-        {
-          "name": "Fantasy / Superpower",
-          "slug": "fantasy---superpower",
-          "category": "genre"
-        },
-        {
-          "name": "Historical",
-          "slug": "historical",
-          "category": "genre"
-        },
-        {
-          "name": "Sweet / Heartwarming",
-          "slug": "sweet---heartwarming",
-          "category": "emotion"
-        },
-        {
-          "name": "Romantic",
-          "slug": "romantic",
-          "category": "emotion"
-        }
-      ],
-      "platforms": [
-        "FlexTV"
       ]
     },
     {
@@ -28112,7 +27862,7 @@
       "source": "ReelShort",
       "title": "The Elf Queen's Revenge",
       "slug": "the-elf-queens-revenge-4d062892",
-      "synopsis": "",
+      "synopsis": "They thought she was just a contract wife, a placeholder for someone better. When she reveals her true identity as the Elf Queen, the family that mocked her will learn what real power looks like. 23 episodes on ReelShort. \u2b50 9.3/10",
       "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-27/the-elf-queens-revenge-3271d7aa687d.jpg",
       "score": 9.3,
       "readCount": null,
@@ -32539,150 +32289,6 @@
       }
     },
     {
-      "id": "the-veterans-promise-cf09566c",
-      "source": "ReelShort",
-      "title": "The Veteran\u2019s Promise",
-      "slug": "the-veterans-promise-cf09566c",
-      "synopsis": "\"Marine veteran Jack Holt built Ridgeline Farm Supply from nothing \u2014 a lifeline for the 200 disabled vets who served beside him. But the one brother he could never repay was Sam Russo, the man who gave his leg to save the entire squad. Now Sam is gone. And the wife and nine-year-old daughter he left behind stand alone against Derek Malone \u2014 a market boss who thinks a grieving widow is his for the taking. Sam left his little girl only one thing: a phone number, and a promise that whoever answers will come. When Sofia finally dials it\u2026 Jack picks up. Saving them was the easy part. Derek's brother is Connor Malone \u2014 the tycoon who owns half of Pittsburgh. Overnight, he tears away every contract Ridgeline has, and brings Jack to his knees. They stripped him bare. They made him beg. But they forgot one thing: You do not humiliate a fallen soldier's widow in front of the men who bled for this country. The reckoning is coming \u2014\"",
-      "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-29/the-veterans-promise-6041f2277547.jpg",
-      "score": 9.1,
-      "readCount": null,
-      "collectCount": null,
-      "chapterCount": 58,
-      "duration": null,
-      "releaseDate": null,
-      "createdAt": null,
-      "updatedAt": null,
-      "sourceUrl": "https://www.reelshort.com/movie/the-veterans-promise-6a5f3c538f2e026dcf09566c",
-      "tags": [
-        {
-          "name": "Royal",
-          "slug": "royal",
-          "category": "genre"
-        },
-        {
-          "name": "Family / Cute Kids",
-          "slug": "family---cute-kids",
-          "category": "genre"
-        },
-        {
-          "name": "Contract Marriage",
-          "slug": "contract-marriage",
-          "category": "genre"
-        },
-        {
-          "name": "CEO / Billionaire",
-          "slug": "ceo---billionaire",
-          "category": "genre"
-        },
-        {
-          "name": "Hidden Identity",
-          "slug": "hidden-identity",
-          "category": "genre"
-        },
-        {
-          "name": "Playing Dumb",
-          "slug": "playing-dumb",
-          "category": "genre"
-        },
-        {
-          "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
-          "category": "emotion"
-        }
-      ],
-      "platforms": [
-        "ReelShort"
-      ],
-      "synopsis_source": "reelshort_cps",
-      "reelshort_tags": [
-        "\u7537\u6027",
-        "\u6240\u6709\u5e74\u9f84\u6bb5",
-        "\u590d\u4ec7",
-        "\u575a\u5f3a",
-        "\u9690\u85cf\u8eab\u4efd",
-        "\u8eab\u4efd\u63ed\u9732"
-      ],
-      "reelshort_metadata": {
-        "language": "\u82f1\u8bed",
-        "publishDate": "2026-07-22",
-        "totalChapters": 58,
-        "freeChapters": 9
-      }
-    },
-    {
-      "id": "the-veterans-promise-zrwk2nvb",
-      "source": "FlexTV",
-      "title": "The Veteran\u2019s Promise",
-      "slug": "the-veterans-promise-zrwk2nvb",
-      "synopsis": "The Veteran\u2019s Promise follows \"Marine veteran Jack Holt built Ridgeline Farm Supply from\u2026. A captivating short drama on FlexTV.",
-      "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-29/the-veterans-promise-6041f2277547.jpg",
-      "score": 9.1,
-      "readCount": null,
-      "collectCount": null,
-      "chapterCount": 0,
-      "duration": null,
-      "releaseDate": null,
-      "createdAt": null,
-      "updatedAt": null,
-      "sourceUrl": "https://www.flextv.cc/episodes/episode-1-the-veteran%E2%80%99s-promise-jyzRWK2nVB",
-      "tags": [
-        {
-          "name": "Family",
-          "slug": "family",
-          "category": "genre"
-        },
-        {
-          "name": "Second Chance Romance",
-          "slug": "second-chance-romance",
-          "category": "genre"
-        },
-        {
-          "name": "Family / Cute Kids",
-          "slug": "family---cute-kids",
-          "category": "genre"
-        },
-        {
-          "name": "Urban",
-          "slug": "urban",
-          "category": "genre"
-        },
-        {
-          "name": "Contemporary",
-          "slug": "contemporary",
-          "category": "genre"
-        },
-        {
-          "name": "Sweet / Heartwarming",
-          "slug": "sweet---heartwarming",
-          "category": "emotion"
-        },
-        {
-          "name": "Revenge / Comeback",
-          "slug": "revenge---comeback",
-          "category": "emotion"
-        }
-      ],
-      "platforms": [
-        "FlexTV"
-      ],
-      "has_reelshort_cps": true,
-      "reelshort_tags": [
-        "\u7537\u6027",
-        "\u6240\u6709\u5e74\u9f84\u6bb5",
-        "\u590d\u4ec7",
-        "\u575a\u5f3a",
-        "\u9690\u85cf\u8eab\u4efd",
-        "\u8eab\u4efd\u63ed\u9732"
-      ],
-      "reelshort_metadata": {
-        "language": "\u82f1\u8bed",
-        "publishDate": "2026-07-22",
-        "totalChapters": 58,
-        "freeChapters": 9
-      }
-    },
-    {
       "id": "the-villainess-who-edits-reality-01233489",
       "source": "GoodShort",
       "title": "The Villainess Who Edits Reality",
@@ -34832,80 +34438,6 @@
       ],
       "platforms": [
         "ShortMax"
-      ],
-      "synopsis_source": "reelshort_cps",
-      "reelshort_tags": [
-        "\u5973\u6027",
-        "\u6240\u6709\u5e74\u9f84\u6bb5",
-        "\u4ebf\u4e07\u5bcc\u7fc1",
-        "\u5148\u5a5a\u540e\u7231",
-        "\u79bb\u5a5a",
-        "\u72ec\u7acb\u5973\u6027",
-        "\u771f\u76f8",
-        "\u7231\u60c5"
-      ],
-      "reelshort_metadata": {
-        "language": "\u82f1\u8bed",
-        "publishDate": "2026-07-21",
-        "totalChapters": 59,
-        "freeChapters": 10
-      }
-    },
-    {
-      "id": "wolfless-bow-to-the-queen-3c0331de",
-      "source": "ReelShort",
-      "title": "Wolfless? Bow to the Queen!",
-      "slug": "wolfless-bow-to-the-queen-3c0331de",
-      "synopsis": "Stella Hart loved Ashton Voss without a shred of dignity. Heir to a century-old Old Money jewelry empire, he blamed her for a fire seven years ago \u2014 convinced she'd ignored his cries to save a stranger instead. For three years he punished her for it: one hundred divorce letters, and one hundred times she came crawling back to sign them away. The hundred-and-first, she didn't. Not after he forced allergic Stella to drink in front of his friends. Not after her stepsister shattered her dead mother's locket on the floor. Not after his slap broke the hearing aid she'd worn since her father's fists stole her hearing at nineteen. In a blood-red dress, she signed \u2014 and walked into the arms of Ethan Morrow, the Silicon Valley titan who'd quietly funded her late mother's cancer research for years. Ashton realized what he'd thrown away far too late. He begged. He drank. He tried to burn her name down so no one else could have her. But you don't get to break a woman who's already walked away \u2014 you just get to watch her shine somewhere you can't reach. He spent three years calling her nothing. Now he'll spend a lifetime wondering where his star went.",
-      "coverUrl": "https://bestshortdrama.com/sites/dramora/posters/2026-07-31/wolfless-bow-to-the-queen-4c087380d983.jpg",
-      "score": 8.6,
-      "readCount": null,
-      "collectCount": null,
-      "chapterCount": 50,
-      "duration": null,
-      "releaseDate": null,
-      "createdAt": null,
-      "updatedAt": null,
-      "sourceUrl": "https://www.reelshort.com/movie/wolfless-bow-to-the-queen-6a5068b09b871d8b3c0331de",
-      "tags": [
-        {
-          "name": "Contract Marriage",
-          "slug": "contract-marriage",
-          "category": "genre"
-        },
-        {
-          "name": "Werewolf / Alpha",
-          "slug": "werewolf---alpha",
-          "category": "genre"
-        },
-        {
-          "name": "Fantasy / Superpower",
-          "slug": "fantasy---superpower",
-          "category": "genre"
-        },
-        {
-          "name": "Royal",
-          "slug": "royal",
-          "category": "genre"
-        },
-        {
-          "name": "Hidden Identity",
-          "slug": "hidden-identity",
-          "category": "genre"
-        },
-        {
-          "name": "Playing Dumb",
-          "slug": "playing-dumb",
-          "category": "genre"
-        },
-        {
-          "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
-          "category": "emotion"
-        }
-      ],
-      "platforms": [
-        "ReelShort"
       ],
       "synopsis_source": "reelshort_cps",
       "reelshort_tags": [
