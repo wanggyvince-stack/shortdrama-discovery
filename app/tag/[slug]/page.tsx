@@ -30,11 +30,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? seoContent.intro.replace(/\*\*/g, '').replace(/\n/g, ' ').substring(0, 155) + '...'
     : `Discover the best ${tag.name.toLowerCase()} short dramas. Browse our curated collection of top-rated ${tag.name.toLowerCase()} micro dramas.`;
 
-  return {
+  const metadata: Metadata = {
     title: `Best ${tag.name} Short Dramas — Where to Watch Full Series`,
     description,
     alternates: { canonical: `/tag/${slug}` },
   };
+
+  // Thin tag pages (< 10 dramas) → noindex to avoid low-quality signal
+  if (tag.dramaCount < 10) {
+    metadata.robots = { index: false, follow: true };
+  }
+
+  return metadata;
 }
 
 const TAG_COLORS: Record<string, string> = {
