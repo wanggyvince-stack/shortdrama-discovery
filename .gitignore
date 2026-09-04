@@ -4,3 +4,4 @@ prisma/dev.db
 scraper/data/
 *.db
 .DS_Store
+.next/
