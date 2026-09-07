@@ -94,6 +94,7 @@ export default function RootLayout({
             </div>
             <div className="site-footer__col">
               <p className="site-footer__col-title">About</p>
+              <Link href="/about" className="site-footer__link">About DramaDisco</Link>
               <span className="site-footer__link" style={{ cursor: 'default' }}>Data from official platforms</span>
               <span className="site-footer__link" style={{ cursor: 'default' }}>© 2026 DramaDisco</span>
             </div>

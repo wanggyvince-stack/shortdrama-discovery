@@ -311,6 +311,16 @@ export default async function DramaPage({ params }: Props) {
                 <span>🌐 {drama.source} Official</span>
               </div>
             )}
+
+            {/* Affiliate disclosure (FTC) */}
+            <p style={{
+              marginTop: 'var(--space-4)',
+              fontSize: 'var(--text-xs)',
+              lineHeight: 1.6,
+              color: 'var(--text-muted)',
+            }}>
+              DramaDisco may earn a commission when you sign up or make a purchase through links on this page, at no additional cost to you. This does not affect our recommendations.
+            </p>
           </div>
         </section>
 

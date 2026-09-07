@@ -18,6 +18,15 @@ export default function PlatformsPage() {
         <p style={{ color: '#6b7280', marginTop: '0.5rem' }}>
           Browse {platforms.length} platforms and their drama libraries.
         </p>
+        <p style={{
+          marginTop: 'var(--space-3)',
+          fontSize: 'var(--text-xs)',
+          lineHeight: 1.6,
+          color: 'var(--text-muted)',
+          maxWidth: '640px',
+        }}>
+          DramaDisco may earn a commission when you sign up or make a purchase through links on this page, at no additional cost to you. This does not affect our recommendations.
+        </p>
       </section>
 
       <section className="drama-section">
