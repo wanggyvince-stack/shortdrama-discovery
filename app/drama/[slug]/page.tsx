@@ -52,15 +52,19 @@ function buildTagDescription(title: string, tagNames: string[], source?: string,
 // SEO title: full drama title first (the actual search term), punchy
 // high-CTR genre trailer with "Where to Watch" for search differentiation.
 // v1.3: added "Where to Watch" prefix to genre trailer for CTR boost
+// v1.4: title hard cap 60 chars (Google SERP truncation). Returned as absolute
+// metadata title to bypass the root layout's '%s | DramaDisco' template suffix,
+// which would otherwise push 68% of pages over the limit.
 function buildSeoTitle(title: string, tagNames: string[]): string {
+  const MAX = 60;
   const genre = tagNames.find(t => !/^(romance|drama)$/i.test(t)) || tagNames[0];
   if (genre) {
-    const withWhereToWatch = `${title} — Where to Watch ${genre} Short Drama`;
-    if (withWhereToWatch.length <= 70) return withWhereToWatch;
-    const withGenre = `${title} | ${genre} Short Drama`;
-    if (withGenre.length <= 70) return withGenre;
+    const withGenre = `${title} — ${genre} Short Drama`;
+    if (withGenre.length <= MAX) return withGenre;
   }
-  return title.length <= 70 ? `${title} | Short Drama` : title.slice(0, 69).trimEnd();
+  const suffix = ' — Short Drama';
+  if ((title + suffix).length <= MAX) return `${title}${suffix}`;
+  return title.length <= MAX ? title : title.slice(0, 59).trimEnd();
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -77,7 +81,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const enhancedTitle = buildSeoTitle(drama.title, tagNames);
 
   return {
-    title: enhancedTitle,
+    title: { absolute: enhancedTitle },
     description,
     alternates: { canonical: `/drama/${slug}` },
     openGraph: {
@@ -245,7 +249,7 @@ export default async function DramaPage({ params }: Props) {
                           href={cpsUrl}
                           className="btn-watch"
                           target="_blank"
-                          rel="noopener noreferrer nofollow"
+                          rel="sponsored noopener noreferrer"
                           data-drama-id={drama.id}
                           data-drama-slug={drama.slug}
                           data-platform={drama.source}
@@ -257,7 +261,7 @@ export default async function DramaPage({ params }: Props) {
                         <a
                           href={drama.sourceUrl || '#'}
                           target="_blank"
-                          rel="noopener noreferrer nofollow"
+                          rel="sponsored noopener noreferrer"
                           data-drama-id={drama.id}
                           data-drama-slug={drama.slug}
                           data-platform={drama.source}
@@ -275,7 +279,7 @@ export default async function DramaPage({ params }: Props) {
                       href={drama.sourceUrl || '#'}
                       className="btn-watch"
                       target="_blank"
-                      rel="noopener noreferrer nofollow"
+                      rel="sponsored noopener noreferrer"
                       data-drama-id={drama.id}
                       data-drama-slug={drama.slug}
                       data-platform={drama.source}
@@ -390,7 +394,7 @@ export default async function DramaPage({ params }: Props) {
                 href={cpsUrl}
                 className="mobile-sticky-cta__app"
                 target="_blank"
-                rel="noopener noreferrer nofollow"
+                rel="sponsored noopener noreferrer"
                 data-drama-id={drama.id}
                 data-drama-slug={drama.slug}
                 data-platform={drama.source}
@@ -404,7 +408,7 @@ export default async function DramaPage({ params }: Props) {
                   href={drama.sourceUrl}
                   className="mobile-sticky-cta__web"
                   target="_blank"
-                  rel="noopener noreferrer nofollow"
+                  rel="sponsored noopener noreferrer"
                   data-drama-id={drama.id}
                   data-drama-slug={drama.slug}
                   data-platform={drama.source}
@@ -424,7 +428,7 @@ export default async function DramaPage({ params }: Props) {
                 href={drama.sourceUrl}
                 className="mobile-sticky-cta__app"
                 target="_blank"
-                rel="noopener noreferrer nofollow"
+                rel="sponsored noopener noreferrer"
                 data-drama-id={drama.id}
                 data-drama-slug={drama.slug}
                 data-platform={drama.source}
@@ -465,29 +469,19 @@ export default async function DramaPage({ params }: Props) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'TVEpisode',
+            '@type': 'TVSeries',
             name: drama.title,
             description: displaySynopsis,
             image: drama.coverUrl || '',
             url: `https://dramadisco.com/drama/${drama.slug}`,
             numberOfEpisodes: drama.chapterCount,
             genre: drama.tags.map((dt) => dt.name),
-            aggregateRating: drama.score ? {
-              '@type': 'AggregateRating',
-              ratingValue: drama.score,
-              bestRating: 10,
-              worstRating: 1,
-              ratingCount: Math.max(drama.readCount || 1, 1),
-            } : undefined,
-            // v1.3: AggregateOffer for "Available on N platforms" structured data
-            offers: drama.platforms && drama.platforms.length > 0 ? {
-              '@type': 'AggregateOffer',
-              offerCount: drama.platforms.length,
-              availability: 'https://schema.org/InStock',
-              lowPrice: '0',
-              highPrice: '0',
-              priceCurrency: 'USD',
-            } : undefined,
+            // v1.4: aggregateRating removed — readCount is null site-wide, so the
+            // fallback ratingCount:1 was fabricated. Google policy requires ratings
+            // to summarize real user reviews; fake counts trigger manual penalties.
+            // Score still displays in the page UI for users.
+            // v1.4: offers removed — lowPrice/highPrice '0' misrepresented paid
+            // platform content. Omit entirely until real price data exists.
             provider: drama.source ? { '@type': 'Organization', name: drama.source, url: currentPlatform?.websiteUrl } : undefined,
             publisher: { '@type': 'Organization', name: 'DramaDisco', url: 'https://dramadisco.com' },
           }),

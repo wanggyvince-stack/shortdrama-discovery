@@ -30,8 +30,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? seoContent.intro.replace(/\*\*/g, '').replace(/\n/g, ' ').substring(0, 155) + '...'
     : `Discover the best ${tag.name.toLowerCase()} short dramas. Browse our curated collection of top-rated ${tag.name.toLowerCase()} micro dramas.`;
 
+  // Keep title ≤ 60 chars; use absolute to bypass '%s | DramaDisco' template
+  const MAX_TITLE = 60;
+  let tagTitle = `${tag.name} Short Dramas — DramaDisco`;
+  if (tagTitle.length > MAX_TITLE) {
+    tagTitle = `Best ${tag.name} Short Dramas`;
+    if (tagTitle.length > MAX_TITLE) {
+      tagTitle = tagTitle.slice(0, 59).trimEnd();
+    }
+  }
+
   const metadata: Metadata = {
-    title: `Best ${tag.name} Short Dramas — Where to Watch Full Series`,
+    title: { absolute: tagTitle },
     description,
     alternates: { canonical: `/tag/${slug}` },
   };
@@ -228,16 +238,10 @@ export default async function TagPage({ params }: Props) {
                 '@type': 'ListItem',
                 position: index + 1,
                 item: {
-                  '@type': 'TVEpisode',
+                  '@type': 'TVSeries',
                   name: drama.title,
                   url: `https://dramadisco.com/drama/${drama.slug}`,
                   image: drama.coverUrl,
-                  aggregateRating: drama.score ? {
-                    '@type': 'AggregateRating',
-                    ratingValue: drama.score,
-                    bestRating: 10,
-                    ratingCount: Math.max(drama.readCount || 1, 1),
-                  } : undefined,
                 },
               })),
             },

@@ -65,7 +65,7 @@ export default function PlatformsPage() {
                     <a
                       href={platform.websiteUrl}
                       target="_blank"
-                      rel="noopener noreferrer nofollow"
+                      rel="sponsored noopener noreferrer"
                       style={{
                         display: 'inline-block',
                         marginTop: 'var(--space-3)',
