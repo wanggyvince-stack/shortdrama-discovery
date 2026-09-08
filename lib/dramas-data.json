@@ -69,7 +69,7 @@
       "name": "Romantic",
       "slug": "romantic",
       "category": "emotion",
-      "dramaCount": 457,
+      "dramaCount": 452,
       "avgScore": null,
       "totalReads": 0
     },
@@ -78,7 +78,7 @@
       "name": "Romance",
       "slug": "romance",
       "category": "genre",
-      "dramaCount": 314,
+      "dramaCount": 311,
       "avgScore": null,
       "totalReads": 0
     },
@@ -87,7 +87,7 @@
       "name": "CEO / Billionaire",
       "slug": "ceo---billionaire",
       "category": "genre",
-      "dramaCount": 235,
+      "dramaCount": 234,
       "avgScore": null,
       "totalReads": 0
     },
@@ -96,7 +96,7 @@
       "name": "Family / Cute Kids",
       "slug": "family---cute-kids",
       "category": "genre",
-      "dramaCount": 197,
+      "dramaCount": 194,
       "avgScore": null,
       "totalReads": 0
     },
@@ -105,7 +105,7 @@
       "name": "Revenge / Comeback",
       "slug": "revenge---comeback",
       "category": "emotion",
-      "dramaCount": 173,
+      "dramaCount": 172,
       "avgScore": null,
       "totalReads": 0
     },
@@ -114,7 +114,7 @@
       "name": "Second Chance Romance",
       "slug": "second-chance-romance",
       "category": "genre",
-      "dramaCount": 143,
+      "dramaCount": 139,
       "avgScore": null,
       "totalReads": 0
     },
@@ -123,7 +123,7 @@
       "name": "Hidden Identity",
       "slug": "hidden-identity",
       "category": "genre",
-      "dramaCount": 129,
+      "dramaCount": 127,
       "avgScore": null,
       "totalReads": 0
     },
@@ -132,7 +132,7 @@
       "name": "Drama",
       "slug": "drama",
       "category": "genre",
-      "dramaCount": 128,
+      "dramaCount": 127,
       "avgScore": null,
       "totalReads": 0
     },
@@ -141,7 +141,7 @@
       "name": "Fantasy / Superpower",
       "slug": "fantasy---superpower",
       "category": "genre",
-      "dramaCount": 122,
+      "dramaCount": 118,
       "avgScore": null,
       "totalReads": 0
     },
@@ -150,7 +150,7 @@
       "name": "Contract Marriage",
       "slug": "contract-marriage",
       "category": "genre",
-      "dramaCount": 117,
+      "dramaCount": 114,
       "avgScore": null,
       "totalReads": 0
     },
@@ -159,7 +159,7 @@
       "name": "Dark Mysterious",
       "slug": "dark-mysterious",
       "category": "emotion",
-      "dramaCount": 102,
+      "dramaCount": 100,
       "avgScore": null,
       "totalReads": 0
     },
@@ -177,7 +177,7 @@
       "name": "Sweet / Heartwarming",
       "slug": "sweet---heartwarming",
       "category": "emotion",
-      "dramaCount": 88,
+      "dramaCount": 85,
       "avgScore": null,
       "totalReads": 0
     },
@@ -186,7 +186,7 @@
       "name": "Royal",
       "slug": "royal",
       "category": "genre",
-      "dramaCount": 93,
+      "dramaCount": 91,
       "avgScore": null,
       "totalReads": 0
     },
@@ -195,7 +195,7 @@
       "name": "Playing Dumb",
       "slug": "playing-dumb",
       "category": "genre",
-      "dramaCount": 73,
+      "dramaCount": 71,
       "avgScore": null,
       "totalReads": 0
     },
@@ -213,7 +213,7 @@
       "name": "Urban",
       "slug": "urban",
       "category": "genre",
-      "dramaCount": 65,
+      "dramaCount": 64,
       "avgScore": null,
       "totalReads": 0
     },
@@ -231,7 +231,7 @@
       "name": "Werewolf / Alpha",
       "slug": "werewolf---alpha",
       "category": "genre",
-      "dramaCount": 51,
+      "dramaCount": 50,
       "avgScore": null,
       "totalReads": 0
     },
@@ -249,7 +249,7 @@
       "name": "Contemporary",
       "slug": "contemporary",
       "category": "genre",
-      "dramaCount": 43,
+      "dramaCount": 42,
       "avgScore": null,
       "totalReads": 0
     },
@@ -276,7 +276,7 @@
       "name": "Wedding",
       "slug": "wedding",
       "category": "scene",
-      "dramaCount": 32,
+      "dramaCount": 30,
       "avgScore": null,
       "totalReads": 0
     },
@@ -285,7 +285,7 @@
       "name": "Flash Marriage / Contract",
       "slug": "flash-marriage---contract",
       "category": "genre",
-      "dramaCount": 31,
+      "dramaCount": 30,
       "avgScore": null,
       "totalReads": 0
     },
@@ -366,7 +366,7 @@
       "name": "Historical",
       "slug": "historical",
       "category": "genre",
-      "dramaCount": 15,
+      "dramaCount": 13,
       "avgScore": null,
       "totalReads": 0
     },
@@ -510,7 +510,7 @@
       "name": "Modern Romance",
       "slug": "modern-romance",
       "category": "genre",
-      "dramaCount": 7,
+      "dramaCount": 5,
       "avgScore": null,
       "totalReads": 0
     },
@@ -753,7 +753,7 @@
       "name": "Family",
       "slug": "family",
       "category": "genre",
-      "dramaCount": 3,
+      "dramaCount": 2,
       "avgScore": null,
       "totalReads": 0
     },
@@ -1131,7 +1131,7 @@
       "name": "Romantic Marriage",
       "slug": "romantic-marriage",
       "category": "genre",
-      "dramaCount": 1,
+      "dramaCount": 0,
       "avgScore": null,
       "totalReads": 0
     },
@@ -1176,7 +1176,7 @@
       "name": "Powerful Family",
       "slug": "powerful-family",
       "category": "genre",
-      "dramaCount": 1,
+      "dramaCount": 0,
       "avgScore": null,
       "totalReads": 0
     },
@@ -1511,7 +1511,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -1635,7 +1635,7 @@
         },
         {
           "name": "Home / Domestic",
-          "slug": "home---domestic",
+          "slug": "home-domestic",
           "category": "scene"
         }
       ],
@@ -1843,7 +1843,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -1937,7 +1937,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
@@ -2469,7 +2469,7 @@
         },
         {
           "name": "Home / Domestic",
-          "slug": "home---domestic",
+          "slug": "home-domestic",
           "category": "scene"
         }
       ],
@@ -2573,7 +2573,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -2677,7 +2677,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -2944,7 +2944,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -3320,7 +3320,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -4163,7 +4163,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -4210,7 +4210,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -4675,7 +4675,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -4756,7 +4756,7 @@
         },
         {
           "name": "Home / Domestic",
-          "slug": "home---domestic",
+          "slug": "home-domestic",
           "category": "scene"
         }
       ],
@@ -4976,7 +4976,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -5033,7 +5033,7 @@
         },
         {
           "name": "Courtroom / Legal",
-          "slug": "courtroom---legal",
+          "slug": "courtroom-legal",
           "category": "scene"
         }
       ],
@@ -5189,7 +5189,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
@@ -5553,7 +5553,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -5600,7 +5600,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
@@ -5724,7 +5724,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -5884,7 +5884,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -6275,7 +6275,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -6312,7 +6312,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -6661,7 +6661,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -8222,7 +8222,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -9024,7 +9024,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
@@ -9283,7 +9283,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -9325,7 +9325,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -9372,7 +9372,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -9742,7 +9742,7 @@
       "tags": [
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -10149,7 +10149,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
@@ -10297,7 +10297,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -10699,7 +10699,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -10741,7 +10741,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -10872,7 +10872,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -10966,7 +10966,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -11233,7 +11233,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
@@ -11275,7 +11275,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -11327,7 +11327,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -11540,7 +11540,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -11976,7 +11976,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -12246,7 +12246,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -12417,7 +12417,7 @@
         },
         {
           "name": "Home / Domestic",
-          "slug": "home---domestic",
+          "slug": "home-domestic",
           "category": "scene"
         }
       ],
@@ -12699,7 +12699,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -12850,7 +12850,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -13165,7 +13165,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -13259,7 +13259,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
@@ -13353,7 +13353,7 @@
         },
         {
           "name": "Courtroom / Legal",
-          "slug": "courtroom---legal",
+          "slug": "courtroom-legal",
           "category": "scene"
         }
       ],
@@ -13405,7 +13405,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -13792,7 +13792,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -13859,7 +13859,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -14015,7 +14015,7 @@
         },
         {
           "name": "Home / Domestic",
-          "slug": "home---domestic",
+          "slug": "home-domestic",
           "category": "scene"
         }
       ],
@@ -14374,7 +14374,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
@@ -14540,12 +14540,12 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -14743,7 +14743,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -14831,7 +14831,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -14888,7 +14888,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -15049,7 +15049,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -15170,7 +15170,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -15645,7 +15645,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -15687,7 +15687,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -15838,7 +15838,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -16249,7 +16249,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -16466,7 +16466,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -16817,7 +16817,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -16884,7 +16884,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -17222,12 +17222,12 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
           "name": "Courtroom / Legal",
-          "slug": "courtroom---legal",
+          "slug": "courtroom-legal",
           "category": "scene"
         }
       ],
@@ -17548,7 +17548,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -17647,7 +17647,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -17970,7 +17970,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -18096,7 +18096,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
@@ -18242,7 +18242,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
@@ -18957,7 +18957,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -19061,7 +19061,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -19353,7 +19353,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -19585,7 +19585,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -20044,7 +20044,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -20138,7 +20138,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -20248,7 +20248,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
@@ -20608,7 +20608,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -20848,7 +20848,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -20924,7 +20924,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -21253,7 +21253,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -21300,7 +21300,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
@@ -21444,7 +21444,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -21838,7 +21838,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -22478,7 +22478,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -22656,7 +22656,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -22807,7 +22807,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -23344,7 +23344,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -23968,7 +23968,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -24036,7 +24036,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -24130,7 +24130,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -24187,7 +24187,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -24244,7 +24244,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -24746,7 +24746,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -25261,7 +25261,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -25866,7 +25866,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -25970,7 +25970,7 @@
         },
         {
           "name": "Courtroom / Legal",
-          "slug": "courtroom---legal",
+          "slug": "courtroom-legal",
           "category": "scene"
         }
       ],
@@ -26022,7 +26022,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
@@ -26089,7 +26089,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -26396,7 +26396,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -26542,7 +26542,7 @@
         },
         {
           "name": "Home / Domestic",
-          "slug": "home---domestic",
+          "slug": "home-domestic",
           "category": "scene"
         }
       ],
@@ -26794,7 +26794,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
@@ -27311,7 +27311,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -27561,7 +27561,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -27668,7 +27668,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -27775,7 +27775,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -28141,7 +28141,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -28238,7 +28238,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -28535,7 +28535,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -28874,7 +28874,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -28931,12 +28931,12 @@
         },
         {
           "name": "Home / Domestic",
-          "slug": "home---domestic",
+          "slug": "home-domestic",
           "category": "scene"
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -29416,7 +29416,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -29545,7 +29545,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
@@ -30519,7 +30519,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -30967,7 +30967,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
@@ -31019,7 +31019,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -31097,7 +31097,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -31149,7 +31149,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -31409,7 +31409,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -31456,7 +31456,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -31668,7 +31668,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -31772,7 +31772,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
@@ -31834,7 +31834,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
@@ -31911,7 +31911,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -32389,7 +32389,7 @@
         },
         {
           "name": "Courtroom / Legal",
-          "slug": "courtroom---legal",
+          "slug": "courtroom-legal",
           "category": "scene"
         }
       ],
@@ -32807,7 +32807,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -33232,7 +33232,7 @@
       "tags": [
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -33284,7 +33284,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -33514,7 +33514,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         },
         {
@@ -34036,7 +34036,7 @@
         },
         {
           "name": "Travel / Adventure",
-          "slug": "travel---adventure",
+          "slug": "travel-adventure",
           "category": "scene"
         }
       ],
@@ -34083,7 +34083,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -34187,7 +34187,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -34796,7 +34796,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -34900,7 +34900,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],
@@ -34970,7 +34970,7 @@
         },
         {
           "name": "Dark / Mysterious",
-          "slug": "dark---mysterious",
+          "slug": "dark-mysterious",
           "category": "emotion"
         }
       ],

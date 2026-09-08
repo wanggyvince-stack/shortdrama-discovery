@@ -1,7 +1,7 @@
 // =============================================================================
 // DramaCPS Per-Drama Links (Non-ReelShort platforms)
 // Auto-extracted from dramacps.com on 2026-09-01
-// 158 dramas mapped (130 original + 18 from v5 + 10 from v6 episode names)
+// 142 dramas mapped (158 original - 16 dead links removed 2026-09-08)
 // ReelShort links excluded (handled by RS Boost)
 // =============================================================================
 
@@ -13,7 +13,6 @@ export interface DramaCpsEntry {
 export const DRAMACPS_PER_DRAMA: Record<string, DramaCpsEntry> = {
   '(Dubbed) His One-Year Wife, His Forever Love': { link: 'https://r.reelsgo.tv/B4EX3xplHvwg', platform: 'KALOSTV' },
   '(Dubbed) My Secret Child With The CEO': { link: 'https://r.reelsgo.tv/l0L78y6CzRA_', platform: 'GOODSHORT' },
-  '100% Destined for Your Love': { link: 'https://r.reelsgo.tv/5XY148Wi9Yxo', platform: 'YOURCHANNEL' },
   '[Dubbed] Heart of the Dragon': { link: 'https://r.reelsgo.tv/F11p7nE_JKrT', platform: 'TOUCHSHORT' },
   '[Dubbed] Love After Divorce: The Elusive Wife': { link: 'https://r.reelsgo.tv/B4EX3xplHvwg', platform: 'KALOSTV' },
   '[Dubbed] Love between fairy and devil': { link: 'https://r.reelsgo.tv/N2s5nTHN8SG_', platform: 'FLAREFLOW' },
@@ -22,10 +21,8 @@ export const DRAMACPS_PER_DRAMA: Record<string, DramaCpsEntry> = {
   '[Dubbed] The Forbidden Promise: Lord Jiang\'s Consort': { link: 'https://r.reelsgo.tv/B49CsYkIrLeS', platform: 'FLICKREELS' },
   '[Dubbed]Veiled War God: Protect the Heiress': { link: 'https://r.reelsgo.tv/p5Yb1O_Qls9e', platform: 'GOODSHORT' },
   '[ENG DUB] He Knows Your Name, He Owns Your Fate': { link: 'https://r.reelsgo.tv/fjVMQ2K1dRAj', platform: 'FLAREFLOW' },
-  '[ENG DUB] Sisters Against the World\'s Judgment': { link: 'https://r.reelsgo.tv/14SRQIuxgUm_', platform: 'YOURCHANNEL' },
   '[ENG DUB] The Phoenix in the Dust': { link: 'https://r.reelsgo.tv/Ru4zE3n9iA8N', platform: 'STARDUSTTV' },
   '[ENG DUB] What the Fire Left Standing': { link: 'https://r.reelsgo.tv/DmSxPMJ0Olr4', platform: 'FLAREFLOW' },
-  'A Flash Marriage With The Billionaire Tycoon': { link: 'https://r.reelsgo.tv/aHsu55aQz-Rh', platform: 'SHORTMAX' },
   'A Love Contract with the Zombie King': { link: 'https://r.reelsgo.tv/JigEokxxYib6', platform: 'FLAREFLOW' },
   'A Sweet Contract with the Mafia Boss': { link: 'https://r.reelsgo.tv/l0L78y6CzRA_', platform: 'GOODSHORT' },
   'After I Bought Sperm, the Alpha Claimed Me': { link: 'https://r.reelsgo.tv/Kb7csvrF53wO', platform: 'FLAREFLOW' },
@@ -33,7 +30,6 @@ export const DRAMACPS_PER_DRAMA: Record<string, DramaCpsEntry> = {
   'After the Divorce, I Made Him Lose Everything': { link: 'https://r.reelsgo.tv/B4EX3xplHvwg', platform: 'KALOSTV' },
   'After the Divorce, the Mafia Boss Went crazy': { link: 'https://r.reelsgo.tv/bbXYF1Ypauza', platform: 'FLICKREELS' },
   'Alpha, You Have A Secret Cub!': { link: 'https://r.reelsgo.tv/Mpp2hn1BZ2mS', platform: 'FLAREFLOW' },
-  'Back to You, Back to Love': { link: 'https://r.reelsgo.tv/xsJmREnOSFC9', platform: 'YOURCHANNEL' },
   'Back with Five Heirs to Claim What\'s Mine': { link: 'https://r.reelsgo.tv/DmSxPMJ0Olr4', platform: 'FLAREFLOW' },
   'Beneath Her Gown: The Master\'s Claimed Wolf Pet': { link: 'https://r.reelsgo.tv/zh39Dv7Muubj', platform: 'FLICKREELS' },
   'Billionaire Brothers and Their Country Brides': { link: 'https://r.reelsgo.tv/fynyA3XAHncw', platform: 'GOODSHORT' },
@@ -63,11 +59,8 @@ export const DRAMACPS_PER_DRAMA: Record<string, DramaCpsEntry> = {
   'From Rags to The Hidden Heir\'s Bride': { link: 'https://r.reelsgo.tv/iimNLVNw8xld', platform: 'SEREAL+' },
   'From Rejected to the Alpha Queen': { link: 'https://r.reelsgo.tv/zFXQFrdjVpBF', platform: 'FLAREFLOW' },
   'Getting Even: the Secret Prodigy’s playbook': { link: 'https://r.reelsgo.tv/J9DmhpPb9kxY', platform: 'FLAREFLOW' },
-  'Gladiator Prince Unshackled by Love': { link: 'https://r.reelsgo.tv/9PHFXanGT_Se', platform: 'GOODSHORT' },
   'He Dumped Me Live. I Took Over His Team': { link: 'https://r.reelsgo.tv/r02x46MzgsX7', platform: 'KALOSTV' },
   'He Knew I Was the Wrong Bride': { link: 'https://r.reelsgo.tv/nMz-v1L0cF3C', platform: 'GOODSHORT' },
-  'He Saved a Boy Who Returns a Billion': { link: 'https://r.reelsgo.tv/aeUX8T1Gigvv', platform: 'GOODSHORT' },
-  'He Took A Mistress I Took the Sky': { link: 'https://r.reelsgo.tv/gjkCEeSZo8p9', platform: 'GOODSHORT' },
   'He\'s Too Late for Her Mafia Majesty': { link: 'https://r.reelsgo.tv/0iENWHG3Ttg5', platform: 'FLAREFLOW' },
   'Her Second Marriage, Her Golden Era': { link: 'https://r.reelsgo.tv/0u7Zu_LdJSz_', platform: 'GOODSHORT' },
   'Hidden Ace Makes Cocky Captain Beg for Mercy': { link: 'https://r.reelsgo.tv/jDeuMbmZNx7x', platform: 'GOODSHORT' },
@@ -77,9 +70,7 @@ export const DRAMACPS_PER_DRAMA: Record<string, DramaCpsEntry> = {
   'I Was Sent to Spy on the Mad Mafia Heir': { link: 'https://r.reelsgo.tv/nMz-v1L0cF3C', platform: 'GOODSHORT' },
   'I\'m the Mafia Girl Boss and He\'s My Man': { link: 'https://r.reelsgo.tv/XGL0_1BC4h46', platform: 'FLAREFLOW' },
   'King of the Flooded World': { link: 'https://r.reelsgo.tv/TDlJknwwR15R', platform: 'FLAREFLOW' },
-  'Leashed to My Demanding Boss 24/7': { link: 'https://r.reelsgo.tv/vtqr8OD-_klc', platform: 'GOODSHORT' },
   'Living as the Villainess: The Princess\'s Divorce Agenda': { link: 'https://r.reelsgo.tv/0iENWHG3Ttg5', platform: 'FLAREFLOW' },
-  'Love as I Remember': { link: 'https://r.reelsgo.tv/hIf_yl3xgfPt', platform: 'GOODSHORT' },
   'Love Lost in the Space': { link: 'https://r.reelsgo.tv/u5ExhX5i3NVy', platform: 'KALOSTV' },
   'Mama with Might: Two Little Reasons to Love': { link: 'https://r.reelsgo.tv/7StNbc_Lw9Hx', platform: 'KALOSTV' },
   'Match Point': { link: 'https://r.reelsgo.tv/XmBLHpbZQwgV', platform: 'YOURCHANNEL' },
@@ -98,8 +89,6 @@ export const DRAMACPS_PER_DRAMA: Record<string, DramaCpsEntry> = {
   'Power of Three Set me Free': { link: 'https://r.reelsgo.tv/9lcpM-0GtDfw', platform: 'GOODSHORT' },
   'Reborn as A Kingmaker of My Useless Chaebol Dad': { link: 'https://r.reelsgo.tv/dBaaOrFoUA28', platform: 'GOODSHORT' },
   'Regret Yet? Your Goddess Is Your Ex-Wife': { link: 'https://r.reelsgo.tv/65zXibIHv8tw', platform: 'YOURCHANNEL' },
-  'Regret！Your Husband is A Tycoon!': { link: 'https://r.reelsgo.tv/sdIVg3HeEOkj', platform: 'SHORTMAX' },
-  'Return of the Abandoned Heiress': { link: 'https://r.reelsgo.tv/j_05hfMXsc1S', platform: 'GOODSHORT' },
   'Return of the Exiled Dragon Heir': { link: 'https://r.reelsgo.tv/l6mdspZGNvCG', platform: 'DRAMABOX' },
   'Revenge for The Truth in Her Diary': { link: 'https://r.reelsgo.tv/ddDhMvlxKtbV', platform: 'STARDUSTTV' },
   'Secret Marriage Swap, The War God’s Late Remorse': { link: 'https://r.reelsgo.tv/J9DmhpPb9kxY', platform: 'FLAREFLOW' },
@@ -132,7 +121,6 @@ export const DRAMACPS_PER_DRAMA: Record<string, DramaCpsEntry> = {
   'The Law of My Body: A Secret Therapy': { link: 'https://r.reelsgo.tv/aTIctVayHge3', platform: 'DRAMABOX' },
   'The Mafia Boss My Husband Betrayed': { link: 'https://r.reelsgo.tv/VNr-rc2Jb2lF', platform: 'FLAREFLOW' },
   'The Maid Who Ran From the Don': { link: 'https://r.reelsgo.tv/b3JjmZb93_7v', platform: 'SHORTMAX' },
-  'The Mogul Behind the Counter': { link: 'https://r.reelsgo.tv/qA3uhhy1Gh7q', platform: 'YOURCHANNEL' },
   'The Phoenix\'s Rebirth for Revenge': { link: 'https://r.reelsgo.tv/J9DmhpPb9kxY', platform: 'FLAREFLOW' },
   'The Prison Made Her A Queen AGAIN': { link: 'https://r.reelsgo.tv/ddDhMvlxKtbV', platform: 'STARDUSTTV' },
   'The Queen Strikes Back with Three Tycoons': { link: 'https://r.reelsgo.tv/5Y9yb9nw_4ri', platform: 'SEREAL+' },
@@ -158,15 +146,11 @@ export const DRAMACPS_PER_DRAMA: Record<string, DramaCpsEntry> = {
   'Wolf of the North': { link: 'https://r.reelsgo.tv/TaMlOaucMbRO', platform: 'KALOSTV' },
   'Wolves at Her Back, Dragons at Her Side': { link: 'https://r.reelsgo.tv/5Y9yb9nw_4ri', platform: 'SEREAL+' },
   'Wrath of the Zeus‘s Son': { link: 'https://r.reelsgo.tv/PP8CYIHtcEMH', platform: 'SHORTMAX' },
-  'Your Loser Husband Is the War God': { link: 'https://r.reelsgo.tv/xsJmREnOSFC9', platform: 'YOURCHANNEL' },
   '[Dubbed] Spoiled by the boss': { link: 'https://r.reelsgo.tv/1Um3u4Xv4wUF', platform: 'KALOSTV' },
   '[Dubbed] The Petite Healer': { link: 'https://r.reelsgo.tv/zW0q59EpZ9WU', platform: 'STARDUSTTV' },
   '[ENG DUB] Rise Built on Forgotten Betrayals': { link: 'https://r.reelsgo.tv/w4MwHKyALa7F', platform: 'GOODSHORT' },
   'By Marrying North I Won His Remorse': { link: 'https://r.reelsgo.tv/6hsPuhDyu--w', platform: 'GOODSHORT' },
   'Daddy Don\'s Forbidden Pet': { link: 'https://r.reelsgo.tv/H9tPMTYaK0uZ', platform: 'GOODSHORT' },
-  'Fake Queen Bee, I\'m the true Heiress!': { link: 'https://r.reelsgo.tv/SSXu7yS9I4qY', platform: 'YOURCHANNEL' },
   'From Mudblood to Atlantis\' Owner': { link: 'https://r.reelsgo.tv/SHNYfKAzedJx', platform: 'GOODSHORT' },
-  'The Last Month of No Masters': { link: 'https://r.reelsgo.tv/vP5W847Z-nIm', platform: 'GOODSHORT' },
   'The Trash Heiress Is A Dragon Master': { link: 'https://r.reelsgo.tv/tA12-MdxytOP', platform: 'GOODSHORT' },
-  'Worlds Apart': { link: 'https://r.reelsgo.tv/jQqKqe73cTG3', platform: 'GOODSHORT' },
 };
