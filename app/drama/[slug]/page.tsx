@@ -107,6 +107,11 @@ const PLATFORM_COLORS: Record<string, string> = {
   netshort: '#2ECC71',
 };
 
+// Platforms that are app-only (no web drama pages exist).
+// Their sourceUrl points to non-existent web pages (e.g. shorttv.live/drama/xxx).
+// Do NOT render "Watch on Web" links for these platforms.
+const APP_ONLY_PLATFORMS = new Set(['ShortMax']);
+
 export default async function DramaPage({ params }: Props) {
   const { slug } = await params;
   const drama = getDramaBySlug(slug);
@@ -243,6 +248,7 @@ export default async function DramaPage({ params }: Props) {
                 {(() => {
                   const cpsUrl = getCpsUrl(drama.source || '', drama.title);
                   if (cpsUrl) {
+                    const isAppOnly = APP_ONLY_PLATFORMS.has(drama.source || '');
                     return (
                       <>
                         <a
@@ -258,18 +264,20 @@ export default async function DramaPage({ params }: Props) {
                         >
                           📱 Watch on App
                         </a>
-                        <a
-                          href={drama.sourceUrl || '#'}
-                          target="_blank"
-                          rel="sponsored noopener noreferrer"
-                          data-drama-id={drama.id}
-                          data-drama-slug={drama.slug}
-                          data-platform={drama.source}
-                          data-link-type="web"
-                          className="cps-web-link"
-                        >
-                          or watch on web →
-                        </a>
+                        {!isAppOnly && (
+                          <a
+                            href={drama.sourceUrl || '#'}
+                            target="_blank"
+                            rel="sponsored noopener noreferrer"
+                            data-drama-id={drama.id}
+                            data-drama-slug={drama.slug}
+                            data-platform={drama.source}
+                            data-link-type="web"
+                            className="cps-web-link"
+                          >
+                            or watch on web →
+                          </a>
+                        )}
                       </>
                     );
                   }
@@ -398,6 +406,7 @@ export default async function DramaPage({ params }: Props) {
       {(() => {
         const cpsUrl = getCpsUrl(drama.source || '', drama.title);
         if (cpsUrl) {
+          const isAppOnly = APP_ONLY_PLATFORMS.has(drama.source || '');
           return (
             <div className="mobile-sticky-cta">
               <a
@@ -413,7 +422,7 @@ export default async function DramaPage({ params }: Props) {
               >
                 📱 Watch on App
               </a>
-              {drama.sourceUrl && (
+              {drama.sourceUrl && !isAppOnly && (
                 <a
                   href={drama.sourceUrl}
                   className="mobile-sticky-cta__web"
