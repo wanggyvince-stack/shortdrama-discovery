@@ -193,6 +193,20 @@ export default function DiscoBall() {
     const group = new THREE.Group();
     scene.add(group);
 
+    // ─── Base sphere (cropped to match tile band — no black areas beyond tiles) ───
+    const basePhiMax = Math.asin(CUT_Y);
+    const baseMargin = TILE_H / 2;
+    const basePhiMin = -basePhiMax + baseMargin;
+    const basePhiTop = basePhiMax - baseMargin;
+    // Convert latitude (phi) to Three.js polar angle (theta): theta = PI/2 - phi
+    const baseThetaStart = Math.PI / 2 - basePhiTop;
+    const baseThetaLength = basePhiTop - basePhiMin;
+    const baseGeom = new THREE.SphereGeometry(R, 64, 32, 0, Math.PI * 2, baseThetaStart, baseThetaLength);
+    const baseMat = new THREE.MeshStandardMaterial({
+      color: 0x666666, metalness: 0.3, roughness: 0.5, side: THREE.DoubleSide
+    });
+    const baseSphere = new THREE.Mesh(baseGeom, baseMat);
+    group.add(baseSphere);
 
     // ─── Create tiles ───
     const textureLoader = new THREE.TextureLoader();
@@ -704,6 +718,10 @@ export default function DiscoBall() {
       renderer.domElement.removeEventListener('click', onClickCanvas);
       renderer.domElement.removeEventListener('touchstart', onTouchStart);
       renderer.domElement.removeEventListener('touchend', onTouchEndTap);
+
+      // Dispose base sphere
+      baseGeom.dispose();
+      baseMat.dispose();
 
       // Dispose all geometries and materials
       allTileMeshes.forEach(m => {
