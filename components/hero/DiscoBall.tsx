@@ -35,10 +35,10 @@ const SWITCH_DELAY = 150;
 // Mobile thresholds
 const MOBILE_BREAKPOINT = 768;
 
-// Proxy poster URLs through Next.js Image Optimization (same-origin, no CORS)
+// Return original poster URL directly (Vercel image optimization disabled to avoid 402)
+// THREE.TextureLoader will attempt CORS; on failure the gold fallback material is used
 function getProxiedPosterUrl(originalUrl: string): string {
-  const encoded = encodeURIComponent(originalUrl);
-  return `/_next/image?url=${encoded}&w=256&q=75`;
+  return originalUrl;
 }
 
 function structuredGrid(gridN: number, isMobile: boolean) {
@@ -210,7 +210,8 @@ export default function DiscoBall() {
 
     // ─── Create tiles ───
     const textureLoader = new THREE.TextureLoader();
-    // No crossOrigin needed — URLs are proxied through _next/image (same-origin)
+    // Attempt CORS for cross-origin textures; falls back to gold material on failure
+    textureLoader.crossOrigin = 'anonymous';
     const maxAniso = renderer.capabilities.getMaxAnisotropy();
     const pts = structuredGrid(GRID_N, isMobile);
     const allTileMeshes: THREE.Mesh[] = [];
