@@ -35,10 +35,16 @@ const SWITCH_DELAY = 150;
 // Mobile thresholds
 const MOBILE_BREAKPOINT = 768;
 
-// Return original poster URL directly (Vercel image optimization disabled to avoid 402)
-// THREE.TextureLoader will attempt CORS; on failure the gold fallback material is used
+// Use wsrv.nl (free CDN) for poster URLs — provides CORS headers for THREE.js texture loading
+// Falls back to gold material if loading fails
 function getProxiedPosterUrl(originalUrl: string): string {
-  return originalUrl;
+  const params = new URLSearchParams({
+    url: originalUrl,
+    w: '256',
+    q: '75',
+    output: 'webp',
+  });
+  return `https://wsrv.nl/?${params.toString()}`;
 }
 
 function structuredGrid(gridN: number, isMobile: boolean) {

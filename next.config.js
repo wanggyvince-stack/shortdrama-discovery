@@ -4,11 +4,17 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    loader: 'custom',
+    loaderFile: 'lib/image-loader.ts',
     remotePatterns: [
       {
         protocol: 'https',
         hostname: '**',
+      },
+      // wsrv.nl - free image optimization CDN
+      {
+        protocol: 'https',
+        hostname: 'wsrv.nl',
       },
     ],
   },
