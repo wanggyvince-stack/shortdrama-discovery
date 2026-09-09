@@ -193,31 +193,10 @@ export default function DiscoBall() {
     const group = new THREE.Group();
     scene.add(group);
 
-    // ─── Base sphere (truncated) ───
-    const baseGeom = new THREE.SphereGeometry(R, 128, 64);
-    const bp = baseGeom.attributes.position;
-    const bi = baseGeom.index;
-    const keep: boolean[] = [];
-    for (let i = 0; i < bp.count; i++) keep.push(Math.abs(bp.getY(i)) <= R * CUT_Y);
-    if (bi) {
-      const ni: number[] = [];
-      for (let i = 0; i < bi.count; i += 3) {
-        const a = bi.getX(i), b = bi.getX(i + 1), c = bi.getX(i + 2);
-        if (keep[a] && keep[b] && keep[c]) ni.push(a, b, c);
-      }
-      baseGeom.setIndex(ni);
-    }
-    baseGeom.computeVertexNormals();
-    const baseMat = new THREE.MeshStandardMaterial({
-      color: BG, metalness: 0, roughness: 1, envMapIntensity: 0
-    });
-    const baseSphere = new THREE.Mesh(baseGeom, baseMat);
-    group.add(baseSphere);
 
     // ─── Create tiles ───
     const textureLoader = new THREE.TextureLoader();
-    // Attempt CORS for cross-origin textures; falls back to gold material on failure
-    textureLoader.crossOrigin = 'anonymous';
+    // No forced CORS — let Three.js load textures naturally; gold fallback on failure
     const maxAniso = renderer.capabilities.getMaxAnisotropy();
     const pts = structuredGrid(GRID_N, isMobile);
     const allTileMeshes: THREE.Mesh[] = [];
@@ -736,8 +715,6 @@ export default function DiscoBall() {
         (m.material as THREE.Material).dispose();
       });
 
-      baseGeom.dispose();
-      baseMat.dispose();
       partGeom.dispose();
       partMat.dispose();
       part2Geom.dispose();
